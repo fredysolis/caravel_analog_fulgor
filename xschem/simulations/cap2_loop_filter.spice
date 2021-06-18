@@ -1,0 +1,7 @@
+**.subckt cap2_loop_filter in out
+*.iopin in
+*.iopin out
+XC1 in out sky130_fd_pr__cap_mim_m3_1 W=20 L=20 MF=9 m=9
+**.ends
+** flattened .save nodes
+.end

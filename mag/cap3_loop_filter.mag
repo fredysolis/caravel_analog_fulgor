@@ -1,0 +1,27 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1624020278
+<< metal3 >>
+rect 4830 -6426 13448 2174
+rect 6430 -6666 7430 -6426
+rect 10749 -6666 11749 -6426
+rect 6430 -7521 11749 -6666
+<< metal4 >>
+rect 6430 2227 11749 3227
+rect 6430 524 7430 2227
+rect 10749 524 11749 2227
+rect 6430 -476 11749 524
+rect 6430 -3776 7430 -476
+rect 10749 -3776 11749 -476
+rect 6430 -4776 11749 -3776
+rect 6430 -6426 7430 -4776
+rect 10749 -6426 11749 -4776
+use sky130_fd_pr__cap_mim_m3_1_WHJTNJ  sky130_fd_pr__cap_mim_m3_1_WHJTNJ_0
+timestamp 1624020278
+transform 1 0 9139 0 1 -2126
+box -4309 -4300 4309 4300
+<< labels >>
+rlabel metal4 6430 2227 11749 3227 1 in
+rlabel metal3 6430 -7521 11749 -6666 1 out
+<< end >>

@@ -360,7 +360,6 @@ port 7 nsew signal output
 string LEFsite unit
 string LEFclass CORE
 string FIXED_BBOX 0 0 768 666
-string GDS_FILE $PDKPATH/libs.ref/sky130_fd_sc_hs/gds/sky130_fd_sc_hs.gds
 string LEFsymmetry X Y
 string GDS_END 2405310
 string GDS_START 2399018

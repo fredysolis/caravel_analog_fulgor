@@ -1,115 +1,207 @@
 * NGSPICE file created from loop_filter.ext - technology: sky130A
 
-.subckt sky130_fd_pr__res_high_po_5p73_GW5RGE w_n2133_n2890# a_n573_2292# a_821_n2724#
-+ a_821_2292# a_n1967_2292# a_n573_n2724# a_n1967_n2724#
-X0 a_n1967_n2724# a_n1967_2292# w_n2133_n2890# sky130_fd_pr__res_high_po_5p73 l=2.292e+07u
-X1 a_n573_n2724# a_n573_2292# w_n2133_n2890# sky130_fd_pr__res_high_po_5p73 l=2.292e+07u
-X2 a_821_n2724# a_821_2292# w_n2133_n2890# sky130_fd_pr__res_high_po_5p73 l=2.292e+07u
-C0 a_n573_n2724# a_n1967_n2724# 0.19fF
-C1 a_821_2292# a_n573_2292# 0.19fF
-C2 a_821_n2724# a_n573_n2724# 0.19fF
-C3 a_n1967_2292# a_n573_2292# 0.19fF
-C4 a_821_n2724# w_n2133_n2890# 1.76fF
-C5 a_821_2292# w_n2133_n2890# 1.76fF
-C6 a_n573_n2724# w_n2133_n2890# 1.53fF
-C7 a_n573_2292# w_n2133_n2890# 1.53fF
-C8 a_n1967_n2724# w_n2133_n2890# 1.76fF
-C9 a_n1967_2292# w_n2133_n2890# 1.76fF
+.subckt sky130_fd_pr__cap_mim_m3_1_MACBVW VSUBS m3_n2650_n13200# m3_n7969_n2600# m3_7988_8000#
++ m3_2669_n7900# m3_n13288_n2600# m3_n2650_2700# m3_2669_2700# m3_n13288_n13200# m3_n7969_n13200#
++ m3_n13288_8000# m3_7988_2700# m3_n2650_n7900# m3_7988_n7900# m3_2669_n13200# m3_n7969_8000#
++ m3_n13288_2700# m3_n7969_n7900# m3_n13288_n7900# m3_2669_n2600# m3_n7969_2700# m3_7988_n13200#
++ c1_n13188_n13100# m3_7988_n2600# m3_n2650_n2600# m3_n2650_8000# m3_2669_8000#
+X0 c1_n13188_n13100# m3_2669_n13200# sky130_fd_pr__cap_mim_m3_1 l=2.5e+07u w=2.5e+07u
+X1 c1_n13188_n13100# m3_n2650_8000# sky130_fd_pr__cap_mim_m3_1 l=2.5e+07u w=2.5e+07u
+X2 c1_n13188_n13100# m3_2669_n7900# sky130_fd_pr__cap_mim_m3_1 l=2.5e+07u w=2.5e+07u
+X3 c1_n13188_n13100# m3_n13288_n13200# sky130_fd_pr__cap_mim_m3_1 l=2.5e+07u w=2.5e+07u
+X4 c1_n13188_n13100# m3_n7969_2700# sky130_fd_pr__cap_mim_m3_1 l=2.5e+07u w=2.5e+07u
+X5 c1_n13188_n13100# m3_n13288_8000# sky130_fd_pr__cap_mim_m3_1 l=2.5e+07u w=2.5e+07u
+X6 c1_n13188_n13100# m3_2669_8000# sky130_fd_pr__cap_mim_m3_1 l=2.5e+07u w=2.5e+07u
+X7 c1_n13188_n13100# m3_7988_2700# sky130_fd_pr__cap_mim_m3_1 l=2.5e+07u w=2.5e+07u
+X8 c1_n13188_n13100# m3_2669_n2600# sky130_fd_pr__cap_mim_m3_1 l=2.5e+07u w=2.5e+07u
+X9 c1_n13188_n13100# m3_7988_n13200# sky130_fd_pr__cap_mim_m3_1 l=2.5e+07u w=2.5e+07u
+X10 c1_n13188_n13100# m3_n7969_8000# sky130_fd_pr__cap_mim_m3_1 l=2.5e+07u w=2.5e+07u
+X11 c1_n13188_n13100# m3_7988_n7900# sky130_fd_pr__cap_mim_m3_1 l=2.5e+07u w=2.5e+07u
+X12 c1_n13188_n13100# m3_n7969_n13200# sky130_fd_pr__cap_mim_m3_1 l=2.5e+07u w=2.5e+07u
+X13 c1_n13188_n13100# m3_7988_8000# sky130_fd_pr__cap_mim_m3_1 l=2.5e+07u w=2.5e+07u
+X14 c1_n13188_n13100# m3_n13288_n7900# sky130_fd_pr__cap_mim_m3_1 l=2.5e+07u w=2.5e+07u
+X15 c1_n13188_n13100# m3_n7969_n7900# sky130_fd_pr__cap_mim_m3_1 l=2.5e+07u w=2.5e+07u
+X16 c1_n13188_n13100# m3_n2650_n7900# sky130_fd_pr__cap_mim_m3_1 l=2.5e+07u w=2.5e+07u
+X17 c1_n13188_n13100# m3_n2650_n13200# sky130_fd_pr__cap_mim_m3_1 l=2.5e+07u w=2.5e+07u
+X18 c1_n13188_n13100# m3_n2650_2700# sky130_fd_pr__cap_mim_m3_1 l=2.5e+07u w=2.5e+07u
+X19 c1_n13188_n13100# m3_7988_n2600# sky130_fd_pr__cap_mim_m3_1 l=2.5e+07u w=2.5e+07u
+X20 c1_n13188_n13100# m3_n13288_2700# sky130_fd_pr__cap_mim_m3_1 l=2.5e+07u w=2.5e+07u
+X21 c1_n13188_n13100# m3_n13288_n2600# sky130_fd_pr__cap_mim_m3_1 l=2.5e+07u w=2.5e+07u
+X22 c1_n13188_n13100# m3_n7969_n2600# sky130_fd_pr__cap_mim_m3_1 l=2.5e+07u w=2.5e+07u
+X23 c1_n13188_n13100# m3_n2650_n2600# sky130_fd_pr__cap_mim_m3_1 l=2.5e+07u w=2.5e+07u
+X24 c1_n13188_n13100# m3_2669_2700# sky130_fd_pr__cap_mim_m3_1 l=2.5e+07u w=2.5e+07u
+C0 m3_n2650_n13200# m3_2669_n13200# 2.73fF
+C1 m3_n2650_n2600# m3_2669_n2600# 2.73fF
+C2 c1_n13188_n13100# m3_n13288_n7900# 58.61fF
+C3 m3_n2650_2700# m3_n7969_2700# 2.73fF
+C4 m3_2669_n7900# m3_n2650_n7900# 2.73fF
+C5 m3_n2650_8000# c1_n13188_n13100# 58.61fF
+C6 m3_7988_8000# m3_7988_2700# 3.39fF
+C7 m3_n7969_8000# m3_n13288_8000# 2.73fF
+C8 m3_n13288_n13200# m3_n13288_n7900# 3.28fF
+C9 m3_2669_n2600# m3_2669_2700# 3.28fF
+C10 m3_n2650_8000# m3_n2650_2700# 3.28fF
+C11 m3_7988_n2600# c1_n13188_n13100# 61.01fF
+C12 m3_n2650_n2600# m3_n2650_n7900# 3.28fF
+C13 c1_n13188_n13100# m3_7988_n7900# 61.01fF
+C14 m3_7988_2700# m3_2669_2700# 2.73fF
+C15 m3_7988_n13200# c1_n13188_n13100# 60.75fF
+C16 m3_2669_8000# c1_n13188_n13100# 58.61fF
+C17 m3_n2650_n13200# m3_n2650_n7900# 3.28fF
+C18 m3_n7969_8000# c1_n13188_n13100# 58.61fF
+C19 c1_n13188_n13100# m3_2669_n13200# 58.61fF
+C20 m3_2669_8000# m3_n2650_8000# 2.73fF
+C21 m3_2669_n7900# c1_n13188_n13100# 58.86fF
+C22 m3_7988_n2600# m3_7988_n7900# 3.39fF
+C23 m3_n7969_8000# m3_n7969_2700# 3.28fF
+C24 m3_n7969_n7900# m3_n2650_n7900# 2.73fF
+C25 m3_n2650_n13200# m3_n7969_n13200# 2.73fF
+C26 m3_n2650_n2600# m3_n7969_n2600# 2.73fF
+C27 m3_7988_8000# c1_n13188_n13100# 60.75fF
+C28 c1_n13188_n13100# m3_2669_n2600# 58.86fF
+C29 m3_n7969_8000# m3_n2650_8000# 2.73fF
+C30 m3_7988_n13200# m3_7988_n7900# 3.39fF
+C31 m3_n2650_n2600# c1_n13188_n13100# 58.86fF
+C32 m3_n2650_n2600# m3_n2650_2700# 3.28fF
+C33 c1_n13188_n13100# m3_7988_2700# 61.01fF
+C34 c1_n13188_n13100# m3_2669_2700# 58.86fF
+C35 m3_n7969_n7900# m3_n7969_n13200# 3.28fF
+C36 m3_n13288_8000# m3_n13288_2700# 3.28fF
+C37 m3_n2650_n13200# c1_n13188_n13100# 58.61fF
+C38 c1_n13188_n13100# m3_n2650_n7900# 58.86fF
+C39 m3_n2650_2700# m3_2669_2700# 2.73fF
+C40 m3_2669_n7900# m3_7988_n7900# 2.73fF
+C41 m3_7988_n13200# m3_2669_n13200# 2.73fF
+C42 m3_7988_n2600# m3_2669_n2600# 2.73fF
+C43 m3_n13288_8000# c1_n13188_n13100# 58.36fF
+C44 m3_n7969_n7900# m3_n7969_n2600# 3.28fF
+C45 m3_n7969_n7900# c1_n13188_n13100# 58.86fF
+C46 m3_7988_n2600# m3_7988_2700# 3.39fF
+C47 m3_2669_8000# m3_7988_8000# 2.73fF
+C48 c1_n13188_n13100# m3_n7969_n13200# 58.61fF
+C49 m3_2669_n7900# m3_2669_n13200# 3.28fF
+C50 m3_n13288_n2600# m3_n13288_2700# 3.28fF
+C51 m3_n13288_n13200# m3_n7969_n13200# 2.73fF
+C52 m3_n13288_n2600# m3_n7969_n2600# 2.73fF
+C53 c1_n13188_n13100# m3_n13288_2700# 58.61fF
+C54 m3_n7969_n7900# m3_n13288_n7900# 2.73fF
+C55 m3_2669_8000# m3_2669_2700# 3.28fF
+C56 m3_n13288_n2600# c1_n13188_n13100# 58.61fF
+C57 c1_n13188_n13100# m3_n7969_n2600# 58.86fF
+C58 m3_2669_n7900# m3_2669_n2600# 3.28fF
+C59 m3_n7969_2700# m3_n13288_2700# 2.73fF
+C60 m3_n7969_n2600# m3_n7969_2700# 3.28fF
+C61 c1_n13188_n13100# m3_n2650_2700# 58.86fF
+C62 m3_n13288_n13200# c1_n13188_n13100# 58.36fF
+C63 c1_n13188_n13100# m3_n7969_2700# 58.86fF
+C64 m3_n13288_n2600# m3_n13288_n7900# 3.28fF
+C65 c1_n13188_n13100# VSUBS 2.51fF
+C66 m3_7988_n13200# VSUBS 12.57fF
+C67 m3_2669_n13200# VSUBS 12.37fF
+C68 m3_n2650_n13200# VSUBS 12.37fF
+C69 m3_n7969_n13200# VSUBS 12.37fF
+C70 m3_n13288_n13200# VSUBS 12.37fF
+C71 m3_7988_n7900# VSUBS 12.57fF
+C72 m3_2669_n7900# VSUBS 12.37fF
+C73 m3_n2650_n7900# VSUBS 12.37fF
+C74 m3_n7969_n7900# VSUBS 12.37fF
+C75 m3_n13288_n7900# VSUBS 12.37fF
+C76 m3_7988_n2600# VSUBS 12.57fF
+C77 m3_2669_n2600# VSUBS 12.37fF
+C78 m3_n2650_n2600# VSUBS 12.37fF
+C79 m3_n7969_n2600# VSUBS 12.37fF
+C80 m3_n13288_n2600# VSUBS 12.37fF
+C81 m3_7988_2700# VSUBS 12.57fF
+C82 m3_2669_2700# VSUBS 12.37fF
+C83 m3_n2650_2700# VSUBS 12.37fF
+C84 m3_n7969_2700# VSUBS 12.37fF
+C85 m3_n13288_2700# VSUBS 12.37fF
+C86 m3_7988_8000# VSUBS 12.57fF
+C87 m3_2669_8000# VSUBS 12.37fF
+C88 m3_n2650_8000# VSUBS 12.37fF
+C89 m3_n7969_8000# VSUBS 12.37fF
+C90 m3_n13288_8000# VSUBS 12.37fF
 .ends
 
-.subckt sky130_fd_pr__cap_mim_m3_1_W3JTNJ VSUBS c1_n6369_n6300# m3_2169_n6400# m3_n2150_n6400#
-+ c1_2269_n6300# c1_n2050_n6300# m3_n6469_n6400#
+.subckt cap1_loop_filter VSUBS in out
+Xsky130_fd_pr__cap_mim_m3_1_MACBVW_0 VSUBS out out out out out out out out out out
++ out out out out out out out out out out out in out out out out sky130_fd_pr__cap_mim_m3_1_MACBVW
+C0 in out 2.17fF
+C1 in VSUBS -10.03fF
+C2 out VSUBS 62.40fF
+.ends
+
+.subckt sky130_fd_pr__cap_mim_m3_1_W3JTNJ VSUBS m3_n6469_n2100# c1_n6369_n6300# m3_2169_n6400#
++ m3_n2150_n6400# c1_2269_n6300# m3_n6469_2200# m3_n2150_n2100# c1_n2050_n6300# m3_n2150_2200#
++ m3_n6469_n6400#
 X0 c1_2269_n6300# m3_2169_n6400# sky130_fd_pr__cap_mim_m3_1 l=2e+07u w=2e+07u
 X1 c1_2269_n6300# m3_2169_n6400# sky130_fd_pr__cap_mim_m3_1 l=2e+07u w=2e+07u
-X2 c1_n2050_n6300# m3_n2150_n6400# sky130_fd_pr__cap_mim_m3_1 l=2e+07u w=2e+07u
-X3 c1_n6369_n6300# m3_n6469_n6400# sky130_fd_pr__cap_mim_m3_1 l=2e+07u w=2e+07u
+X2 c1_n2050_n6300# m3_n2150_2200# sky130_fd_pr__cap_mim_m3_1 l=2e+07u w=2e+07u
+X3 c1_n6369_n6300# m3_n6469_n2100# sky130_fd_pr__cap_mim_m3_1 l=2e+07u w=2e+07u
 X4 c1_2269_n6300# m3_2169_n6400# sky130_fd_pr__cap_mim_m3_1 l=2e+07u w=2e+07u
 X5 c1_n6369_n6300# m3_n6469_n6400# sky130_fd_pr__cap_mim_m3_1 l=2e+07u w=2e+07u
-X6 c1_n2050_n6300# m3_n2150_n6400# sky130_fd_pr__cap_mim_m3_1 l=2e+07u w=2e+07u
+X6 c1_n2050_n6300# m3_n2150_n2100# sky130_fd_pr__cap_mim_m3_1 l=2e+07u w=2e+07u
 X7 c1_n2050_n6300# m3_n2150_n6400# sky130_fd_pr__cap_mim_m3_1 l=2e+07u w=2e+07u
-X8 c1_n6369_n6300# m3_n6469_n6400# sky130_fd_pr__cap_mim_m3_1 l=2e+07u w=2e+07u
-C0 m3_n2150_n6400# c1_n2050_n6300# 121.67fF
-C1 c1_n2050_n6300# c1_2269_n6300# 1.99fF
-C2 m3_n2150_n6400# c1_2269_n6300# 4.84fF
-C3 m3_n6469_n6400# c1_n6369_n6300# 121.67fF
-C4 c1_n2050_n6300# c1_n6369_n6300# 1.99fF
-C5 m3_2169_n6400# m3_n2150_n6400# 39.69fF
-C6 m3_2169_n6400# c1_2269_n6300# 121.67fF
-C7 m3_n6469_n6400# c1_n2050_n6300# 4.84fF
-C8 m3_n2150_n6400# m3_n6469_n6400# 39.69fF
-C9 c1_2269_n6300# VSUBS 0.16fF
-C10 c1_n2050_n6300# VSUBS 0.16fF
-C11 c1_n6369_n6300# VSUBS 0.16fF
-C12 m3_2169_n6400# VSUBS 26.86fF
-C13 m3_n2150_n6400# VSUBS 26.86fF
-C14 m3_n6469_n6400# VSUBS 26.86fF
+X8 c1_n6369_n6300# m3_n6469_2200# sky130_fd_pr__cap_mim_m3_1 l=2e+07u w=2e+07u
+C0 m3_n6469_n2100# m3_n2150_n2100# 1.75fF
+C1 m3_n2150_n2100# m3_2169_n6400# 1.75fF
+C2 m3_n2150_2200# c1_n2050_n6300# 38.10fF
+C3 m3_n6469_2200# m3_n6469_n2100# 2.63fF
+C4 c1_2269_n6300# c1_n2050_n6300# 1.99fF
+C5 m3_n6469_n2100# c1_n6369_n6300# 38.10fF
+C6 m3_n2150_n6400# c1_n2050_n6300# 38.10fF
+C7 m3_n2150_n6400# m3_n6469_n6400# 1.75fF
+C8 m3_n6469_2200# c1_n6369_n6300# 38.10fF
+C9 m3_n2150_n2100# c1_n2050_n6300# 38.10fF
+C10 m3_n6469_n2100# m3_n6469_n6400# 2.63fF
+C11 m3_n2150_2200# m3_n2150_n2100# 2.63fF
+C12 m3_n2150_2200# m3_2169_n6400# 1.75fF
+C13 c1_2269_n6300# m3_2169_n6400# 121.67fF
+C14 m3_n6469_2200# m3_n2150_2200# 1.75fF
+C15 m3_n2150_n6400# m3_n2150_n2100# 2.63fF
+C16 c1_n6369_n6300# c1_n2050_n6300# 1.99fF
+C17 m3_n2150_n6400# m3_2169_n6400# 1.75fF
+C18 c1_n6369_n6300# m3_n6469_n6400# 38.10fF
+C19 c1_2269_n6300# VSUBS 0.16fF
+C20 c1_n2050_n6300# VSUBS 0.16fF
+C21 c1_n6369_n6300# VSUBS 0.16fF
+C22 m3_n2150_n6400# VSUBS 8.68fF
+C23 m3_n6469_n6400# VSUBS 8.68fF
+C24 m3_n2150_n2100# VSUBS 8.68fF
+C25 m3_n6469_n2100# VSUBS 8.68fF
+C26 m3_2169_n6400# VSUBS 26.86fF
+C27 m3_n2150_2200# VSUBS 8.68fF
+C28 m3_n6469_2200# VSUBS 8.68fF
 .ends
 
-.subckt sky130_fd_pr__cap_mim_m3_1_MA89VW VSUBS c1_2769_n13100# m3_n2650_n13200# m3_n13288_n13200#
-+ m3_n7969_n13200# m3_2669_n13200# c1_n2550_n13100# c1_n7869_n13100# m3_7988_n13200#
-+ c1_n13188_n13100# c1_8088_n13100#
-X0 c1_2769_n13100# m3_2669_n13200# sky130_fd_pr__cap_mim_m3_1 l=2.5e+07u w=2.5e+07u
-X1 c1_n2550_n13100# m3_n2650_n13200# sky130_fd_pr__cap_mim_m3_1 l=2.5e+07u w=2.5e+07u
-X2 c1_2769_n13100# m3_2669_n13200# sky130_fd_pr__cap_mim_m3_1 l=2.5e+07u w=2.5e+07u
-X3 c1_n13188_n13100# m3_n13288_n13200# sky130_fd_pr__cap_mim_m3_1 l=2.5e+07u w=2.5e+07u
-X4 c1_n7869_n13100# m3_n7969_n13200# sky130_fd_pr__cap_mim_m3_1 l=2.5e+07u w=2.5e+07u
-X5 c1_n13188_n13100# m3_n13288_n13200# sky130_fd_pr__cap_mim_m3_1 l=2.5e+07u w=2.5e+07u
-X6 c1_2769_n13100# m3_2669_n13200# sky130_fd_pr__cap_mim_m3_1 l=2.5e+07u w=2.5e+07u
-X7 c1_8088_n13100# m3_7988_n13200# sky130_fd_pr__cap_mim_m3_1 l=2.5e+07u w=2.5e+07u
-X8 c1_2769_n13100# m3_2669_n13200# sky130_fd_pr__cap_mim_m3_1 l=2.5e+07u w=2.5e+07u
-X9 c1_8088_n13100# m3_7988_n13200# sky130_fd_pr__cap_mim_m3_1 l=2.5e+07u w=2.5e+07u
-X10 c1_n7869_n13100# m3_n7969_n13200# sky130_fd_pr__cap_mim_m3_1 l=2.5e+07u w=2.5e+07u
-X11 c1_8088_n13100# m3_7988_n13200# sky130_fd_pr__cap_mim_m3_1 l=2.5e+07u w=2.5e+07u
-X12 c1_n7869_n13100# m3_n7969_n13200# sky130_fd_pr__cap_mim_m3_1 l=2.5e+07u w=2.5e+07u
-X13 c1_8088_n13100# m3_7988_n13200# sky130_fd_pr__cap_mim_m3_1 l=2.5e+07u w=2.5e+07u
-X14 c1_n13188_n13100# m3_n13288_n13200# sky130_fd_pr__cap_mim_m3_1 l=2.5e+07u w=2.5e+07u
-X15 c1_n7869_n13100# m3_n7969_n13200# sky130_fd_pr__cap_mim_m3_1 l=2.5e+07u w=2.5e+07u
-X16 c1_n2550_n13100# m3_n2650_n13200# sky130_fd_pr__cap_mim_m3_1 l=2.5e+07u w=2.5e+07u
-X17 c1_n2550_n13100# m3_n2650_n13200# sky130_fd_pr__cap_mim_m3_1 l=2.5e+07u w=2.5e+07u
-X18 c1_n2550_n13100# m3_n2650_n13200# sky130_fd_pr__cap_mim_m3_1 l=2.5e+07u w=2.5e+07u
-X19 c1_8088_n13100# m3_7988_n13200# sky130_fd_pr__cap_mim_m3_1 l=2.5e+07u w=2.5e+07u
-X20 c1_n13188_n13100# m3_n13288_n13200# sky130_fd_pr__cap_mim_m3_1 l=2.5e+07u w=2.5e+07u
-X21 c1_n13188_n13100# m3_n13288_n13200# sky130_fd_pr__cap_mim_m3_1 l=2.5e+07u w=2.5e+07u
-X22 c1_n7869_n13100# m3_n7969_n13200# sky130_fd_pr__cap_mim_m3_1 l=2.5e+07u w=2.5e+07u
-X23 c1_n2550_n13100# m3_n2650_n13200# sky130_fd_pr__cap_mim_m3_1 l=2.5e+07u w=2.5e+07u
-X24 c1_2769_n13100# m3_2669_n13200# sky130_fd_pr__cap_mim_m3_1 l=2.5e+07u w=2.5e+07u
-C0 m3_n13288_n13200# c1_n13188_n13100# 305.88fF
-C1 m3_n2650_n13200# c1_n2550_n13100# 305.88fF
-C2 c1_8088_n13100# m3_7988_n13200# 305.88fF
-C3 c1_2769_n13100# c1_8088_n13100# 4.15fF
-C4 m3_n2650_n13200# m3_2669_n13200# 81.90fF
-C5 m3_n13288_n13200# c1_n7869_n13100# 10.12fF
-C6 c1_2769_n13100# c1_n2550_n13100# 4.15fF
-C7 m3_n7969_n13200# c1_n2550_n13100# 10.12fF
-C8 m3_n2650_n13200# c1_2769_n13100# 10.12fF
-C9 m3_n7969_n13200# c1_n7869_n13100# 305.88fF
-C10 c1_n7869_n13100# c1_n13188_n13100# 4.15fF
-C11 m3_7988_n13200# m3_2669_n13200# 81.90fF
-C12 m3_n2650_n13200# m3_n7969_n13200# 81.90fF
-C13 c1_8088_n13100# m3_2669_n13200# 10.12fF
-C14 c1_2769_n13100# m3_2669_n13200# 305.88fF
-C15 c1_n7869_n13100# c1_n2550_n13100# 4.15fF
-C16 m3_n7969_n13200# m3_n13288_n13200# 81.90fF
-C17 c1_8088_n13100# VSUBS 0.23fF
-C18 c1_2769_n13100# VSUBS 0.23fF
-C19 c1_n2550_n13100# VSUBS 0.23fF
-C20 c1_n7869_n13100# VSUBS 0.23fF
-C21 c1_n13188_n13100# VSUBS 0.23fF
-C22 m3_7988_n13200# VSUBS 63.09fF
-C23 m3_2669_n13200# VSUBS 63.09fF
-C24 m3_n2650_n13200# VSUBS 63.09fF
-C25 m3_n7969_n13200# VSUBS 63.09fF
-C26 m3_n13288_n13200# VSUBS 63.09fF
+.subckt cap2_loop_filter VSUBS in out
+Xsky130_fd_pr__cap_mim_m3_1_W3JTNJ_0 VSUBS out in out out in out out in out out sky130_fd_pr__cap_mim_m3_1_W3JTNJ
+C0 out in 8.08fF
+C1 in VSUBS -16.59fF
+C2 out VSUBS 13.00fF
+.ends
+
+.subckt sky130_fd_pr__res_high_po_5p73_X44RQA a_n573_2292# w_n739_n2890# a_n573_n2724#
+X0 a_n573_n2724# a_n573_2292# w_n739_n2890# sky130_fd_pr__res_high_po_5p73 l=2.292e+07u
+C0 a_n573_n2724# w_n739_n2890# 1.98fF
+C1 a_n573_2292# w_n739_n2890# 1.98fF
+.ends
+
+.subckt res_loop_filter vss out in
+Xsky130_fd_pr__res_high_po_5p73_X44RQA_0 in vss out sky130_fd_pr__res_high_po_5p73_X44RQA
+C0 out vss 3.87fF
+C1 in vss 3.02fF
 .ends
 
 .subckt loop_filter_pex_c vss in vc_pex
-Xsky130_fd_pr__res_high_po_5p73_GW5RGE_0 vss vc_pex m1_166_166# vc_pex in m1_166_166#
-+ m1_166_166# sky130_fd_pr__res_high_po_5p73_GW5RGE
-Xsky130_fd_pr__cap_mim_m3_1_W3JTNJ_0 vss in vss vss in in vss sky130_fd_pr__cap_mim_m3_1_W3JTNJ
-Xsky130_fd_pr__cap_mim_m3_1_MA89VW_0 vss vc_pex vss vss vss vss vc_pex vc_pex vss
-+ vc_pex vc_pex sky130_fd_pr__cap_mim_m3_1_MA89VW
-C0 vc_pex vss -869.21fF
-C1 in vss -532.70fF
-C2 m1_166_166# vss 5.01fF
+Xcap1_loop_filter_0 vss vc_pex vss cap1_loop_filter
+Xcap2_loop_filter_0 vss in vss cap2_loop_filter
+Xres_loop_filter_0 vss res_loop_filter_2/out in res_loop_filter
+Xres_loop_filter_1 vss res_loop_filter_2/out vc_pex res_loop_filter
+Xres_loop_filter_2 vss res_loop_filter_2/out vc_pex res_loop_filter
+C0 vc_pex in 0.18fF
+C1 vc_pex vss -2.18fF
+C2 res_loop_filter_2/out vss 8.49fF
+C3 in vss -35.88fF
 .ends
 

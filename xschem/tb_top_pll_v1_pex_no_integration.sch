@@ -98,13 +98,13 @@ value="
 .param fref = 100e6
 .param Tref = 1/fref
 .param iref = 100u
-.param vd0 = vdd
+.param vd0 = 0.0
 
-.options TEMP = 0.0
+.options TEMP = 100.0
 .options RSHUNT = 1e20
 
 * Models
-.lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/corners/sky130.lib FF
+.lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/corners/sky130.lib SS
 .include ~/caravel_analog_fulgor/xschem/simulations/PFD_pex_c.spice
 .include ~/caravel_analog_fulgor/xschem/simulations/pfd_cp_interface_pex_c.spice
 .include ~/caravel_analog_fulgor/xschem/simulations/charge_pump_pex_c.spice

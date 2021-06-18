@@ -98,13 +98,13 @@ value="
 .param fref = 100e6
 .param Tref = 1/fref
 .param iref = 100u
-.param vd0 = vdd
+.param vd0 = 0.0
 
-.options TEMP = 0.0
+.options TEMP = 100.0
 .options RSHUNT = 1e20
 
 * Models
-.lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/corners/sky130.lib FF
+.lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/corners/sky130.lib SS
 
 * Data to save
 
@@ -170,6 +170,7 @@ C {noconn.sym} -490 240 2 0 {name=l80}
 C {noconn.sym} -490 260 2 0 {name=l81}
 C {noconn.sym} -490 280 2 0 {name=l82}
 C {noconn.sym} -490 300 2 0 {name=l83}
+C {top_pll_v1.sym} 10 250 0 0 {name=x1}
 C {lab_pin.sym} 180 90 1 0 {name=l5 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 240 90 1 0 {name=l7 sig_type=std_logic lab=vss}
 C {lab_pin.sym} -280 80 1 0 {name=l9 sig_type=std_logic lab=iref_cp}
@@ -231,10 +232,9 @@ C {lab_wire.sym} 220 420 3 0 {name=l65 sig_type=std_logic lab=div_5_nQ0}
 C {lab_wire.sym} 240 420 3 0 {name=l71 sig_type=std_logic lab=div_5_Q1}
 C {lab_wire.sym} 260 420 3 0 {name=l72 sig_type=std_logic lab=div_5_Q1_shift}
 C {lab_wire.sym} 280 420 3 0 {name=l73 sig_type=std_logic lab=div_5_nQ2}
+C {bias.sym} -590 210 0 0 {name=x2}
 C {netlist_not_shown.sym} 230 -170 0 0 {name=STDCELL_MODELS
 only_toplevel=true
 place=end
 format="tcleval(@value )"
 value="[sky130_models]"}
-C {top_pll_v1.sym} 10 250 0 0 {name=x1}
-C {bias.sym} -590 210 0 0 {name=x2}

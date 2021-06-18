@@ -1,0 +1,671 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1624029152
+<< nwell >>
+rect -63 88 28718 1568
+rect -63 -2 28622 88
+rect 28639 -2 28718 88
+<< pwell >>
+rect -63 -36 28718 -2
+rect -63 -126 27595 -36
+rect 28041 -126 28718 -36
+rect -63 -1119 28718 -126
+<< psubdiff >>
+rect -26 -1107 -2 -1017
+rect 28658 -1107 28682 -1017
+<< nsubdiff >>
+rect -27 1442 -3 1532
+rect 28658 1442 28682 1532
+<< psubdiffcont >>
+rect -2 -1107 28658 -1017
+<< nsubdiffcont >>
+rect -3 1442 28658 1532
+<< polycont >>
+rect 25 -100 228 -61
+rect 678 -100 3199 -63
+rect 3996 -100 27595 -64
+<< locali >>
+rect 28658 1442 28682 1532
+rect 10 -61 244 -44
+rect 10 -100 25 -61
+rect 228 -100 244 -61
+rect 10 -117 244 -100
+rect 660 -63 3215 -47
+rect 660 -100 678 -63
+rect 3199 -100 3215 -63
+rect 660 -117 3215 -100
+rect 3978 -64 27595 -48
+rect 3978 -100 3996 -64
+rect 3978 -117 27595 -100
+rect -18 -1107 -2 -1017
+rect 28658 -1107 28674 -1017
+<< viali >>
+rect -27 1442 -3 1532
+rect -3 1442 28658 1532
+rect 25 -100 228 -61
+rect 678 -100 3199 -63
+rect 3996 -100 27595 -64
+rect -2 -1107 28658 -1017
+<< metal1 >>
+rect -63 1532 28694 1538
+rect -63 1442 -27 1532
+rect 28658 1442 28694 1532
+rect -63 1436 28694 1442
+rect -63 1395 0 1436
+rect 28639 1385 28694 1436
+rect -63 -61 240 -55
+rect -63 -100 25 -61
+rect 228 -100 240 -61
+rect -63 -107 240 -100
+rect 378 -56 514 -23
+rect 378 -57 679 -56
+rect 378 -63 3211 -57
+rect 378 -100 678 -63
+rect 3199 -100 3211 -63
+rect 378 -106 3211 -100
+rect 3411 -59 3824 -19
+rect 3984 -59 27610 -58
+rect 3411 -64 27610 -59
+rect 3411 -100 3996 -64
+rect 27595 -100 27610 -64
+rect 3411 -106 27610 -100
+rect 378 -107 679 -106
+rect 3411 -107 4070 -106
+rect 378 -138 514 -107
+rect 3411 -143 3824 -107
+rect 27687 -220 28718 64
+rect -63 -1017 28718 -953
+rect -63 -1107 -2 -1017
+rect 28658 -1107 28718 -1017
+rect -63 -1113 28718 -1107
+use sky130_fd_pr__nfet_01v8_T69Y3A  sky130_fd_pr__nfet_01v8_T69Y3A_0
+timestamp 1623972527
+transform 1 0 257 0 1 -573
+box -257 -425 257 499
+use sky130_fd_pr__pfet_01v8_58ZKDE  sky130_fd_pr__pfet_01v8_58ZKDE_0
+timestamp 1623972527
+transform 1 0 257 0 1 700
+box -257 -777 257 744
+use sky130_fd_pr__nfet_01v8_T69Y3A  sky130_fd_pr__nfet_01v8_T69Y3A_1
+timestamp 1623972527
+transform 1 0 879 0 1 -573
+box -257 -425 257 499
+use sky130_fd_pr__nfet_01v8_T69Y3A  sky130_fd_pr__nfet_01v8_T69Y3A_2
+timestamp 1623972527
+transform 1 0 1263 0 1 -573
+box -257 -425 257 499
+use sky130_fd_pr__pfet_01v8_58ZKDE  sky130_fd_pr__pfet_01v8_58ZKDE_1
+timestamp 1623972527
+transform 1 0 879 0 1 700
+box -257 -777 257 744
+use sky130_fd_pr__pfet_01v8_58ZKDE  sky130_fd_pr__pfet_01v8_58ZKDE_2
+timestamp 1623972527
+transform 1 0 1263 0 1 700
+box -257 -777 257 744
+use sky130_fd_pr__nfet_01v8_T69Y3A  sky130_fd_pr__nfet_01v8_T69Y3A_3
+timestamp 1623972527
+transform 1 0 1647 0 1 -573
+box -257 -425 257 499
+use sky130_fd_pr__pfet_01v8_58ZKDE  sky130_fd_pr__pfet_01v8_58ZKDE_3
+timestamp 1623972527
+transform 1 0 1647 0 1 700
+box -257 -777 257 744
+use sky130_fd_pr__nfet_01v8_T69Y3A  sky130_fd_pr__nfet_01v8_T69Y3A_4
+timestamp 1623972527
+transform 1 0 2031 0 1 -573
+box -257 -425 257 499
+use sky130_fd_pr__pfet_01v8_58ZKDE  sky130_fd_pr__pfet_01v8_58ZKDE_4
+timestamp 1623972527
+transform 1 0 2031 0 1 700
+box -257 -777 257 744
+use sky130_fd_pr__nfet_01v8_T69Y3A  sky130_fd_pr__nfet_01v8_T69Y3A_5
+timestamp 1623972527
+transform 1 0 2415 0 1 -573
+box -257 -425 257 499
+use sky130_fd_pr__nfet_01v8_T69Y3A  sky130_fd_pr__nfet_01v8_T69Y3A_6
+timestamp 1623972527
+transform 1 0 2799 0 1 -573
+box -257 -425 257 499
+use sky130_fd_pr__pfet_01v8_58ZKDE  sky130_fd_pr__pfet_01v8_58ZKDE_5
+timestamp 1623972527
+transform 1 0 2415 0 1 700
+box -257 -777 257 744
+use sky130_fd_pr__pfet_01v8_58ZKDE  sky130_fd_pr__pfet_01v8_58ZKDE_6
+timestamp 1623972527
+transform 1 0 2799 0 1 700
+box -257 -777 257 744
+use sky130_fd_pr__nfet_01v8_T69Y3A  sky130_fd_pr__nfet_01v8_T69Y3A_7
+timestamp 1623972527
+transform 1 0 3183 0 1 -573
+box -257 -425 257 499
+use sky130_fd_pr__pfet_01v8_58ZKDE  sky130_fd_pr__pfet_01v8_58ZKDE_7
+timestamp 1623972527
+transform 1 0 3183 0 1 700
+box -257 -777 257 744
+use sky130_fd_pr__nfet_01v8_T69Y3A  sky130_fd_pr__nfet_01v8_T69Y3A_8
+timestamp 1623972527
+transform 1 0 3567 0 1 -573
+box -257 -425 257 499
+use sky130_fd_pr__pfet_01v8_58ZKDE  sky130_fd_pr__pfet_01v8_58ZKDE_8
+timestamp 1623972527
+transform 1 0 3567 0 1 700
+box -257 -777 257 744
+use sky130_fd_pr__nfet_01v8_T69Y3A  sky130_fd_pr__nfet_01v8_T69Y3A_9
+timestamp 1623972527
+transform 1 0 4190 0 1 -573
+box -257 -425 257 499
+use sky130_fd_pr__pfet_01v8_58ZKDE  sky130_fd_pr__pfet_01v8_58ZKDE_9
+timestamp 1623972527
+transform 1 0 4190 0 1 700
+box -257 -777 257 744
+use sky130_fd_pr__nfet_01v8_T69Y3A  sky130_fd_pr__nfet_01v8_T69Y3A_10
+timestamp 1623972527
+transform -1 0 4574 0 1 -573
+box -257 -425 257 499
+use sky130_fd_pr__pfet_01v8_58ZKDE  sky130_fd_pr__pfet_01v8_58ZKDE_13
+timestamp 1623972527
+transform 1 0 4574 0 1 700
+box -257 -777 257 744
+use sky130_fd_pr__nfet_01v8_T69Y3A  sky130_fd_pr__nfet_01v8_T69Y3A_12
+timestamp 1623972527
+transform -1 0 5342 0 1 -573
+box -257 -425 257 499
+use sky130_fd_pr__nfet_01v8_T69Y3A  sky130_fd_pr__nfet_01v8_T69Y3A_11
+timestamp 1623972527
+transform -1 0 4958 0 1 -573
+box -257 -425 257 499
+use sky130_fd_pr__pfet_01v8_58ZKDE  sky130_fd_pr__pfet_01v8_58ZKDE_12
+timestamp 1623972527
+transform 1 0 4958 0 1 700
+box -257 -777 257 744
+use sky130_fd_pr__pfet_01v8_58ZKDE  sky130_fd_pr__pfet_01v8_58ZKDE_11
+timestamp 1623972527
+transform 1 0 5342 0 1 700
+box -257 -777 257 744
+use sky130_fd_pr__nfet_01v8_T69Y3A  sky130_fd_pr__nfet_01v8_T69Y3A_13
+timestamp 1623972527
+transform -1 0 5726 0 1 -573
+box -257 -425 257 499
+use sky130_fd_pr__pfet_01v8_58ZKDE  sky130_fd_pr__pfet_01v8_58ZKDE_10
+timestamp 1623972527
+transform 1 0 5726 0 1 700
+box -257 -777 257 744
+use sky130_fd_pr__nfet_01v8_T69Y3A  sky130_fd_pr__nfet_01v8_T69Y3A_14
+timestamp 1623972527
+transform -1 0 6110 0 1 -573
+box -257 -425 257 499
+use sky130_fd_pr__pfet_01v8_58ZKDE  sky130_fd_pr__pfet_01v8_58ZKDE_16
+timestamp 1623972527
+transform 1 0 6110 0 1 700
+box -257 -777 257 744
+use sky130_fd_pr__nfet_01v8_T69Y3A  sky130_fd_pr__nfet_01v8_T69Y3A_16
+timestamp 1623972527
+transform -1 0 6878 0 1 -573
+box -257 -425 257 499
+use sky130_fd_pr__nfet_01v8_T69Y3A  sky130_fd_pr__nfet_01v8_T69Y3A_15
+timestamp 1623972527
+transform -1 0 6494 0 1 -573
+box -257 -425 257 499
+use sky130_fd_pr__pfet_01v8_58ZKDE  sky130_fd_pr__pfet_01v8_58ZKDE_15
+timestamp 1623972527
+transform 1 0 6494 0 1 700
+box -257 -777 257 744
+use sky130_fd_pr__pfet_01v8_58ZKDE  sky130_fd_pr__pfet_01v8_58ZKDE_14
+timestamp 1623972527
+transform 1 0 6878 0 1 700
+box -257 -777 257 744
+use sky130_fd_pr__nfet_01v8_T69Y3A  sky130_fd_pr__nfet_01v8_T69Y3A_17
+timestamp 1623972527
+transform 1 0 7262 0 1 -573
+box -257 -425 257 499
+use sky130_fd_pr__pfet_01v8_58ZKDE  sky130_fd_pr__pfet_01v8_58ZKDE_17
+timestamp 1623972527
+transform 1 0 7262 0 1 700
+box -257 -777 257 744
+use sky130_fd_pr__nfet_01v8_T69Y3A  sky130_fd_pr__nfet_01v8_T69Y3A_18
+timestamp 1623972527
+transform -1 0 7646 0 1 -573
+box -257 -425 257 499
+use sky130_fd_pr__pfet_01v8_58ZKDE  sky130_fd_pr__pfet_01v8_58ZKDE_20
+timestamp 1623972527
+transform 1 0 7646 0 1 700
+box -257 -777 257 744
+use sky130_fd_pr__nfet_01v8_T69Y3A  sky130_fd_pr__nfet_01v8_T69Y3A_19
+timestamp 1623972527
+transform -1 0 8030 0 1 -573
+box -257 -425 257 499
+use sky130_fd_pr__nfet_01v8_T69Y3A  sky130_fd_pr__nfet_01v8_T69Y3A_20
+timestamp 1623972527
+transform -1 0 8414 0 1 -573
+box -257 -425 257 499
+use sky130_fd_pr__pfet_01v8_58ZKDE  sky130_fd_pr__pfet_01v8_58ZKDE_19
+timestamp 1623972527
+transform 1 0 8030 0 1 700
+box -257 -777 257 744
+use sky130_fd_pr__pfet_01v8_58ZKDE  sky130_fd_pr__pfet_01v8_58ZKDE_18
+timestamp 1623972527
+transform 1 0 8414 0 1 700
+box -257 -777 257 744
+use sky130_fd_pr__nfet_01v8_T69Y3A  sky130_fd_pr__nfet_01v8_T69Y3A_21
+timestamp 1623972527
+transform -1 0 8798 0 1 -573
+box -257 -425 257 499
+use sky130_fd_pr__pfet_01v8_58ZKDE  sky130_fd_pr__pfet_01v8_58ZKDE_24
+timestamp 1623972527
+transform 1 0 8798 0 1 700
+box -257 -777 257 744
+use sky130_fd_pr__nfet_01v8_T69Y3A  sky130_fd_pr__nfet_01v8_T69Y3A_22
+timestamp 1623972527
+transform -1 0 9182 0 1 -573
+box -257 -425 257 499
+use sky130_fd_pr__pfet_01v8_58ZKDE  sky130_fd_pr__pfet_01v8_58ZKDE_23
+timestamp 1623972527
+transform 1 0 9182 0 1 700
+box -257 -777 257 744
+use sky130_fd_pr__nfet_01v8_T69Y3A  sky130_fd_pr__nfet_01v8_T69Y3A_23
+timestamp 1623972527
+transform -1 0 9566 0 1 -573
+box -257 -425 257 499
+use sky130_fd_pr__nfet_01v8_T69Y3A  sky130_fd_pr__nfet_01v8_T69Y3A_24
+timestamp 1623972527
+transform -1 0 9950 0 1 -573
+box -257 -425 257 499
+use sky130_fd_pr__pfet_01v8_58ZKDE  sky130_fd_pr__pfet_01v8_58ZKDE_22
+timestamp 1623972527
+transform 1 0 9566 0 1 700
+box -257 -777 257 744
+use sky130_fd_pr__pfet_01v8_58ZKDE  sky130_fd_pr__pfet_01v8_58ZKDE_21
+timestamp 1623972527
+transform 1 0 9950 0 1 700
+box -257 -777 257 744
+use sky130_fd_pr__nfet_01v8_T69Y3A  sky130_fd_pr__nfet_01v8_T69Y3A_25
+timestamp 1623972527
+transform -1 0 10334 0 1 -573
+box -257 -425 257 499
+use sky130_fd_pr__pfet_01v8_58ZKDE  sky130_fd_pr__pfet_01v8_58ZKDE_29
+timestamp 1623972527
+transform 1 0 10334 0 1 700
+box -257 -777 257 744
+use sky130_fd_pr__nfet_01v8_T69Y3A  sky130_fd_pr__nfet_01v8_T69Y3A_26
+timestamp 1623972527
+transform -1 0 10718 0 1 -573
+box -257 -425 257 499
+use sky130_fd_pr__pfet_01v8_58ZKDE  sky130_fd_pr__pfet_01v8_58ZKDE_28
+timestamp 1623972527
+transform 1 0 10718 0 1 700
+box -257 -777 257 744
+use sky130_fd_pr__nfet_01v8_T69Y3A  sky130_fd_pr__nfet_01v8_T69Y3A_27
+timestamp 1623972527
+transform -1 0 11102 0 1 -573
+box -257 -425 257 499
+use sky130_fd_pr__nfet_01v8_T69Y3A  sky130_fd_pr__nfet_01v8_T69Y3A_28
+timestamp 1623972527
+transform -1 0 11486 0 1 -573
+box -257 -425 257 499
+use sky130_fd_pr__pfet_01v8_58ZKDE  sky130_fd_pr__pfet_01v8_58ZKDE_27
+timestamp 1623972527
+transform 1 0 11102 0 1 700
+box -257 -777 257 744
+use sky130_fd_pr__pfet_01v8_58ZKDE  sky130_fd_pr__pfet_01v8_58ZKDE_26
+timestamp 1623972527
+transform 1 0 11486 0 1 700
+box -257 -777 257 744
+use sky130_fd_pr__nfet_01v8_T69Y3A  sky130_fd_pr__nfet_01v8_T69Y3A_29
+timestamp 1623972527
+transform -1 0 11870 0 1 -573
+box -257 -425 257 499
+use sky130_fd_pr__pfet_01v8_58ZKDE  sky130_fd_pr__pfet_01v8_58ZKDE_25
+timestamp 1623972527
+transform 1 0 11870 0 1 700
+box -257 -777 257 744
+use sky130_fd_pr__nfet_01v8_T69Y3A  sky130_fd_pr__nfet_01v8_T69Y3A_30
+timestamp 1623972527
+transform -1 0 12254 0 1 -573
+box -257 -425 257 499
+use sky130_fd_pr__pfet_01v8_58ZKDE  sky130_fd_pr__pfet_01v8_58ZKDE_32
+timestamp 1623972527
+transform 1 0 12254 0 1 700
+box -257 -777 257 744
+use sky130_fd_pr__nfet_01v8_T69Y3A  sky130_fd_pr__nfet_01v8_T69Y3A_31
+timestamp 1623972527
+transform -1 0 12638 0 1 -573
+box -257 -425 257 499
+use sky130_fd_pr__nfet_01v8_T69Y3A  sky130_fd_pr__nfet_01v8_T69Y3A_32
+timestamp 1623972527
+transform -1 0 13022 0 1 -573
+box -257 -425 257 499
+use sky130_fd_pr__pfet_01v8_58ZKDE  sky130_fd_pr__pfet_01v8_58ZKDE_31
+timestamp 1623972527
+transform 1 0 12638 0 1 700
+box -257 -777 257 744
+use sky130_fd_pr__pfet_01v8_58ZKDE  sky130_fd_pr__pfet_01v8_58ZKDE_30
+timestamp 1623972527
+transform 1 0 13022 0 1 700
+box -257 -777 257 744
+use sky130_fd_pr__nfet_01v8_T69Y3A  sky130_fd_pr__nfet_01v8_T69Y3A_33
+timestamp 1623972527
+transform 1 0 13406 0 1 -573
+box -257 -425 257 499
+use sky130_fd_pr__pfet_01v8_58ZKDE  sky130_fd_pr__pfet_01v8_58ZKDE_33
+timestamp 1623972527
+transform 1 0 13406 0 1 700
+box -257 -777 257 744
+use sky130_fd_pr__nfet_01v8_T69Y3A  sky130_fd_pr__nfet_01v8_T69Y3A_34
+timestamp 1623972527
+transform -1 0 13790 0 1 -573
+box -257 -425 257 499
+use sky130_fd_pr__pfet_01v8_58ZKDE  sky130_fd_pr__pfet_01v8_58ZKDE_36
+timestamp 1623972527
+transform 1 0 13790 0 1 700
+box -257 -777 257 744
+use sky130_fd_pr__nfet_01v8_T69Y3A  sky130_fd_pr__nfet_01v8_T69Y3A_35
+timestamp 1623972527
+transform -1 0 14174 0 1 -573
+box -257 -425 257 499
+use sky130_fd_pr__nfet_01v8_T69Y3A  sky130_fd_pr__nfet_01v8_T69Y3A_36
+timestamp 1623972527
+transform -1 0 14558 0 1 -573
+box -257 -425 257 499
+use sky130_fd_pr__pfet_01v8_58ZKDE  sky130_fd_pr__pfet_01v8_58ZKDE_35
+timestamp 1623972527
+transform 1 0 14174 0 1 700
+box -257 -777 257 744
+use sky130_fd_pr__pfet_01v8_58ZKDE  sky130_fd_pr__pfet_01v8_58ZKDE_34
+timestamp 1623972527
+transform 1 0 14558 0 1 700
+box -257 -777 257 744
+use sky130_fd_pr__nfet_01v8_T69Y3A  sky130_fd_pr__nfet_01v8_T69Y3A_37
+timestamp 1623972527
+transform -1 0 14942 0 1 -573
+box -257 -425 257 499
+use sky130_fd_pr__pfet_01v8_58ZKDE  sky130_fd_pr__pfet_01v8_58ZKDE_40
+timestamp 1623972527
+transform 1 0 14942 0 1 700
+box -257 -777 257 744
+use sky130_fd_pr__nfet_01v8_T69Y3A  sky130_fd_pr__nfet_01v8_T69Y3A_38
+timestamp 1623972527
+transform -1 0 15326 0 1 -573
+box -257 -425 257 499
+use sky130_fd_pr__pfet_01v8_58ZKDE  sky130_fd_pr__pfet_01v8_58ZKDE_39
+timestamp 1623972527
+transform 1 0 15326 0 1 700
+box -257 -777 257 744
+use sky130_fd_pr__nfet_01v8_T69Y3A  sky130_fd_pr__nfet_01v8_T69Y3A_39
+timestamp 1623972527
+transform -1 0 15710 0 1 -573
+box -257 -425 257 499
+use sky130_fd_pr__nfet_01v8_T69Y3A  sky130_fd_pr__nfet_01v8_T69Y3A_40
+timestamp 1623972527
+transform -1 0 16094 0 1 -573
+box -257 -425 257 499
+use sky130_fd_pr__pfet_01v8_58ZKDE  sky130_fd_pr__pfet_01v8_58ZKDE_38
+timestamp 1623972527
+transform 1 0 15710 0 1 700
+box -257 -777 257 744
+use sky130_fd_pr__pfet_01v8_58ZKDE  sky130_fd_pr__pfet_01v8_58ZKDE_37
+timestamp 1623972527
+transform 1 0 16094 0 1 700
+box -257 -777 257 744
+use sky130_fd_pr__nfet_01v8_T69Y3A  sky130_fd_pr__nfet_01v8_T69Y3A_41
+timestamp 1623972527
+transform -1 0 16478 0 1 -573
+box -257 -425 257 499
+use sky130_fd_pr__pfet_01v8_58ZKDE  sky130_fd_pr__pfet_01v8_58ZKDE_45
+timestamp 1623972527
+transform 1 0 16478 0 1 700
+box -257 -777 257 744
+use sky130_fd_pr__nfet_01v8_T69Y3A  sky130_fd_pr__nfet_01v8_T69Y3A_42
+timestamp 1623972527
+transform -1 0 16862 0 1 -573
+box -257 -425 257 499
+use sky130_fd_pr__nfet_01v8_T69Y3A  sky130_fd_pr__nfet_01v8_T69Y3A_43
+timestamp 1623972527
+transform -1 0 17246 0 1 -573
+box -257 -425 257 499
+use sky130_fd_pr__pfet_01v8_58ZKDE  sky130_fd_pr__pfet_01v8_58ZKDE_44
+timestamp 1623972527
+transform 1 0 16862 0 1 700
+box -257 -777 257 744
+use sky130_fd_pr__pfet_01v8_58ZKDE  sky130_fd_pr__pfet_01v8_58ZKDE_43
+timestamp 1623972527
+transform 1 0 17246 0 1 700
+box -257 -777 257 744
+use sky130_fd_pr__nfet_01v8_T69Y3A  sky130_fd_pr__nfet_01v8_T69Y3A_44
+timestamp 1623972527
+transform -1 0 17630 0 1 -573
+box -257 -425 257 499
+use sky130_fd_pr__pfet_01v8_58ZKDE  sky130_fd_pr__pfet_01v8_58ZKDE_42
+timestamp 1623972527
+transform 1 0 17630 0 1 700
+box -257 -777 257 744
+use sky130_fd_pr__nfet_01v8_T69Y3A  sky130_fd_pr__nfet_01v8_T69Y3A_45
+timestamp 1623972527
+transform -1 0 18014 0 1 -573
+box -257 -425 257 499
+use sky130_fd_pr__pfet_01v8_58ZKDE  sky130_fd_pr__pfet_01v8_58ZKDE_41
+timestamp 1623972527
+transform 1 0 18014 0 1 700
+box -257 -777 257 744
+use sky130_fd_pr__nfet_01v8_T69Y3A  sky130_fd_pr__nfet_01v8_T69Y3A_46
+timestamp 1623972527
+transform -1 0 18398 0 1 -573
+box -257 -425 257 499
+use sky130_fd_pr__nfet_01v8_T69Y3A  sky130_fd_pr__nfet_01v8_T69Y3A_47
+timestamp 1623972527
+transform -1 0 18782 0 1 -573
+box -257 -425 257 499
+use sky130_fd_pr__pfet_01v8_58ZKDE  sky130_fd_pr__pfet_01v8_58ZKDE_48
+timestamp 1623972527
+transform 1 0 18398 0 1 700
+box -257 -777 257 744
+use sky130_fd_pr__pfet_01v8_58ZKDE  sky130_fd_pr__pfet_01v8_58ZKDE_47
+timestamp 1623972527
+transform 1 0 18782 0 1 700
+box -257 -777 257 744
+use sky130_fd_pr__nfet_01v8_T69Y3A  sky130_fd_pr__nfet_01v8_T69Y3A_48
+timestamp 1623972527
+transform -1 0 19166 0 1 -573
+box -257 -425 257 499
+use sky130_fd_pr__pfet_01v8_58ZKDE  sky130_fd_pr__pfet_01v8_58ZKDE_46
+timestamp 1623972527
+transform 1 0 19166 0 1 700
+box -257 -777 257 744
+use sky130_fd_pr__nfet_01v8_T69Y3A  sky130_fd_pr__nfet_01v8_T69Y3A_49
+timestamp 1623972527
+transform 1 0 19550 0 1 -573
+box -257 -425 257 499
+use sky130_fd_pr__pfet_01v8_58ZKDE  sky130_fd_pr__pfet_01v8_58ZKDE_49
+timestamp 1623972527
+transform 1 0 19550 0 1 700
+box -257 -777 257 744
+use sky130_fd_pr__nfet_01v8_T69Y3A  sky130_fd_pr__nfet_01v8_T69Y3A_50
+timestamp 1623972527
+transform -1 0 19934 0 1 -573
+box -257 -425 257 499
+use sky130_fd_pr__nfet_01v8_T69Y3A  sky130_fd_pr__nfet_01v8_T69Y3A_51
+timestamp 1623972527
+transform -1 0 20318 0 1 -573
+box -257 -425 257 499
+use sky130_fd_pr__pfet_01v8_58ZKDE  sky130_fd_pr__pfet_01v8_58ZKDE_52
+timestamp 1623972527
+transform 1 0 19934 0 1 700
+box -257 -777 257 744
+use sky130_fd_pr__pfet_01v8_58ZKDE  sky130_fd_pr__pfet_01v8_58ZKDE_51
+timestamp 1623972527
+transform 1 0 20318 0 1 700
+box -257 -777 257 744
+use sky130_fd_pr__nfet_01v8_T69Y3A  sky130_fd_pr__nfet_01v8_T69Y3A_52
+timestamp 1623972527
+transform -1 0 20702 0 1 -573
+box -257 -425 257 499
+use sky130_fd_pr__pfet_01v8_58ZKDE  sky130_fd_pr__pfet_01v8_58ZKDE_50
+timestamp 1623972527
+transform 1 0 20702 0 1 700
+box -257 -777 257 744
+use sky130_fd_pr__nfet_01v8_T69Y3A  sky130_fd_pr__nfet_01v8_T69Y3A_53
+timestamp 1623972527
+transform -1 0 21086 0 1 -573
+box -257 -425 257 499
+use sky130_fd_pr__pfet_01v8_58ZKDE  sky130_fd_pr__pfet_01v8_58ZKDE_56
+timestamp 1623972527
+transform 1 0 21086 0 1 700
+box -257 -777 257 744
+use sky130_fd_pr__nfet_01v8_T69Y3A  sky130_fd_pr__nfet_01v8_T69Y3A_54
+timestamp 1623972527
+transform -1 0 21470 0 1 -573
+box -257 -425 257 499
+use sky130_fd_pr__nfet_01v8_T69Y3A  sky130_fd_pr__nfet_01v8_T69Y3A_55
+timestamp 1623972527
+transform -1 0 21854 0 1 -573
+box -257 -425 257 499
+use sky130_fd_pr__pfet_01v8_58ZKDE  sky130_fd_pr__pfet_01v8_58ZKDE_55
+timestamp 1623972527
+transform 1 0 21470 0 1 700
+box -257 -777 257 744
+use sky130_fd_pr__pfet_01v8_58ZKDE  sky130_fd_pr__pfet_01v8_58ZKDE_54
+timestamp 1623972527
+transform 1 0 21854 0 1 700
+box -257 -777 257 744
+use sky130_fd_pr__nfet_01v8_T69Y3A  sky130_fd_pr__nfet_01v8_T69Y3A_56
+timestamp 1623972527
+transform -1 0 22238 0 1 -573
+box -257 -425 257 499
+use sky130_fd_pr__pfet_01v8_58ZKDE  sky130_fd_pr__pfet_01v8_58ZKDE_53
+timestamp 1623972527
+transform 1 0 22238 0 1 700
+box -257 -777 257 744
+use sky130_fd_pr__nfet_01v8_T69Y3A  sky130_fd_pr__nfet_01v8_T69Y3A_57
+timestamp 1623972527
+transform -1 0 22622 0 1 -573
+box -257 -425 257 499
+use sky130_fd_pr__pfet_01v8_58ZKDE  sky130_fd_pr__pfet_01v8_58ZKDE_61
+timestamp 1623972527
+transform 1 0 22622 0 1 700
+box -257 -777 257 744
+use sky130_fd_pr__nfet_01v8_T69Y3A  sky130_fd_pr__nfet_01v8_T69Y3A_59
+timestamp 1623972527
+transform -1 0 23390 0 1 -573
+box -257 -425 257 499
+use sky130_fd_pr__nfet_01v8_T69Y3A  sky130_fd_pr__nfet_01v8_T69Y3A_58
+timestamp 1623972527
+transform -1 0 23006 0 1 -573
+box -257 -425 257 499
+use sky130_fd_pr__pfet_01v8_58ZKDE  sky130_fd_pr__pfet_01v8_58ZKDE_60
+timestamp 1623972527
+transform 1 0 23006 0 1 700
+box -257 -777 257 744
+use sky130_fd_pr__pfet_01v8_58ZKDE  sky130_fd_pr__pfet_01v8_58ZKDE_59
+timestamp 1623972527
+transform 1 0 23390 0 1 700
+box -257 -777 257 744
+use sky130_fd_pr__nfet_01v8_T69Y3A  sky130_fd_pr__nfet_01v8_T69Y3A_60
+timestamp 1623972527
+transform -1 0 23774 0 1 -573
+box -257 -425 257 499
+use sky130_fd_pr__pfet_01v8_58ZKDE  sky130_fd_pr__pfet_01v8_58ZKDE_58
+timestamp 1623972527
+transform 1 0 23774 0 1 700
+box -257 -777 257 744
+use sky130_fd_pr__nfet_01v8_T69Y3A  sky130_fd_pr__nfet_01v8_T69Y3A_61
+timestamp 1623972527
+transform -1 0 24158 0 1 -573
+box -257 -425 257 499
+use sky130_fd_pr__pfet_01v8_58ZKDE  sky130_fd_pr__pfet_01v8_58ZKDE_57
+timestamp 1623972527
+transform 1 0 24158 0 1 700
+box -257 -777 257 744
+use sky130_fd_pr__nfet_01v8_T69Y3A  sky130_fd_pr__nfet_01v8_T69Y3A_63
+timestamp 1623972527
+transform -1 0 24926 0 1 -573
+box -257 -425 257 499
+use sky130_fd_pr__nfet_01v8_T69Y3A  sky130_fd_pr__nfet_01v8_T69Y3A_62
+timestamp 1623972527
+transform -1 0 24542 0 1 -573
+box -257 -425 257 499
+use sky130_fd_pr__pfet_01v8_58ZKDE  sky130_fd_pr__pfet_01v8_58ZKDE_64
+timestamp 1623972527
+transform 1 0 24542 0 1 700
+box -257 -777 257 744
+use sky130_fd_pr__pfet_01v8_58ZKDE  sky130_fd_pr__pfet_01v8_58ZKDE_63
+timestamp 1623972527
+transform 1 0 24926 0 1 700
+box -257 -777 257 744
+use sky130_fd_pr__nfet_01v8_T69Y3A  sky130_fd_pr__nfet_01v8_T69Y3A_64
+timestamp 1623972527
+transform -1 0 25310 0 1 -573
+box -257 -425 257 499
+use sky130_fd_pr__pfet_01v8_58ZKDE  sky130_fd_pr__pfet_01v8_58ZKDE_62
+timestamp 1623972527
+transform 1 0 25310 0 1 700
+box -257 -777 257 744
+use sky130_fd_pr__nfet_01v8_T69Y3A  sky130_fd_pr__nfet_01v8_T69Y3A_65
+timestamp 1623972527
+transform 1 0 25694 0 1 -573
+box -257 -425 257 499
+use sky130_fd_pr__pfet_01v8_58ZKDE  sky130_fd_pr__pfet_01v8_58ZKDE_65
+timestamp 1623972527
+transform 1 0 25694 0 1 700
+box -257 -777 257 744
+use sky130_fd_pr__nfet_01v8_T69Y3A  sky130_fd_pr__nfet_01v8_T69Y3A_67
+timestamp 1623972527
+transform -1 0 26462 0 1 -573
+box -257 -425 257 499
+use sky130_fd_pr__nfet_01v8_T69Y3A  sky130_fd_pr__nfet_01v8_T69Y3A_66
+timestamp 1623972527
+transform -1 0 26078 0 1 -573
+box -257 -425 257 499
+use sky130_fd_pr__pfet_01v8_58ZKDE  sky130_fd_pr__pfet_01v8_58ZKDE_68
+timestamp 1623972527
+transform 1 0 26078 0 1 700
+box -257 -777 257 744
+use sky130_fd_pr__pfet_01v8_58ZKDE  sky130_fd_pr__pfet_01v8_58ZKDE_67
+timestamp 1623972527
+transform 1 0 26462 0 1 700
+box -257 -777 257 744
+use sky130_fd_pr__nfet_01v8_T69Y3A  sky130_fd_pr__nfet_01v8_T69Y3A_68
+timestamp 1623972527
+transform -1 0 26846 0 1 -573
+box -257 -425 257 499
+use sky130_fd_pr__pfet_01v8_58ZKDE  sky130_fd_pr__pfet_01v8_58ZKDE_66
+timestamp 1623972527
+transform 1 0 26846 0 1 700
+box -257 -777 257 744
+use sky130_fd_pr__nfet_01v8_T69Y3A  sky130_fd_pr__nfet_01v8_T69Y3A_69
+timestamp 1623972527
+transform -1 0 27230 0 1 -573
+box -257 -425 257 499
+use sky130_fd_pr__pfet_01v8_58ZKDE  sky130_fd_pr__pfet_01v8_58ZKDE_72
+timestamp 1623972527
+transform 1 0 27230 0 1 700
+box -257 -777 257 744
+use sky130_fd_pr__nfet_01v8_T69Y3A  sky130_fd_pr__nfet_01v8_T69Y3A_71
+timestamp 1623972527
+transform -1 0 27998 0 1 -573
+box -257 -425 257 499
+use sky130_fd_pr__nfet_01v8_T69Y3A  sky130_fd_pr__nfet_01v8_T69Y3A_70
+timestamp 1623972527
+transform -1 0 27614 0 1 -573
+box -257 -425 257 499
+use sky130_fd_pr__pfet_01v8_58ZKDE  sky130_fd_pr__pfet_01v8_58ZKDE_71
+timestamp 1623972527
+transform 1 0 27614 0 1 700
+box -257 -777 257 744
+use sky130_fd_pr__pfet_01v8_58ZKDE  sky130_fd_pr__pfet_01v8_58ZKDE_70
+timestamp 1623972527
+transform 1 0 27998 0 1 700
+box -257 -777 257 744
+use sky130_fd_pr__nfet_01v8_T69Y3A  sky130_fd_pr__nfet_01v8_T69Y3A_72
+timestamp 1623972527
+transform -1 0 28382 0 1 -573
+box -257 -425 257 499
+use sky130_fd_pr__pfet_01v8_58ZKDE  sky130_fd_pr__pfet_01v8_58ZKDE_69
+timestamp 1623972527
+transform 1 0 28382 0 1 700
+box -257 -777 257 744
+<< labels >>
+rlabel metal1 -63 -107 25 -55 1 in
+rlabel metal1 -63 1532 28694 1538 1 vdd
+rlabel metal1 -63 -1113 28718 -1107 1 vss
+rlabel metal1 27687 -220 28718 64 1 out
+<< end >>

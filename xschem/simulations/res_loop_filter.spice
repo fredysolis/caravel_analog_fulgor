@@ -1,0 +1,8 @@
+**.subckt res_loop_filter in vss out
+*.iopin in
+*.iopin vss
+*.iopin out
+XR3 out in vss sky130_fd_pr__res_high_po_5p73 L=22.92 mult=1 m=1
+**.ends
+** flattened .save nodes
+.end

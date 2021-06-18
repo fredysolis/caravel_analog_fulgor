@@ -1,0 +1,65 @@
+**.subckt tb_buffer_salida_pex_c
+VSS vss GND {vss} 
+VDD vdd vss {vdd} 
+VIN pll_out vss PULSE(0 {vin} 0 1p 1p {T/2} {T}) DC {vin} AC 0 
+C1 out vss 20p m=1
+x1 vdd in pll_out vss inverter_min_x4
+x3 vdd int1 in vss inverter_min_x4
+x2 vdd out int1 vss buffer_salida_pex_c
+**** begin user architecture code
+
+
+
+* Parameters
+.param vdd = 1.8
+.param vss = 0
+.param vin = 1.8
+.param T   = 1n
+.param C   = 10f
+
+.options TEMP = 27.0
+
+* Models
+.lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/corners/sky130.lib TT
+.include ~/caravel_analog_fulgor/xschem/simulations/buffer_salida_pex_c.spice
+
+
+* Data to save
+.save all
+
+
+* Simulation
+.control
+
+	reset
+
+	tran .001ns 10ns
+
+
+	plot v(in) v(int1)+2 v(out)+4
+.endc
+
+
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  inverter_min_x4.sym # of pins=4
+* sym_path: /home/dhernando/caravel_analog_fulgor/xschem/inverter_min_x4.sym
+* sch_path: /home/dhernando/caravel_analog_fulgor/xschem/inverter_min_x4.sch
+.subckt inverter_min_x4  vdd out in vss
+*.iopin vss
+*.ipin in
+*.opin out
+*.iopin vdd
+XM2 out in vdd vdd sky130_fd_pr__pfet_01v8 L=0.15 W=0.84 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=4 m=4 
+XM1 out in vss vss sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=4 m=4 
+.ends
+
+.GLOBAL GND
+** flattened .save nodes
+.end
