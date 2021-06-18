@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1623248172
+timestamp 1624049879
 << nwell >>
 rect -363 1865 931 1954
 rect -363 1858 911 1865
@@ -235,23 +235,23 @@ rect 795 -141 805 -85
 rect 861 -141 871 -85
 rect 795 -146 871 -141
 use cap_vco  cap_vco_0
-timestamp 1623247475
+timestamp 1624049879
 transform 1 0 5 0 1 528
 box 554 -6 926 514
 use inverter_csvco  inverter_csvco_0
-timestamp 1623162837
+timestamp 1624049879
 transform 1 0 68 0 1 387
 box 0 -597 432 757
 use sky130_fd_pr__pfet_01v8_8DL6ZL  sky130_fd_pr__pfet_01v8_8DL6ZL_0
-timestamp 1622843784
+timestamp 1624049879
 transform -1 0 284 0 -1 1496
 box -647 -369 647 369
 use sky130_fd_pr__nfet_01v8_7H8F5S  sky130_fd_pr__nfet_01v8_7H8F5S_0
-timestamp 1622843784
+timestamp 1624049879
 transform 1 0 284 0 -1 -553
 box -647 -360 647 360
 use sky130_fd_pr__nfet_01v8_EDT3AT  sky130_fd_pr__nfet_01v8_EDT3AT_0
-timestamp 1623244079
+timestamp 1624049879
 transform 1 0 711 0 1 100
 box -211 -221 211 221
 << labels >>

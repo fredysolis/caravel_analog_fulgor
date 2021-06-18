@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1623954650
+timestamp 1624049879
 << metal1 >>
 rect 983 2998 993 3026
 rect 0 2944 993 2998
@@ -50,27 +50,27 @@ rect 983 40 993 152
 rect 1161 40 1171 152
 rect 983 35 1171 40
 use trans_gate  trans_gate_0
-timestamp 1623610677
+timestamp 1624049879
 transform 1 0 675 0 -1 723
 box -53 -811 569 723
 use inverter_cp_x2  inverter_cp_x2_0
-timestamp 1623355426
+timestamp 1624049879
 transform 1 0 1244 0 -1 776
 box 0 -758 910 776
 use inverter_cp_x2  inverter_cp_x2_1
-timestamp 1623355426
+timestamp 1624049879
 transform 1 0 1244 0 1 2292
 box 0 -758 910 776
 use inverter_cp_x1  inverter_cp_x1_0
-timestamp 1623798692
+timestamp 1624049879
 transform 1 0 0 0 -1 776
 box 0 -758 622 776
 use inverter_cp_x1  inverter_cp_x1_2
-timestamp 1623798692
+timestamp 1624049879
 transform 1 0 622 0 1 2292
 box 0 -758 622 776
 use inverter_cp_x1  inverter_cp_x1_1
-timestamp 1623798692
+timestamp 1624049879
 transform 1 0 0 0 1 2292
 box 0 -758 622 776
 << labels >>

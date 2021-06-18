@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1623706675
+timestamp 1624049879
 << nwell >>
 rect -422 2867 0 2956
 << pwell >>
@@ -138,23 +138,23 @@ rect 3440 1357 3441 1421
 rect 440 1356 608 1357
 rect 3316 1356 3441 1357
 use csvco_branch  csvco_branch_2
-timestamp 1623248172
+timestamp 1624049879
 transform 1 0 2951 0 1 1002
 box -363 -1002 931 1954
 use csvco_branch  csvco_branch_1
-timestamp 1623248172
+timestamp 1624049879
 transform 1 0 1657 0 1 1002
 box -363 -1002 931 1954
 use csvco_branch  csvco_branch_0
-timestamp 1623248172
+timestamp 1624049879
 transform 1 0 363 0 1 1002
 box -363 -1002 931 1954
 use sky130_fd_pr__pfet_01v8_4757AC  sky130_fd_pr__pfet_01v8_4757AC_0
-timestamp 1623181853
+timestamp 1624049879
 transform 1 0 -211 0 1 2498
 box -211 -369 211 369
 use sky130_fd_pr__nfet_01v8_CBAU6Y  sky130_fd_pr__nfet_01v8_CBAU6Y_0
-timestamp 1623181853
+timestamp 1624049879
 transform 1 0 -211 0 1 449
 box -211 -360 211 360
 << labels >>

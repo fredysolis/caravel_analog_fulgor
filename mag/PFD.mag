@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1623767380
+timestamp 1624049879
 << nwell >>
 rect 2872 706 3790 1304
 rect 3241 700 3768 706
@@ -79,15 +79,15 @@ rect 1390 -1268 1400 -1146
 rect 1472 -1268 1482 -1146
 rect 1390 -1273 1482 -1268
 use dff_pfd  dff_pfd_1
-timestamp 1623456247
+timestamp 1624049879
 transform 1 0 0 0 -1 0
 box 0 0 2872 1304
 use dff_pfd  dff_pfd_0
-timestamp 1623456247
+timestamp 1624049879
 transform 1 0 0 0 1 0
 box 0 0 2872 1304
 use and_pfd  and_pfd_0
-timestamp 1623541727
+timestamp 1624049879
 transform -1 0 3790 0 1 -598
 box 0 0 918 1304
 << labels >>

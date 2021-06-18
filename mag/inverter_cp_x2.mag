@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1623355426
+timestamp 1624049879
 << nwell >>
 rect 0 0 910 776
 << pwell >>
@@ -81,11 +81,11 @@ rect 0 -722 36 -688
 rect 874 -722 910 -688
 rect 0 -728 910 -722
 use sky130_fd_pr__pfet_01v8_XJXT7S  sky130_fd_pr__pfet_01v8_XJXT7S_0
-timestamp 1623353110
+timestamp 1624049879
 transform 1 0 455 0 1 344
 box -455 -344 455 344
 use sky130_fd_pr__nfet_01v8_AZESM8  sky130_fd_pr__nfet_01v8_AZESM8_0
-timestamp 1623353949
+timestamp 1624049879
 transform 1 0 455 0 1 -335
 box -455 -335 455 335
 << labels >>

@@ -50,7 +50,7 @@ N 120 -140 160 -140 { lab=lf_vc}
 N 520 -230 580 -230 { lab=vco_out}
 N 620 -330 620 -300 { lab=vdd}
 N 660 -330 660 -300 { lab=vss}
-N 700 -250 740 -250 { lab=out_to_pad}
+N 700 -250 740 -250 { lab=out_to_buffer}
 N 700 -210 750 -210 { lab=out_to_div}
 N 870 -210 870 260 { lab=out_to_div}
 N 570 260 750 260 { lab=out_to_div}
@@ -93,6 +93,11 @@ N -190 340 -190 380 { lab=div_5_nQ0}
 N -210 340 -210 380 { lab=div_5_Q0}
 N -130 340 -130 380 { lab=div_5_nQ2}
 N -390 260 -390 300 { lab=out_div_by_5}
+N 740 -250 930 -250 { lab=out_to_buffer}
+N 810 -300 810 -250 { lab=out_to_buffer}
+N 970 -330 970 -300 { lab=vdd}
+N 970 -200 970 -170 { lab=vss}
+N 1060 -250 1100 -250 { lab=out_to_pad}
 C {lab_pin.sym} 410 -330 1 0 {name=l38 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 410 -130 3 0 {name=l39 sig_type=std_logic lab=vss}
 C {lab_pin.sym} -530 -360 1 0 {name=l7 sig_type=std_logic lab=vdd}
@@ -125,7 +130,7 @@ C {iopin.sym} 330 -150 1 0 {name=p16 lab=vco_D0}
 C {iopin.sym} 160 -320 3 0 {name=p17 lab=vco_vctrl}
 C {iopin.sym} 520 -320 3 0 {name=p18 lab=vco_out}
 C {iopin.sym} 640 -120 1 0 {name=p19 lab=out_first_buffer}
-C {opin.sym} 740 -250 0 0 {name=p20 lab=out_to_pad}
+C {iopin.sym} 810 -300 3 0 {name=p20 lab=out_to_buffer}
 C {iopin.sym} 370 220 3 0 {name=p21 lab=out_to_div}
 C {iopin.sym} 0 200 3 0 {name=p22 lab=out_by_2}
 C {iopin.sym} 0 320 1 0 {name=p23 lab=n_out_by_2}
@@ -147,3 +152,7 @@ C {csvco.sym} 410 -230 0 0 {name=x5}
 C {ring_osc_buffer.sym} 640 -230 0 0 {name=x6}
 C {div_by_5.sym} -170 260 0 1 {name=x7}
 C {div_by_2.sym} 160 260 0 1 {name=x8}
+C {buffer_salida.sym} 990 -250 0 0 {name=x9}
+C {lab_pin.sym} 970 -330 1 0 {name=l1 sig_type=std_logic lab=vdd}
+C {lab_pin.sym} 970 -170 3 0 {name=l2 sig_type=std_logic lab=vss}
+C {iopin.sym} 1100 -250 0 0 {name=p35 lab=out_to_pad}

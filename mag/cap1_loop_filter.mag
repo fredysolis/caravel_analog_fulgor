@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1624018159
+timestamp 1624049879
 << metal3 >>
 rect -42552 -37389 -15977 -16050
 rect -42552 -37390 -35133 -37389
@@ -29,7 +29,7 @@ rect -29815 -21111 -28815 -15842
 rect -24497 -21111 -23497 -15842
 rect -19179 -21111 -18179 -15842
 use sky130_fd_pr__cap_mim_m3_1_MACBVW  sky130_fd_pr__cap_mim_m3_1_MACBVW_0
-timestamp 1624018159
+timestamp 1624049879
 transform 1 0 -29264 0 1 -29250
 box -13288 -13200 13287 13200
 << labels >>

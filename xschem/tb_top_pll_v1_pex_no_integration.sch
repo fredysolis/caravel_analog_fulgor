@@ -32,8 +32,6 @@ N 240 90 240 120 { lab=vss}
 N -280 80 -280 120 { lab=iref_cp}
 N -200 90 -200 120 { lab=D0}
 N -370 250 -340 250 { lab=A}
-N 360 250 400 250 { lab=out_to_pad}
-N 400 250 450 250 { lab=out_to_pad}
 N 280 380 280 430 { lab=div_5_nQ2}
 N 260 380 260 430 { lab=div_5_Q1_shift}
 N 240 380 240 430 { lab=div_5_Q1}
@@ -78,6 +76,11 @@ N 170 430 170 480 { lab=n_out_by_2}
 N 170 380 170 430 { lab=n_out_by_2}
 N 300 430 300 480 { lab=out_by_5}
 N 300 380 300 430 { lab=out_by_5}
+N 420 250 460 250 { lab=out_to_pad}
+N 460 250 510 250 { lab=out_to_pad}
+N 510 250 510 280 { lab=out_to_pad}
+N 510 340 510 370 { lab=vss}
+N 350 380 350 430 { lab=out_to_buffer}
 C {vsource.sym} -620 -150 0 0 {name=VSS value=\{vss\}}
 C {vsource.sym} -550 -150 0 0 {name=VDD value=\{vdd\}}
 C {vsource.sym} -470 -150 0 0 {name=Vref value="PULSE(0 \{vin\} 0 1p 1p \{Tref/2\} \{Tref\}) DC \{vin\} AC 0"}
@@ -114,7 +117,7 @@ value="
 .include ~/caravel_analog_fulgor/xschem/simulations/div_by_2_pex_c.spice
 .include ~/caravel_analog_fulgor/xschem/simulations/div_by_5_pex_c.spice
 .include ~/caravel_analog_fulgor/xschem/simulations/bias_pex_c.spice
-
+.include ~/caravel_analog_fulgor/xschem/simulations/buffer_salida_pex_c.spice
 
 * Data to save
 
@@ -185,8 +188,6 @@ C {lab_pin.sym} 240 90 1 0 {name=l7 sig_type=std_logic lab=vss}
 C {lab_pin.sym} -280 80 1 0 {name=l9 sig_type=std_logic lab=iref_cp}
 C {lab_pin.sym} -200 90 1 0 {name=l10 sig_type=std_logic lab=D0}
 C {lab_pin.sym} -370 250 2 1 {name=l11 sig_type=std_logic lab=A}
-C {noconn.sym} 450 250 2 0 {name=l48}
-C {lab_wire.sym} 370 250 0 1 {name=l61 sig_type=std_logic lab=out_to_pad}
 C {noconn.sym} 280 430 1 1 {name=l66}
 C {noconn.sym} 260 430 1 1 {name=l67}
 C {noconn.sym} 240 430 1 1 {name=l68}
@@ -248,3 +249,12 @@ format="tcleval(@value )"
 value="[sky130_models]"}
 C {bias_pex_c.sym} -590 210 0 0 {name=x2}
 C {top_pll_v1_pex_no_integration.sym} 10 250 0 0 {name=x1}
+C {lab_wire.sym} 470 250 0 1 {name=l61 sig_type=std_logic lab=out_to_pad}
+C {capa.sym} 510 310 0 0 {name=C1
+m=1
+value=20p
+footprint=1206
+device="ceramic capacitor"}
+C {lab_pin.sym} 510 370 3 0 {name=l48 sig_type=std_logic lab=vss}
+C {noconn.sym} 350 430 3 0 {name=l74}
+C {lab_wire.sym} 350 390 3 0 {name=l84 sig_type=std_logic lab=out_to_buffer}

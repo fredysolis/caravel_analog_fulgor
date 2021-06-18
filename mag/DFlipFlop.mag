@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1623898709
+timestamp 1624049879
 << nwell >>
 rect 559 2292 1181 3068
 rect 559 0 1181 776
@@ -110,15 +110,15 @@ rect 153 1320 163 1432
 rect 219 1320 229 1432
 rect 153 1315 229 1320
 use clock_inverter  clock_inverter_0
-timestamp 1623799048
+timestamp 1624049879
 transform 1 0 -1244 0 1 0
 box 0 0 1244 3068
 use latch_diff  latch_diff_1
-timestamp 1623798783
+timestamp 1624049879
 transform -1 0 1707 0 -1 2352
 box -33 -716 1147 2352
 use latch_diff  latch_diff_0
-timestamp 1623798783
+timestamp 1624049879
 transform 1 0 33 0 1 716
 box -33 -716 1147 2352
 << labels >>

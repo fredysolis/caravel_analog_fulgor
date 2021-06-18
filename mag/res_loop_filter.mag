@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1624015667
+timestamp 1624049879
 << viali >>
 rect 126 34 1358 84
 << metal1 >>
@@ -12,7 +12,7 @@ rect 114 34 126 84
 rect 1358 34 1370 84
 rect 114 28 1370 34
 use sky130_fd_pr__res_high_po_5p73_X44RQA *sky130_fd_pr__res_high_po_5p73_X44RQA_0
-timestamp 1623968591
+timestamp 1624049879
 transform 1 0 739 0 1 2890
 box -739 -2890 739 2890
 << labels >>

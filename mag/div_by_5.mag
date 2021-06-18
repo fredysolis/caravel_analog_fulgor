@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1623948030
+timestamp 1624049879
 << nwell >>
 rect -556 2925 0 3068
 rect -556 2664 57 2925
@@ -318,35 +318,35 @@ rect 9599 884 12343 948
 rect 12583 884 12584 948
 rect 1990 883 12584 884
 use DFlipFlop  DFlipFlop_3
-timestamp 1623898709
+timestamp 1624049879
 transform 1 0 11596 0 -1 3068
 box -1244 0 1740 3068
 use DFlipFlop  DFlipFlop_1
-timestamp 1623898709
+timestamp 1624049879
 transform 1 0 4784 0 1 0
 box -1244 0 1740 3068
 use DFlipFlop  DFlipFlop_2
-timestamp 1623898709
+timestamp 1624049879
 transform 1 0 8612 0 1 0
 box -1244 0 1740 3068
 use DFlipFlop  DFlipFlop_0
-timestamp 1623898709
+timestamp 1624049879
 transform 1 0 1244 0 1 0
 box -1244 0 1740 3068
 use sky130_fd_sc_hs__or2_1  sky130_fd_sc_hs__or2_1_0
-timestamp 1622592543
+timestamp 1624049879
 transform 1 0 13374 0 1 1960
 box -38 -49 518 715
 use sky130_fd_sc_hs__and2_1  sky130_fd_sc_hs__and2_1_0
-timestamp 1622592543
+timestamp 1624049879
 transform 1 0 -518 0 1 1960
 box -38 -49 518 715
 use sky130_fd_sc_hs__xor2_1  sky130_fd_sc_hs__xor2_1_0
-timestamp 1622592543
+timestamp 1624049879
 transform -1 0 7330 0 1 1960
 box -38 -49 806 715
 use sky130_fd_sc_hs__and2_1  sky130_fd_sc_hs__and2_1_1
-timestamp 1622592543
+timestamp 1624049879
 transform 1 0 3022 0 -1 1108
 box -38 -49 518 715
 << labels >>

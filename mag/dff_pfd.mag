@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1623456247
+timestamp 1624049879
 << metal1 >>
 rect 0 1180 2872 1234
 rect 0 652 210 718
@@ -64,19 +64,19 @@ rect 1959 370 2063 380
 rect 2159 436 2211 446
 rect 2159 322 2211 332
 use nor_pfd  nor_pfd_0
-timestamp 1623456049
+timestamp 1624049879
 transform 1 0 235 0 1 -468
 box -235 468 483 1772
 use nor_pfd  nor_pfd_1
-timestamp 1623456049
+timestamp 1624049879
 transform 1 0 953 0 1 -468
 box -235 468 483 1772
 use nor_pfd  nor_pfd_2
-timestamp 1623456049
+timestamp 1624049879
 transform 1 0 1671 0 1 -468
 box -235 468 483 1772
 use nor_pfd  nor_pfd_3
-timestamp 1623456049
+timestamp 1624049879
 transform 1 0 2389 0 1 -468
 box -235 468 483 1772
 << labels >>

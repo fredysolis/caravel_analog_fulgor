@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1623940058
+timestamp 1624049879
 << isosubstrate >>
 rect 17 2892 7722 2988
 << nwell >>
@@ -528,39 +528,39 @@ rect 7197 222 7337 348
 rect 7389 222 7529 348
 rect 5225 212 7581 222
 use sky130_fd_pr__nfet_01v8_8GRULZ  sky130_fd_pr__nfet_01v8_8GRULZ_0
-timestamp 1623774805
+timestamp 1624049879
 transform 1 0 4691 0 1 742
 box -1957 -254 1957 254
 use sky130_fd_pr__nfet_01v8_MUHGM9  sky130_fd_pr__nfet_01v8_MUHGM9_0
-timestamp 1623774805
+timestamp 1624049879
 transform 1 0 3861 0 1 285
 box -1127 -285 1127 285
 use sky130_fd_pr__nfet_01v8_YCGG98  sky130_fd_pr__nfet_01v8_YCGG98_0
-timestamp 1623774805
+timestamp 1624049879
 transform 1 0 6355 0 1 285
 box -1367 -285 1367 285
 use sky130_fd_pr__pfet_01v8_4ML9WA  sky130_fd_pr__pfet_01v8_4ML9WA_0
-timestamp 1623774805
+timestamp 1624049879
 transform 1 0 5228 0 1 1630
 box -2457 -634 2457 634
 use sky130_fd_pr__nfet_01v8_YCGG98  sky130_fd_pr__nfet_01v8_YCGG98_1
-timestamp 1623774805
+timestamp 1624049879
 transform -1 0 1367 0 1 285
 box -1367 -285 1367 285
 use sky130_fd_pr__nfet_01v8_YCGG98  sky130_fd_pr__nfet_01v8_YCGG98_2
-timestamp 1623774805
+timestamp 1624049879
 transform -1 0 1367 0 -1 711
 box -1367 -285 1367 285
 use sky130_fd_pr__pfet_01v8_ND88ZC  sky130_fd_pr__pfet_01v8_ND88ZC_1
-timestamp 1623774805
+timestamp 1624049879
 transform -1 0 1367 0 1 2523
 box -1367 -369 1367 369
 use sky130_fd_pr__pfet_01v8_ND88ZC  sky130_fd_pr__pfet_01v8_ND88ZC_0
-timestamp 1623774805
+timestamp 1624049879
 transform 1 0 6355 0 1 2523
 box -1367 -369 1367 369
 use sky130_fd_pr__pfet_01v8_NKZXKB  sky130_fd_pr__pfet_01v8_NKZXKB_0
-timestamp 1623774805
+timestamp 1624049879
 transform 1 0 3861 0 1 2523
 box -1127 -369 1127 369
 << labels >>

@@ -6,8 +6,9 @@ VD0 D0 vss {vd0}
 I0 net1 vss {iref} 
 x1 iref_cp vss vdd vco_out vctrl Up QB nUp A out_to_pad Down nDown QA D0 lf_vc vco_buffer_out biasp
 + pswitch pfd_reset nswitch out_by_2 out_to_div out_by_5 n_out_by_2 div_5_nQ0 div_5_Q1_shift div_5_Q1
-+ out_buffer_div_2 n_out_buffer_div_2 div_5_Q0 n_out_div_2 div_5_nQ2 out_div_2 top_pll_v1_pex_c
++ out_buffer_div_2 n_out_buffer_div_2 div_5_Q0 n_out_div_2 div_5_nQ2 out_div_2 out_to_buffer top_pll_v1_pex_c
 x9 vdd net1 vss iref_cp net2 net3 net4 net5 net6 net7 net8 net9 net10 bias_pex_c
+C1 out_to_pad vss 10p m=1
 **** begin user architecture code
 
 
@@ -26,7 +27,7 @@ x9 vdd net1 vss iref_cp net2 net3 net4 net5 net6 net7 net8 net9 net10 bias_pex_c
 .options RSHUNT = 1e20
 
 * Models
-.lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/corners/sky130.lib SS
+.lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/corners/sky130.lib SF
 .include ~/caravel_analog_fulgor/xschem/simulations/top_pll_v1_pex_c.spice
 .include ~/caravel_analog_fulgor/xschem/simulations/bias_pex_c.spice
 
@@ -61,7 +62,7 @@ x9 vdd net1 vss iref_cp net2 net3 net4 net5 net6 net7 net8 net9 net10 bias_pex_c
 * Simulation
 .control
 	tran 0.01ns 1.5us
-	meas tran Tosc trig v(out_to_pad) val=0.9 fall=1005 targ v(out_to_pad) val=0.9 fall=1105
+	meas tran Tosc trig v(out_to_div) val=0.9 fall=1005 targ v(out_to_div) val=0.9 fall=1105
 	let  T = Tosc/100.0
 	let  f = 1/T
 	echo .
@@ -70,7 +71,7 @@ x9 vdd net1 vss iref_cp net2 net3 net4 net5 net6 net7 net8 net9 net10 bias_pex_c
 	*write tb_PLL_tran.raw
 	plot v(vctrl) v(pfd_reset)+2 v(nDown)+4 v(Down)+6 v(nUp)+8 v(Up)+10 v(QA)+12 v(QB)+12 v(A)+14
 + v(out_by_5)+16
- 	plot v(out_to_pad)+9 v(out_to_div)+6 v(out_by_2)+3 v(out_by_5)
+ 	plot v(out_to_pad)+12 v(out_to_buffer)+9 (out_to_div)+6 v(out_by_2)+3 v(out_by_5)
 	plot v(out_by_5) v(out_by_2) v(out_to_div)
 	plot v(vctrl)
 	plot v(pswitch) v(nswitch) xlimit 1.4us 1.444us

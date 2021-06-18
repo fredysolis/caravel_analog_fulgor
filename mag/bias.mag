@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1623869799
+timestamp 1624049879
 << metal1 >>
 rect -53 2101 44316 2168
 rect 20168 984 24096 1056
@@ -30,47 +30,47 @@ rect 32282 -412 36181 -273
 rect 36316 -412 40215 -273
 rect 40350 -412 44249 -273
 use sky130_fd_pr__pfet_01v8_lvt_8P223X  sky130_fd_pr__pfet_01v8_lvt_8P223X_1
-timestamp 1623863898
+timestamp 1624049879
 transform -1 0 5997 0 1 1042
 box -2018 -1454 2017 1196
 use sky130_fd_pr__pfet_01v8_lvt_8P223X  sky130_fd_pr__pfet_01v8_lvt_8P223X_0
-timestamp 1623863898
+timestamp 1624049879
 transform 1 0 1964 0 1 1042
 box -2018 -1454 2017 1196
 use sky130_fd_pr__pfet_01v8_lvt_8P223X  sky130_fd_pr__pfet_01v8_lvt_8P223X_2
-timestamp 1623863898
+timestamp 1624049879
 transform -1 0 10031 0 1 1042
 box -2018 -1454 2017 1196
 use sky130_fd_pr__pfet_01v8_lvt_8P223X  sky130_fd_pr__pfet_01v8_lvt_8P223X_3
-timestamp 1623863898
+timestamp 1624049879
 transform -1 0 14064 0 1 1042
 box -2018 -1454 2017 1196
 use sky130_fd_pr__pfet_01v8_lvt_8P223X  sky130_fd_pr__pfet_01v8_lvt_8P223X_4
-timestamp 1623863898
+timestamp 1624049879
 transform -1 0 18098 0 1 1042
 box -2018 -1454 2017 1196
 use sky130_fd_pr__pfet_01v8_lvt_8P223X  sky130_fd_pr__pfet_01v8_lvt_8P223X_5
-timestamp 1623863898
+timestamp 1624049879
 transform 1 0 22132 0 1 1042
 box -2018 -1454 2017 1196
 use sky130_fd_pr__pfet_01v8_lvt_8P223X  sky130_fd_pr__pfet_01v8_lvt_8P223X_6
-timestamp 1623863898
+timestamp 1624049879
 transform -1 0 26163 0 1 1042
 box -2018 -1454 2017 1196
 use sky130_fd_pr__pfet_01v8_lvt_8P223X  sky130_fd_pr__pfet_01v8_lvt_8P223X_7
-timestamp 1623863898
+timestamp 1624049879
 transform -1 0 30197 0 1 1042
 box -2018 -1454 2017 1196
 use sky130_fd_pr__pfet_01v8_lvt_8P223X  sky130_fd_pr__pfet_01v8_lvt_8P223X_8
-timestamp 1623863898
+timestamp 1624049879
 transform -1 0 34231 0 1 1042
 box -2018 -1454 2017 1196
 use sky130_fd_pr__pfet_01v8_lvt_8P223X  sky130_fd_pr__pfet_01v8_lvt_8P223X_9
-timestamp 1623863898
+timestamp 1624049879
 transform -1 0 38265 0 1 1042
 box -2018 -1454 2017 1196
 use sky130_fd_pr__pfet_01v8_lvt_8P223X  sky130_fd_pr__pfet_01v8_lvt_8P223X_10
-timestamp 1623863898
+timestamp 1624049879
 transform -1 0 42299 0 1 1042
 box -2018 -1454 2017 1196
 << labels >>
