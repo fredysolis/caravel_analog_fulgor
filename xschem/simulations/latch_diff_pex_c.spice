@@ -1,0 +1,73 @@
+* NGSPICE file created from latch_diff.ext - technology: sky130A
+
+.subckt sky130_fd_pr__pfet_01v8_MJG8BZ VSUBS a_n125_n95# a_63_n95# w_n263_n314# a_n33_n95#
++ a_n63_n192#
+X0 a_63_n95# a_n63_n192# a_n33_n95# w_n263_n314# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=950000u l=150000u
+X1 a_n33_n95# a_n63_n192# a_n125_n95# w_n263_n314# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=950000u l=150000u
+C0 a_n33_n95# w_n263_n314# 0.08fF
+C1 a_n125_n95# w_n263_n314# 0.11fF
+C2 a_63_n95# w_n263_n314# 0.11fF
+C3 a_n33_n95# a_n125_n95# 0.28fF
+C4 a_63_n95# a_n33_n95# 0.28fF
+C5 a_63_n95# a_n125_n95# 0.10fF
+C6 a_63_n95# VSUBS 0.03fF
+C7 a_n33_n95# VSUBS 0.03fF
+C8 a_n125_n95# VSUBS 0.03fF
+C9 a_n63_n192# VSUBS 0.20fF
+C10 w_n263_n314# VSUBS 1.80fF
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_2BS854 w_n311_n335# a_n129_n213# a_111_n125# a_15_n125#
++ a_n173_n125# a_n81_n125#
+X0 a_111_n125# a_n129_n213# a_15_n125# w_n311_n335# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.25e+06u l=150000u
+X1 a_n81_n125# a_n129_n213# a_n173_n125# w_n311_n335# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.25e+06u l=150000u
+X2 a_15_n125# a_n129_n213# a_n81_n125# w_n311_n335# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.25e+06u l=150000u
+C0 a_15_n125# a_111_n125# 0.36fF
+C1 a_n81_n125# a_15_n125# 0.36fF
+C2 a_15_n125# a_n173_n125# 0.13fF
+C3 a_n81_n125# a_111_n125# 0.13fF
+C4 a_111_n125# a_n173_n125# 0.08fF
+C5 a_n81_n125# a_n173_n125# 0.36fF
+C6 a_111_n125# w_n311_n335# 0.05fF
+C7 a_15_n125# w_n311_n335# 0.05fF
+C8 a_n81_n125# w_n311_n335# 0.05fF
+C9 a_n173_n125# w_n311_n335# 0.05fF
+C10 a_n129_n213# w_n311_n335# 0.31fF
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_KU9PSX a_n125_n95# a_n33_n95# a_n81_n183# w_n263_n305#
+X0 a_n33_n95# a_n81_n183# a_n125_n95# w_n263_n305# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=950000u l=150000u
+X1 a_n125_n95# a_n81_n183# a_n33_n95# w_n263_n305# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=950000u l=150000u
+C0 a_n33_n95# a_n125_n95# 0.88fF
+C1 a_n33_n95# a_n81_n183# 0.10fF
+C2 a_n81_n183# a_n125_n95# 0.16fF
+C3 a_n33_n95# w_n263_n305# 0.07fF
+C4 a_n125_n95# w_n263_n305# 0.13fF
+C5 a_n81_n183# w_n263_n305# 0.31fF
+.ends
+
+.subckt latch_diff vss vdd Q nQ D nD CLK
+Xsky130_fd_pr__pfet_01v8_MJG8BZ_0 vss vdd vdd vdd nQ Q sky130_fd_pr__pfet_01v8_MJG8BZ
+Xsky130_fd_pr__pfet_01v8_MJG8BZ_1 vss vdd vdd vdd Q nQ sky130_fd_pr__pfet_01v8_MJG8BZ
+Xsky130_fd_pr__nfet_01v8_2BS854_0 vss CLK vss m1_657_280# m1_657_280# vss sky130_fd_pr__nfet_01v8_2BS854
+Xsky130_fd_pr__nfet_01v8_KU9PSX_0 m1_657_280# Q nD vss sky130_fd_pr__nfet_01v8_KU9PSX
+Xsky130_fd_pr__nfet_01v8_KU9PSX_1 m1_657_280# nQ D vss sky130_fd_pr__nfet_01v8_KU9PSX
+C0 nQ m1_657_280# 1.41fF
+C1 vdd Q 0.16fF
+C2 nQ Q 0.93fF
+C3 Q nD 0.05fF
+C4 Q D 0.05fF
+C5 nQ vdd 0.16fF
+C6 CLK m1_657_280# 0.20fF
+C7 Q m1_657_280# 0.94fF
+C8 nQ nD 0.05fF
+C9 nQ D 0.05fF
+C10 D vss 0.53fF
+C11 nD vss 0.16fF
+C12 m1_657_280# vss 1.88fF
+C13 CLK vss 0.54fF
+C14 Q vss 1.08fF
+C15 nQ vss 1.16fF
+C16 vdd vss 5.30fF
+.ends
+

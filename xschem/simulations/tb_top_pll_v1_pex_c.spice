@@ -1,0 +1,85 @@
+**.subckt tb_top_pll_v1_pex_c
+VSS vss GND {vss} 
+VDD vdd vss {vdd} 
+Vref A vss PULSE(0 {vin} 0 1p 1p {Tref/2} {Tref}) DC {vin} AC 0 
+VD0 D0 vss {vd0} 
+I0 net1 vss {iref} 
+x1 iref_cp vss vdd vco_out vctrl Up QB nUp A out_to_pad Down nDown QA D0 lf_vc vco_buffer_out biasp
++ pswitch pfd_reset nswitch out_by_2 out_to_div out_by_5 n_out_by_2 div_5_nQ0 div_5_Q1_shift div_5_Q1
++ out_buffer_div_2 n_out_buffer_div_2 div_5_Q0 n_out_div_2 div_5_nQ2 out_div_2 top_pll_v1_pex_c
+x9 vdd net1 vss iref_cp net2 net3 net4 net5 net6 net7 net8 net9 net10 bias_pex_c
+**** begin user architecture code
+
+
+
+* Parameters
+.param kp = 1.0
+.param vdd = kp*1.8
+.param vss = 0.0
+.param vin = vdd
+.param fref = 100e6
+.param Tref = 1/fref
+.param iref = 100u
+.param vd0 = vdd
+
+.options TEMP = 50.0
+.options RSHUNT = 1e20
+
+* Models
+.lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/corners/sky130.lib TT
+.include ~/caravel_analog_fulgor/xschem/simulations/top_pll_v1_pex_c.spice
+.include ~/caravel_analog_fulgor/xschem/simulations/bias_pex_c.spice
+
+* Data to save
+
+.ic v(A) = 0.0
+.ic v(QA) = 0.0
+.ic v(QB) = 0.0
+.ic v(Up) = 0.0
+.ic v(nUp) = 0.0
+.ic v(Down) = 0.0
+.ic v(nDown) = 0.0
+.ic v(vctrl) = 0.0
+.ic v(D0) = 0.0
+.ic v(vco_out) = 0.0
+.ic v(vco_buffer_out) = 0.0
+.ic v(out_to_div) = 0.0
+.ic v(out_to_pad) = 0.0
+.ic v(out_div_2) = 0.0
+.ic v(n_out_div_2) = 0.0
+.ic v(out_buffer_div_2) = 0.0
+.ic v(n_out_buffer_div_2) = 0.0
+.ic v(out_by_2) = 0.0
+.ic v(n_out_by_2) = 0.0
+.ic v(div_5_Q0) = 0.0
+.ic v(div_5_nQ0) = 0.0
+.ic v(div_5_Q1) = 0.0
+.ic v(div_5_Q1_shift) = 0.0
+.ic v(div_5_nQ2) = 0.0
+.ic v(out_by_5) = 0.0
+
+* Simulation
+.control
+	tran 0.01ns 1.5us
+	meas tran Tosc trig v(out_to_pad) val=0.9 fall=1005 targ v(out_to_pad) val=0.9 fall=1105
+	let  T = Tosc/100.0
+	let  f = 1/T
+	echo .
+	echo ------ PLL simulation ------
+	print T f
+	*write tb_PLL_tran.raw
+	plot v(vctrl) v(pfd_reset)+2 v(nDown)+4 v(Down)+6 v(nUp)+8 v(Up)+10 v(QA)+12 v(QB)+12 v(A)+14
++ v(out_by_5)+16
+ 	plot v(out_to_pad)+9 v(out_to_div)+6 v(out_by_2)+3 v(out_by_5)
+	plot v(out_by_5) v(out_by_2) v(out_to_div)
+	plot v(vctrl)
+	plot v(pswitch) v(nswitch) xlimit 1.4us 1.444us
+.endc
+
+
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+** flattened .save nodes
+.end

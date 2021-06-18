@@ -1,0 +1,9 @@
+**.subckt loop_filter_real vss vctrl
+*.iopin vss
+*.iopin vctrl
+C1 net2 vss 'C1' m=1 
+C2 net1 vss 'C2' m=1 
+XR1 net2 vctrl __UNCONNECTED_PIN__0 sky130_fd_pr__res_xhigh_po_1p41 W=1.41 L=1 mult=1 m=1
+**.ends
+** flattened .save nodes
+.end

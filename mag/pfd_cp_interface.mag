@@ -1,0 +1,85 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1623954650
+<< metal1 >>
+rect 983 2998 993 3026
+rect 0 2944 993 2998
+rect 983 2914 993 2944
+rect 1161 2998 1171 3026
+rect 1161 2944 2154 2998
+rect 1161 2914 1171 2944
+rect 0 2259 226 2325
+rect 442 2259 832 2325
+rect 1054 2259 1672 2325
+rect 1964 2259 2154 2325
+rect 0 1564 2143 1570
+rect 0 1504 2154 1564
+rect 0 1498 2143 1504
+rect 0 743 226 809
+rect 478 742 720 809
+rect 1094 743 1672 809
+rect 1964 743 2154 809
+rect 983 124 993 152
+rect 0 108 993 124
+rect 0 70 979 108
+rect 983 40 993 108
+rect 1161 124 1171 152
+rect 1161 108 2154 124
+rect 1161 40 1171 108
+rect 1176 70 2154 108
+<< via1 >>
+rect 993 2914 1161 3026
+rect 993 40 1161 152
+<< metal2 >>
+rect 993 3026 1161 3036
+rect 993 2904 1161 2914
+rect 993 152 1161 162
+rect 993 30 1161 40
+<< via2 >>
+rect 993 2914 1161 3026
+rect 993 40 1161 152
+<< metal3 >>
+rect 983 3026 1171 3031
+rect 983 2914 993 3026
+rect 1161 2914 1171 3026
+rect 983 2909 1171 2914
+rect 1017 157 1137 2909
+rect 983 152 1171 157
+rect 983 40 993 152
+rect 1161 40 1171 152
+rect 983 35 1171 40
+use trans_gate  trans_gate_0
+timestamp 1623610677
+transform 1 0 675 0 -1 723
+box -53 -811 569 723
+use inverter_cp_x2  inverter_cp_x2_0
+timestamp 1623355426
+transform 1 0 1244 0 -1 776
+box 0 -758 910 776
+use inverter_cp_x2  inverter_cp_x2_1
+timestamp 1623355426
+transform 1 0 1244 0 1 2292
+box 0 -758 910 776
+use inverter_cp_x1  inverter_cp_x1_0
+timestamp 1623798692
+transform 1 0 0 0 -1 776
+box 0 -758 622 776
+use inverter_cp_x1  inverter_cp_x1_2
+timestamp 1623798692
+transform 1 0 622 0 1 2292
+box 0 -758 622 776
+use inverter_cp_x1  inverter_cp_x1_1
+timestamp 1623798692
+transform 1 0 0 0 1 2292
+box 0 -758 622 776
+<< labels >>
+rlabel metal1 0 1498 2143 1570 1 vss
+rlabel metal1 0 2259 226 2325 1 QA
+rlabel metal1 0 743 226 809 1 QB
+rlabel metal1 1054 2259 1672 2325 1 Up
+rlabel metal1 1094 743 1672 809 1 nDown
+rlabel metal1 1964 743 2154 809 1 Down
+rlabel metal1 1964 2259 2154 2325 1 nUp
+rlabel metal1 0 2944 2154 2998 1 vdd
+<< end >>

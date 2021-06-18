@@ -289,9 +289,9 @@ C {sky130_stdcells/buf_8.sym} 3170 -130 0 0 {name=x2 VGND=vss VNB=vss VPB=vdd3v3
 C {sky130_stdcells/buf_8.sym} 3170 -40 0 0 {name=x3 VGND=vss VNB=vss VPB=vdd1v8 VPWR=vdd1v8 prefix=sky130_fd_sc_hvl__ }
 C {sky130_stdcells/inv_8.sym} 3170 60 0 0 {name=x4 VGND=vss VNB=vss VPB=vdd1v8 VPWR=vdd1v8 prefix=sky130_fd_sc_hvl__ }
 C {sky130_stdcells/buf_1.sym} 3020 -130 0 0 {name=x5 VGND=vss VNB=vss VPB=vdd3v3 VPWR=vdd3v3 prefix=sky130_fd_sc_hvl__schmitt }
-C {devices/iopin.sym} 2840 -400 0 0 {name=p1 lab=vdd3v3}
-C {devices/iopin.sym} 2870 110 0 0 {name=p2 lab=vss}
-C {devices/opin.sym} 3300 -130 0 0 {name=p3 lab=porb_h}
-C {devices/opin.sym} 3300 -40 0 0 {name=p4 lab=porb_l}
-C {devices/opin.sym} 3300 60 0 0 {name=p5 lab=por_l}
-C {devices/iopin.sym} 2840 -330 0 0 {name=p6 lab=vdd1v8}
+C {iopin.sym} 2840 -400 0 0 {name=p1 lab=vdd3v3}
+C {iopin.sym} 2870 110 0 0 {name=p2 lab=vss}
+C {opin.sym} 3300 -130 0 0 {name=p3 lab=porb_h}
+C {opin.sym} 3300 -40 0 0 {name=p4 lab=porb_l}
+C {opin.sym} 3300 60 0 0 {name=p5 lab=por_l}
+C {iopin.sym} 2840 -330 0 0 {name=p6 lab=vdd1v8}

@@ -1,0 +1,172 @@
+**.subckt tb_csvco_pex_c
+vss vss GND {vss} 
+vdd vdd vss {vdd} 
+x1 vdd out_ro_n out_ro vss inverter_min_x2
+x2 vdd out_ro_buf out_ro_n vss inverter_min_x4
+C1 out_ro_buf vss 10f m=1
+Vctrl vctrl vss DC {vctrl} 
+VD0 D0 vss DC {vd0} 
+x3 vdd out_ro vctrl vss D0 csvco_pex_c
+**** begin user architecture code
+
+
+
+* Parameters
+.param kp = 1.0
+.param vdd = kp*1.8
+.param vss = 0.0
+.param vin = vdd
+.param vctrl = 0.0
+.param vd0 = 0.0
+
+.options TEMP = 100.0
+
+* Models
+.lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/corners/sky130.lib SS
+.include ~/caravel_analog_fulgor/xschem/simulations/csvco_pex_c.spice
+
+
+* Data to save
+.save all
+
+.ic v(out_ro) = 0.0
+.ic v(x3.out1) = 0.0
+.ic v(x3.out2) = 0.0
+.ic v(x3.out) = 0.0
+
+* Simulation
+.control
+let i = 0.0
+while i <= 1.9
+      tran 0.01ns 50ns
+      meas tran Tosc trig v(out_ro) val=0.9 fall=5 targ v(out_ro) val=0.9 fall=15
+      meas tran Toscbuf trig v(out_ro_buf) val=0.9 fall=5 targ v(out_ro_buf) val=0.9 fall=15
+      let T = Tosc/10.0
+      let Tbuf = Toscbuf/10.0
+      let f = 1/T
+      let fbuf = 1/Tbuf
+      let Td = 1/(2*3*f)
+      print T Tbuf f fbuf Td
+      let i = i + 0.1
+      alterparam vctrl = $&i
+      reset
+end
+echo .
+echo ----- Vctrl = 0.0 -----
+print tran1.f
+echo ----- Vctrl = 0.1 -----
+print tran2.f
+echo ----- Vctrl = 0.2 -----
+print tran3.f
+echo ----- Vctrl = 0.3 -----
+print tran4.f
+echo ----- Vctrl = 0.4 -----
+print tran5.f
+echo ----- Vctrl = 0.5 -----
+print tran6.f
+echo ----- Vctrl = 0.6 -----
+print tran7.f
+echo ----- Vctrl = 0.7 -----
+print tran8.f
+echo ----- Vctrl = 0.8 -----
+print tran9.f
+echo ----- Vctrl = 0.9 -----
+print tran10.f
+echo ----- Vctrl = 1.0 -----
+print tran11.f
+echo ----- Vctrl = 1.1 -----
+print tran12.f
+echo ----- Vctrl = 1.2 -----
+print tran13.f
+echo ----- Vctrl = 1.3 -----
+print tran14.f
+echo ----- Vctrl = 1.4 -----
+print tran15.f
+echo ----- Vctrl = 1.5 -----
+print tran16.f
+echo ----- Vctrl = 1.6 -----
+print tran17.f
+echo ----- Vctrl = 1.7 -----
+print tran18.f
+echo ----- Vctrl = 1.8 -----
+print tran19.f
+
+*plot tran1.f tran2.f
+
+*  let i = 0
+*  let j = 0
+*  while j < 2
+*    while i < 2
+*      tran 0.1ns 100us
+*      meas tran Tosc trig v(out_ro) val=0.9 fall=5 targ v(out_ro) val=0.9 fall=15
+*      meas tran Toscbuf trig v(out_ro_buf) val=0.9 fall=5 targ v(out_ro_buf) val=0.9 fall=15
+*      let T = Tosc/10.0
+*      let Tbuf = Toscbuf/10.0
+*      let f = 1/T
+*      let fbuf = 1/Tbuf
+*      let Td = 1/(2*3*f)
+*      print T Tbuf f fbuf Td
+*      let i = i + 1
+*      alterparam vctrl = 1.8
+*      reset
+*    end
+*    alterparam vctrl = 0.7
+*    alterparam vd0 = 0.0
+*    alterparam vd1 = 1.8
+*    alterparam vd2 = 1.8
+*    alterpatam vd3 = 0.0
+*    let i = 0
+*    let j = j + 1
+*    reset
+*  end
+*  plot v(tran1.out_ro) v(tran1.out_ro_buf)+2
+*  plot v(tran2.out_ro) v(tran2.out_ro_buf)+2
+*  plot v(tran3.out_ro) v(tran3.out_ro_buf)+2
+*  plot v(tran4.out_ro) v(tran4.out_ro_buf)+2
+*  print tran1.f tran2.f tran3.f tran4.f
+*  let frange_vtun_0 = tran2.f - tran1.f
+*  let frange_vtun_1 = tran4.f - tran3.f
+*  print frange_vtun_0 frange_vtun_1
+.endc
+
+
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  inverter_min_x2.sym # of pins=4
+* sym_path: /home/dhernando/caravel_analog_fulgor/xschem/inverter_min_x2.sym
+* sch_path: /home/dhernando/caravel_analog_fulgor/xschem/inverter_min_x2.sch
+.subckt inverter_min_x2  vdd out in vss
+*.iopin vss
+*.ipin in
+*.opin out
+*.iopin vdd
+XM2 out in vdd vdd sky130_fd_pr__pfet_01v8 L=0.15 W=0.84 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=2 m=2 
+XM1 out in vss vss sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=2 m=2 
+.ends
+
+
+* expanding   symbol:  inverter_min_x4.sym # of pins=4
+* sym_path: /home/dhernando/caravel_analog_fulgor/xschem/inverter_min_x4.sym
+* sch_path: /home/dhernando/caravel_analog_fulgor/xschem/inverter_min_x4.sch
+.subckt inverter_min_x4  vdd out in vss
+*.iopin vss
+*.ipin in
+*.opin out
+*.iopin vdd
+XM2 out in vdd vdd sky130_fd_pr__pfet_01v8 L=0.15 W=0.84 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=4 m=4 
+XM1 out in vss vss sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=4 m=4 
+.ends
+
+.GLOBAL GND
+** flattened .save nodes
+.end

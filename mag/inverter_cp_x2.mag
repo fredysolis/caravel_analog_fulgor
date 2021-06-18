@@ -1,0 +1,96 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1623355426
+<< nwell >>
+rect 0 0 910 776
+<< pwell >>
+rect 0 -758 910 0
+<< psubdiff >>
+rect 108 -722 132 -688
+rect 778 -722 802 -688
+<< nsubdiff >>
+rect 108 706 132 740
+rect 778 706 802 740
+<< psubdiffcont >>
+rect 132 -722 778 -688
+<< nsubdiffcont >>
+rect 132 706 778 740
+<< poly >>
+rect 200 124 710 190
+rect 422 27 488 124
+rect 422 -27 432 27
+rect 478 -27 488 27
+rect 422 -118 488 -27
+rect 200 -184 710 -118
+<< polycont >>
+rect 432 -27 478 27
+<< locali >>
+rect 422 27 488 43
+rect 422 -27 428 27
+rect 482 -27 488 27
+rect 422 -43 488 -27
+<< viali >>
+rect 36 706 132 740
+rect 132 706 778 740
+rect 778 706 874 740
+rect 36 618 874 652
+rect 428 -27 432 27
+rect 432 -27 478 27
+rect 478 -27 482 27
+rect 36 -634 874 -600
+rect 36 -722 132 -688
+rect 132 -722 778 -688
+rect 778 -722 874 -688
+<< metal1 >>
+rect 0 740 910 746
+rect 0 706 36 740
+rect 874 706 910 740
+rect 0 652 910 706
+rect 0 618 36 652
+rect 874 618 910 652
+rect 0 612 910 618
+rect 240 469 286 612
+rect 432 468 478 612
+rect 624 468 670 612
+rect 144 185 190 231
+rect 336 185 382 227
+rect 528 185 574 224
+rect 720 185 766 256
+rect 144 139 766 185
+rect 720 33 766 139
+rect 0 27 494 33
+rect 0 -27 428 27
+rect 482 -27 494 27
+rect 0 -33 494 -27
+rect 720 -33 910 33
+rect 720 -133 766 -33
+rect 144 -179 766 -133
+rect 144 -210 190 -179
+rect 336 -222 382 -179
+rect 528 -222 574 -179
+rect 720 -214 766 -179
+rect 240 -594 286 -458
+rect 432 -594 478 -453
+rect 624 -594 670 -450
+rect 0 -600 910 -594
+rect 0 -634 36 -600
+rect 874 -634 910 -600
+rect 0 -688 910 -634
+rect 0 -722 36 -688
+rect 874 -722 910 -688
+rect 0 -728 910 -722
+use sky130_fd_pr__pfet_01v8_XJXT7S  sky130_fd_pr__pfet_01v8_XJXT7S_0
+timestamp 1623353110
+transform 1 0 455 0 1 344
+box -455 -344 455 344
+use sky130_fd_pr__nfet_01v8_AZESM8  sky130_fd_pr__nfet_01v8_AZESM8_0
+timestamp 1623353949
+transform 1 0 455 0 1 -335
+box -455 -335 455 335
+<< labels >>
+rlabel metal1 0 -33 428 33 1 in
+rlabel metal1 720 -33 910 33 1 out
+rlabel metal1 0 -688 910 -634 1 vss
+rlabel metal1 0 652 910 706 1 vdd
+<< end >>

@@ -1,0 +1,47 @@
+**.subckt ring_osc_buffer vdd vss in_vco out_pad out_div o1
+*.iopin vdd
+*.iopin vss
+*.ipin in_vco
+*.opin out_pad
+*.opin out_div
+*.iopin o1
+x1 vdd o1 in_vco vss inverter_min_x2
+x2 vdd out_div o1 vss inverter_min_x4
+x3 vdd out_pad out_div vss inverter_min_x4
+**.ends
+
+* expanding   symbol:  inverter_min_x2.sym # of pins=4
+* sym_path: /home/dhernando/caravel_analog_fulgor/xschem/inverter_min_x2.sym
+* sch_path: /home/dhernando/caravel_analog_fulgor/xschem/inverter_min_x2.sch
+.subckt inverter_min_x2  vdd out in vss
+*.iopin vss
+*.ipin in
+*.opin out
+*.iopin vdd
+XM2 out in vdd vdd sky130_fd_pr__pfet_01v8 L=0.15 W=0.84 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=2 m=2 
+XM1 out in vss vss sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=2 m=2 
+.ends
+
+
+* expanding   symbol:  inverter_min_x4.sym # of pins=4
+* sym_path: /home/dhernando/caravel_analog_fulgor/xschem/inverter_min_x4.sym
+* sch_path: /home/dhernando/caravel_analog_fulgor/xschem/inverter_min_x4.sch
+.subckt inverter_min_x4  vdd out in vss
+*.iopin vss
+*.ipin in
+*.opin out
+*.iopin vdd
+XM2 out in vdd vdd sky130_fd_pr__pfet_01v8 L=0.15 W=0.84 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=4 m=4 
+XM1 out in vss vss sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=4 m=4 
+.ends
+
+** flattened .save nodes
+.end

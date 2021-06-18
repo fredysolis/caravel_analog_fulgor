@@ -14,26 +14,23 @@
 ###########################################################################
 #### XSCHEM SYSTEM-WIDE DESIGN LIBRARY PATHS: XSCHEM_LIBRARY_PATH
 ###########################################################################
-#### If unset xschem starts with XSCHEM_LIBRARY_PATH set to the default, typically:
-# /home/schippes/.xschem/xschem_library
-# /home/schippes/share/xschem/xschem_library/devices
-# /home/schippes/share/doc/xschem/examples
-# /home/schippes/share/doc/xschem/ngspice
-# /home/schippes/share/doc/xschem/logic
-# /home/schippes/share/doc/xschem/xschem_simulator
-# /home/schippes/share/doc/xschem/binto7seg
-# /home/schippes/share/doc/xschem/pcb
-# /home/schippes/share/doc/xschem/rom8k
-
-#### Flush any previous definition
 set XSCHEM_LIBRARY_PATH {}
-#### include devices/*.sym
-append XSCHEM_LIBRARY_PATH ${XSCHEM_SHAREDIR}/xschem_library
-#### include skywater libraries. Here i use [pwd]. This works if i start xschem from here.
+### GENERAL PURPOSE LIB
+append XSCHEM_LIBRARY_PATH :${XSCHEM_SHAREDIR}/xschem_library
+### EXAMPLES LIB
+append XSCHEM_LIBRARY_PATH :/usr/local/share/doc/xschem/examples
+append XSCHEM_LIBRARY_PATH :/usr/local/share/doc/xschem/ngspice
+append XSCHEM_LIBRARY_PATH :/usr/local/share/doc/xschem/logic
+append XSCHEM_LIBRARY_PATH :/usr/local/share/doc/xschem/xschem_simulator
+append XSCHEM_LIBRARY_PATH :/usr/local/share/doc/xschem/binto7seg
+append XSCHEM_LIBRARY_PATH :/usr/local/share/doc/xschem/pcb
+append XSCHEM_LIBRARY_PATH :/usr/local/share/doc/xschem/rom8k
+### SKY130 PDK SYMBOLS LIB
+append XSCHEM_LIBRARY_PATH :~/skywater/xschem_sky130
+### USERs CELLS LIB
+append XSCHEM_LIBRARY_PATH :~/caravel_analog_fulgor/xschem
+### CURRENT CELL LIB
 append XSCHEM_LIBRARY_PATH :$env(PWD)
-append XSCHEM_LIBRARY_PATH :/usr/share/pdk/sky130A/libs.tech/xschem
-#### add ~/.xschem/xschem_library (USER_CONF_DIR is normally ~/.xschem)
-append XSCHEM_LIBRARY_PATH :$USER_CONF_DIR/xschem_library 
 
 ###########################################################################
 #### SET CUSTOM COLORS FOR XSCHEM LIBRARIES MATCHING CERTAIN PATTERNS
@@ -47,6 +44,7 @@ set dircolor(sky130_tests$) blue
 set dircolor(xschem_sky130$) blue
 set dircolor(xschem_library$) red
 set dircolor(devices$) red
+set dircolor(sky130-mpw2-fulgor) green
 
 ###########################################################################
 #### WINDOW TO OPEN ON STARTUP: XSCHEM_START_WINDOW
@@ -54,14 +52,14 @@ set dircolor(devices$) red
 #### Start without a design if no filename given on command line:
 #### To avoid absolute paths, use a path that is relative to one of the
 #### XSCHEM_LIBRARY_PATH directories. Default: empty
-set XSCHEM_START_WINDOW {sky130_tests/top.sch}
+# set XSCHEM_START_WINDOW {sky130_tests/top.sch}
 
 ###########################################################################
 #### DIRECTORY WHERE SIMULATIONS, NETLIST AND SIMULATOR OUTPUTS ARE PLACED
 ###########################################################################
 #### If unset $USER_CONF_DIR/simulations is assumed (normally ~/.xschem/simulations) 
 # set netlist_dir $env(HOME)/.xschem/simulations
-set netlist_dir .
+set netlist_dir $env(PWD)/simulations
 
 ###########################################################################
 #### CHANGE DEFAULT [] WITH SOME OTHER CHARACTERS FOR BUSSED SIGNALS 
@@ -237,7 +235,7 @@ set netlist_dir .
 ###########################################################################
 #### set gaw address for socket connection: {host port}
 #### default: set to localhost, port 2020
-# set gaw_tcp_address {localhost 2020}
+ set gaw_tcp_address {localhost 2020}
 
 ###########################################################################
 #### XSCHEM LISTEN TO TCP PORT
@@ -258,7 +256,7 @@ set netlist_dir .
 #### list of tcl files to preload.
 # lappend tcl_files ${XSCHEM_SHAREDIR}/change_index.tcl
 lappend tcl_files ${XSCHEM_SHAREDIR}/ngspice_backannotate.tcl
-lappend tcl_files /usr/share/pdk/sky130A/libs.tech/xschem/scripts/sky130_models.tcl
+lappend tcl_files ~/skywater/pdk/skywater130/sky130A/libs.tech/xschem/scripts/sky130_models.tcl
 ###########################################################################
 #### XSCHEM TOOLBAR
 ###########################################################################
@@ -269,5 +267,5 @@ lappend tcl_files /usr/share/pdk/sky130A/libs.tech/xschem/scripts/sky130_models.
 ###########################################################################
 #### SKYWATER PDK SPECIFIC VARIABLES
 ###########################################################################
-set SKYWATER_MODELS ~/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest
-set SKYWATER_STDCELLS ~/skywater-pdk/libraries/sky130_fd_sc_hd/latest
+set SKYWATER_MODELS ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest
+set SKYWATER_STDCELLS ~/skywater/skywater-pdk/libraries/sky130_fd_sc_hs/latest

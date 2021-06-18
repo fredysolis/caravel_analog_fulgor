@@ -1,0 +1,16 @@
+# De ser necesario se pueden incluir con git add --force archivo-a-NO-ignorar
+
+#Archivos de extraccion con magic
+*.ext
+*.sim
+*.nodes
+
+#Archivos de logueo en general
+*.log
+
+#Salida de comparaciones LVS
+*.out
+
+#Archivos con resultados numericos de simulacion
+*.raw
+

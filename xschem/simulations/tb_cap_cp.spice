@@ -1,0 +1,65 @@
+**.subckt tb_cap_cp
+VSS vss GND {vss} 
+VDD vdd vss {vdd} 
+XM1 vss vdd vss vss sky130_fd_pr__nfet_01v8 L=0.3 W=3 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=3 m=3 
+XM2 vss vdd vss vss sky130_fd_pr__pfet_01v8 L=0.3 W=3 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=3 m=3 
+**** begin user architecture code
+
+
+
+* Parameters
+.param kp = 1.0
+.param vdd = kp*1.8
+.param vss = 0.0
+.param vin = vdd
+.param fref = 100e6
+.param Tref = 1/fref
+.param Cn = 0.0001fF
+.param Cp = 0.0001fF
+.param iref=100u
+
+.options TEMP = 100.0
+
+* Models
+.lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/corners/sky130.lib SS
+*.include ~/sky130-mpw2-fulgor/PFD/sch/simulations/PFD_pex_c.spice
+.include ~/sky130-mpw2-fulgor/pfd_cp_interface/sch/simulations/pfd_cp_interface_pex_c.spice
+
+* Data to save
+.save all @M.XM1.msky130_fd_pr__nfet_01v8[cgs] @M.XM2.msky130_fd_pr__pfet_01v8[cgs] @M.XM1.msky130_fd_pr__nfet_01v8[cgd] @M.XM2.msky130_fd_pr__pfet_01v8[cgd] @M.XM1.msky130_fd_pr__nfet_01v8[cgb] @M.XM2.msky130_fd_pr__pfet_01v8[cgb] @M.XM1.msky130_fd_pr__nfet_01v8[cgg] @M.XM2.msky130_fd_pr__pfet_01v8[cgg]
+
+
+* Simulation
+.control
+	op
+	echo .
+	echo ---- Cgs ----
+	print @M.XM1.msky130_fd_pr__nfet_01v8[cgs]
+	print @M.XM2.msky130_fd_pr__pfet_01v8[cgs]
+	echo .
+	echo ---- Cgd ----
+	print @M.XM1.msky130_fd_pr__nfet_01v8[cgd]
+	print @M.XM2.msky130_fd_pr__pfet_01v8[cgd]
+	echo .
+	echo ---- Cgs ----
+	print @M.XM1.msky130_fd_pr__nfet_01v8[cgb]
+	print @M.XM2.msky130_fd_pr__pfet_01v8[cgb]
+	echo .
+	echo ---- Cgs ----
+	print @M.XM1.msky130_fd_pr__nfet_01v8[cgg]
+	print @M.XM2.msky130_fd_pr__pfet_01v8[cgg]
+
+
+.endc
+
+
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+** flattened .save nodes
+.end

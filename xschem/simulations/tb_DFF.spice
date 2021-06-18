@@ -1,0 +1,57 @@
+**.subckt tb_DFF
+VSS vss GND {vss} 
+VDD vdd vss {vdd} 
+Vref A vss PULSE(0 {vin} 0 1p 1p {Tref/2} {Tref}) DC {vin} AC 0 
+Vdiv B vss PULSE(0 {vin} 0 1p 1p {1.05*Tref/2} {1.05*Tref}) DC {vin} AC 0 
+C1 Up vss 10f m=1
+x2 Up vdd Q net3 net2 net4 vss net1 pfd_cp_interface_pex_c
+x1 vdd A Q B vss dff_pfd_pex_c
+**** begin user architecture code
+
+
+
+* Parameters
+.param kp = 0.9
+.param vdd = kp*1.8
+.param vss = 0.0
+.param vin = 1.8
+.param fref = 100e6
+.param Tref = 1/fref
+.param C = 1f
+
+.options TEMP = 50.0
+
+* Models
+.lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/corners/sky130.lib SS
+.include ~/caravel_analog_fulgor/xschem/simulations/pfd_cp_interface_pex_c.spice
+.include ~/caravel_analog_fulgor/xschem/simulations/dff_pfd_pex_c.spice
+
+.ic v(net3) = 0.0
+.ic v(net4) = 0.0
+.ic v(Q) = 0.0
+
+* Data to save
+.save all
+
+* Simulation
+.control
+	tran 0.1ns 200ns
+	*meas tran Tosc trig v(out) val=0.9 fall=5 targ v(out) val=0.9 fall=15
+	*meas tran Td1  trig v(out) val=0.9 fall=5 targ v(out1) val=0.9 rise=6
+	*meas tran Td2  trig v(out1) val=0.9 fall=5 targ v(out2) val=0.9 rise=6
+	*meas tran Td3  trig v(out2) val=0.9 fall=5 targ v(out) val=0.9 rise=5
+	*let  T = Tosc/10.0
+	*let  f = 1/T
+	*let Td = 1/(2*3*f)
+	*print T f Td
+	write tb_DFF_nor_tran.raw
+	plot v(A)+2 v(B)+2 v(Q)
+.endc
+
+
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+** flattened .save nodes
+.end

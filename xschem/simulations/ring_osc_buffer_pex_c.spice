@@ -1,0 +1,140 @@
+* NGSPICE file created from ring_osc_buffer.ext - technology: sky130A
+
+.subckt sky130_fd_pr__pfet_01v8_ZP3U9B_ro_buff VSUBS a_n221_n84# a_159_n84# w_n359_n303# a_n63_n110#
++ a_n129_n84# a_33_n110# a_n159_n110# a_63_n84# a_129_n110# a_n33_n84#
+X0 a_n129_n84# a_n159_n110# a_n221_n84# w_n359_n303# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=840000u l=150000u
+X1 a_63_n84# a_33_n110# a_n33_n84# w_n359_n303# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=840000u l=150000u
+X2 a_n33_n84# a_n63_n110# a_n129_n84# w_n359_n303# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=840000u l=150000u
+X3 a_159_n84# a_129_n110# a_63_n84# w_n359_n303# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=840000u l=150000u
+C0 a_n129_n84# a_n33_n84# 0.24fF
+C1 a_n129_n84# w_n359_n303# 0.06fF
+C2 a_63_n84# a_159_n84# 0.24fF
+C3 a_n63_n110# a_n159_n110# 0.02fF
+C4 a_n221_n84# a_159_n84# 0.04fF
+C5 a_159_n84# a_n33_n84# 0.09fF
+C6 w_n359_n303# a_159_n84# 0.08fF
+C7 a_n63_n110# a_33_n110# 0.02fF
+C8 a_n129_n84# a_159_n84# 0.05fF
+C9 a_63_n84# a_n221_n84# 0.05fF
+C10 a_129_n110# a_33_n110# 0.02fF
+C11 a_63_n84# a_n33_n84# 0.24fF
+C12 a_63_n84# w_n359_n303# 0.06fF
+C13 a_n221_n84# a_n33_n84# 0.09fF
+C14 a_n221_n84# w_n359_n303# 0.08fF
+C15 a_63_n84# a_n129_n84# 0.09fF
+C16 a_n129_n84# a_n221_n84# 0.24fF
+C17 w_n359_n303# a_n33_n84# 0.05fF
+C18 a_159_n84# VSUBS 0.03fF
+C19 a_63_n84# VSUBS 0.03fF
+C20 a_n33_n84# VSUBS 0.03fF
+C21 a_n129_n84# VSUBS 0.03fF
+C22 a_n221_n84# VSUBS 0.03fF
+C23 a_129_n110# VSUBS 0.05fF
+C24 a_33_n110# VSUBS 0.05fF
+C25 a_n63_n110# VSUBS 0.05fF
+C26 a_n159_n110# VSUBS 0.05fF
+C27 w_n359_n303# VSUBS 2.19fF
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_DXA56D_ro_buff w_n359_n252# a_n33_n42# a_129_n68# a_n159_n68#
++ a_n221_n42# a_159_n42# a_n129_n42# a_33_n68# a_n63_n68# a_63_n42#
+X0 a_63_n42# a_33_n68# a_n33_n42# w_n359_n252# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=420000u l=150000u
+X1 a_n33_n42# a_n63_n68# a_n129_n42# w_n359_n252# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=420000u l=150000u
+X2 a_159_n42# a_129_n68# a_63_n42# w_n359_n252# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=420000u l=150000u
+X3 a_n129_n42# a_n159_n68# a_n221_n42# w_n359_n252# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=420000u l=150000u
+C0 a_n221_n42# a_159_n42# 0.02fF
+C1 a_33_n68# a_129_n68# 0.02fF
+C2 a_n159_n68# a_n63_n68# 0.02fF
+C3 a_n221_n42# a_n129_n42# 0.12fF
+C4 a_n33_n42# a_159_n42# 0.05fF
+C5 a_63_n42# a_159_n42# 0.12fF
+C6 a_n33_n42# a_n129_n42# 0.12fF
+C7 a_63_n42# a_n129_n42# 0.05fF
+C8 a_n129_n42# a_159_n42# 0.03fF
+C9 a_n221_n42# a_n33_n42# 0.05fF
+C10 a_n221_n42# a_63_n42# 0.03fF
+C11 a_33_n68# a_n63_n68# 0.02fF
+C12 a_63_n42# a_n33_n42# 0.12fF
+C13 a_159_n42# w_n359_n252# 0.07fF
+C14 a_63_n42# w_n359_n252# 0.06fF
+C15 a_n33_n42# w_n359_n252# 0.06fF
+C16 a_n129_n42# w_n359_n252# 0.06fF
+C17 a_n221_n42# w_n359_n252# 0.07fF
+C18 a_129_n68# w_n359_n252# 0.05fF
+C19 a_33_n68# w_n359_n252# 0.05fF
+C20 a_n63_n68# w_n359_n252# 0.05fF
+C21 a_n159_n68# w_n359_n252# 0.05fF
+.ends
+
+.subckt inverter_min_x4_ro_buff in out vss vdd
+Xsky130_fd_pr__pfet_01v8_ZP3U9B_ro_buff_0 vss out out vdd in vdd in in vdd in out sky130_fd_pr__pfet_01v8_ZP3U9B_ro_buff
+Xsky130_fd_pr__nfet_01v8_DXA56D_ro_buff_0 vss out in in out out vss in in vss sky130_fd_pr__nfet_01v8_DXA56D_ro_buff
+C0 out vdd 0.62fF
+C1 in out 0.67fF
+C2 in vdd 0.33fF
+C3 in vss 1.89fF
+C4 out vss 0.66fF
+C5 vdd vss 3.87fF
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_5RJ8EK_ro_buff a_n33_n42# a_33_n68# w_n263_n252# a_n63_n68#
++ a_n125_n42# a_63_n42#
+X0 a_63_n42# a_33_n68# a_n33_n42# w_n263_n252# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=420000u l=150000u
+X1 a_n33_n42# a_n63_n68# a_n125_n42# w_n263_n252# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=420000u l=150000u
+C0 a_n63_n68# a_33_n68# 0.02fF
+C1 a_n33_n42# a_n125_n42# 0.12fF
+C2 a_63_n42# a_n125_n42# 0.05fF
+C3 a_63_n42# a_n33_n42# 0.12fF
+C4 a_63_n42# w_n263_n252# 0.09fF
+C5 a_n33_n42# w_n263_n252# 0.07fF
+C6 a_n125_n42# w_n263_n252# 0.09fF
+C7 a_33_n68# w_n263_n252# 0.05fF
+C8 a_n63_n68# w_n263_n252# 0.05fF
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_ZPB9BB_ro_buff VSUBS a_n63_n110# a_33_n110# a_n125_n84# a_63_n84#
++ w_n263_n303# a_n33_n84#
+X0 a_63_n84# a_33_n110# a_n33_n84# w_n263_n303# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=840000u l=150000u
+X1 a_n33_n84# a_n63_n110# a_n125_n84# w_n263_n303# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=840000u l=150000u
+C0 w_n263_n303# a_n125_n84# 0.10fF
+C1 w_n263_n303# a_n33_n84# 0.07fF
+C2 w_n263_n303# a_63_n84# 0.10fF
+C3 a_n63_n110# a_33_n110# 0.02fF
+C4 a_n33_n84# a_n125_n84# 0.24fF
+C5 a_n125_n84# a_63_n84# 0.09fF
+C6 a_n33_n84# a_63_n84# 0.24fF
+C7 a_63_n84# VSUBS 0.03fF
+C8 a_n33_n84# VSUBS 0.03fF
+C9 a_n125_n84# VSUBS 0.03fF
+C10 a_33_n110# VSUBS 0.05fF
+C11 a_n63_n110# VSUBS 0.05fF
+C12 w_n263_n303# VSUBS 1.74fF
+.ends
+
+.subckt inverter_min_x2_ro_buff in out vss vdd
+Xsky130_fd_pr__nfet_01v8_5RJ8EK_ro_buff_0 vss in vss in out out sky130_fd_pr__nfet_01v8_5RJ8EK_ro_buff
+Xsky130_fd_pr__pfet_01v8_ZPB9BB_ro_buff_0 vss in in out out vdd vdd sky130_fd_pr__pfet_01v8_ZPB9BB_ro_buff
+C0 in vdd 0.01fF
+C1 out vdd 0.15fF
+C2 out in 0.30fF
+C3 out vss 0.66fF
+C4 in vss 0.72fF
+C5 vdd vss 2.93fF
+.ends
+
+.subckt ring_osc_buffer_pex_c vdd in_vco out_pad out_div vss o1
+Xinverter_min_x4_1 out_div out_pad vss vdd inverter_min_x4_ro_buff
+Xinverter_min_x4_0 o1 out_div vss vdd inverter_min_x4_ro_buff
+Xinverter_min_x2_0 in_vco o1 vss vdd inverter_min_x2_ro_buff
+C0 out_div out_pad 0.15fF
+C1 o1 vdd 0.09fF
+C2 out_div o1 0.11fF
+C3 vdd out_pad 0.10fF
+C4 out_div vdd 0.17fF
+C5 in_vco vss 0.83fF
+C6 vdd vss 14.54fF
+C7 o1 vss 2.72fF
+C8 out_div vss 3.00fF
+C9 out_pad vss 0.70fF
+.ends
+

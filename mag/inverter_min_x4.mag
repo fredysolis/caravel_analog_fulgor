@@ -1,0 +1,92 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1623895985
+<< nwell >>
+rect -53 531 665 643
+<< psubdiff >>
+rect 55 -610 79 -576
+rect 533 -610 557 -576
+<< nsubdiff >>
+rect 55 571 79 605
+rect 533 571 557 605
+<< psubdiffcont >>
+rect 79 -610 533 -576
+<< nsubdiffcont >>
+rect 79 571 533 605
+<< poly >>
+rect 147 360 465 417
+rect 147 83 465 140
+rect 147 10 300 83
+rect 147 -123 190 10
+rect 258 -123 300 10
+rect 147 -181 300 -123
+rect 147 -238 465 -181
+rect 147 -430 465 -373
+<< polycont >>
+rect 190 -123 258 10
+<< locali >>
+rect 174 10 274 26
+rect 174 -123 190 10
+rect 258 -123 274 10
+rect 174 -139 274 -123
+<< viali >>
+rect -17 571 79 605
+rect 79 571 533 605
+rect 533 571 629 605
+rect -17 483 629 517
+rect 190 -123 258 10
+rect -18 -521 629 -487
+rect -18 -610 79 -576
+rect 79 -610 533 -576
+rect 533 -610 629 -576
+<< metal1 >>
+rect -53 605 665 611
+rect -53 571 -17 605
+rect 629 571 665 605
+rect -53 517 665 571
+rect -53 483 -17 517
+rect 629 483 665 517
+rect -53 477 665 483
+rect 88 129 137 334
+rect 172 165 248 477
+rect 281 129 330 333
+rect 364 165 440 477
+rect 498 129 574 334
+rect 88 59 574 129
+rect 184 10 264 22
+rect 184 -13 190 10
+rect -53 -93 190 -13
+rect 184 -123 190 -93
+rect 258 -123 264 10
+rect 184 -135 264 -123
+rect 498 -19 574 59
+rect 498 -97 665 -19
+rect 498 -165 574 -97
+rect 90 -232 574 -165
+rect 90 -347 139 -232
+rect 172 -481 248 -263
+rect 282 -348 331 -232
+rect 364 -481 440 -263
+rect 498 -347 574 -232
+rect -53 -487 665 -481
+rect -53 -521 -18 -487
+rect 629 -521 665 -487
+rect -53 -576 665 -521
+rect -53 -610 -18 -576
+rect 629 -610 665 -576
+rect -53 -616 665 -610
+use sky130_fd_pr__nfet_01v8_DXA56D  sky130_fd_pr__nfet_01v8_DXA56D_0
+timestamp 1623431064
+transform 1 0 306 0 1 -305
+box -359 -252 359 252
+use sky130_fd_pr__pfet_01v8_ZP3U9B  sky130_fd_pr__pfet_01v8_ZP3U9B_0
+timestamp 1623431064
+transform 1 0 306 0 1 250
+box -359 -303 359 303
+<< labels >>
+rlabel metal1 -53 -576 665 -521 1 vss
+rlabel metal1 -53 -93 190 -13 1 in
+rlabel metal1 498 -97 665 -19 1 out
+rlabel metal1 -53 517 665 571 1 vdd
+<< end >>

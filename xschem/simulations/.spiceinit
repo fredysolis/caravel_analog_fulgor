@@ -1,0 +1,5 @@
+set ngbehavior=hsa 
+set ng_nomodcheck 
+set numthreads=8 
+set filetype=ascii 
+set outputpath=~sky130-mpw2-fulgorring_osc

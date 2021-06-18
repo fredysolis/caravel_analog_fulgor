@@ -73,21 +73,21 @@ N -60 -90 0 -90 { lab=#net25}
 N -60 -70 0 -70 { lab=#net26}
 N -60 -50 0 -50 { lab=#net27}
 C {user_analog_project_wrapper.sym} 150 -110 0 0 {name=x1}
-C {devices/vsource.sym} 590 -220 0 0 {name=V1 value="PWL(0.0 0 400u 0 5.4m 3.3)"}
-C {devices/vsource.sym} 690 -220 0 0 {name=V2 value="PWL(0.0 0 300u 0 5.3 1.8)"}
-C {devices/vsource.sym} 780 -220 0 0 {name=V3 value="PWL(0.0 0 100u 0 5m 3.3)"}
-C {devices/bus_connect.sym} 660 10 1 1 {name=l1 lab=io_analog[4]}
-C {devices/gnd.sym} 730 -150 0 0 {name=l2 lab=GND}
-C {devices/bus_connect.sym} 630 30 1 0 {name=l3 lab=io_clamp_high[2:1]}
-C {devices/bus_connect.sym} 630 90 1 0 {name=l8 lab=io_clamp_high[0]}
-C {devices/lab_pin.sym} 570 30 0 0 {name=l11 sig_type=std_logic lab=io_clamp_high[2:0]}
-C {devices/lab_pin.sym} 570 10 0 0 {name=l12 sig_type=std_logic lab=io_analog[10:0]}
-C {devices/lab_pin.sym} 480 50 0 0 {name=l9 sig_type=std_logic lab=io_clamp_low[2:0]}
-C {devices/lab_pin.sym} 450 -50 0 0 {name=l4 sig_type=std_logic lab=io_oeb[26:0]}
-C {devices/lab_pin.sym} 450 -70 0 0 {name=l5 sig_type=std_logic lab=io_out[26:0]}
-C {devices/bus_connect.sym} 510 -50 0 0 {name=l6 lab=io_oeb[16:15]}
-C {devices/bus_connect.sym} 600 -50 0 0 {name=l7 lab=io_oeb[12:11]}
-C {devices/code_shown.sym} 920 -130 0 0 {name=s1 only_toplevel=false value=".param mc_mm_switch=0
+C {vsource.sym} 590 -220 0 0 {name=V1 value="PWL(0.0 0 400u 0 5.4m 3.3)"}
+C {vsource.sym} 690 -220 0 0 {name=V2 value="PWL(0.0 0 300u 0 5.3 1.8)"}
+C {vsource.sym} 780 -220 0 0 {name=V3 value="PWL(0.0 0 100u 0 5m 3.3)"}
+C {bus_connect.sym} 660 10 1 1 {name=l1 lab=io_analog[4]}
+C {gnd.sym} 730 -150 0 0 {name=l2 lab=GND}
+C {bus_connect.sym} 630 30 1 0 {name=l3 lab=io_clamp_high[2:1]}
+C {bus_connect.sym} 630 90 1 0 {name=l8 lab=io_clamp_high[0]}
+C {lab_pin.sym} 570 30 0 0 {name=l11 sig_type=std_logic lab=io_clamp_high[2:0]}
+C {lab_pin.sym} 570 10 0 0 {name=l12 sig_type=std_logic lab=io_analog[10:0]}
+C {lab_pin.sym} 480 50 0 0 {name=l9 sig_type=std_logic lab=io_clamp_low[2:0]}
+C {lab_pin.sym} 450 -50 0 0 {name=l4 sig_type=std_logic lab=io_oeb[26:0]}
+C {lab_pin.sym} 450 -70 0 0 {name=l5 sig_type=std_logic lab=io_out[26:0]}
+C {bus_connect.sym} 510 -50 0 0 {name=l6 lab=io_oeb[16:15]}
+C {bus_connect.sym} 600 -50 0 0 {name=l7 lab=io_oeb[12:11]}
+C {code_shown.sym} 920 -130 0 0 {name=s1 only_toplevel=false value=".param mc_mm_switch=0
 .lib /usr/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
 .include /usr/share/pdk/sky130A/libs.ref/sky130_fd_sc_hvl/spice/sky130_fd_sc_hvl.spice
 .control

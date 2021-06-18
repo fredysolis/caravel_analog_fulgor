@@ -1,0 +1,36 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1623945368
+<< nwell >>
+rect 1 1259 1963 1270
+rect 1 744 1961 1259
+<< metal1 >>
+rect 491 1186 1963 1187
+rect 1 1133 1963 1186
+rect 1 1132 1954 1133
+rect 1 535 213 589
+rect 397 523 639 603
+rect 1078 519 1490 603
+rect 1796 519 1963 597
+rect 0 40 1963 94
+use inverter_min_x2  inverter_min_x2_0
+timestamp 1623898709
+transform 1 0 54 0 1 615
+box -53 -615 473 655
+use inverter_min_x4  inverter_min_x4_0
+timestamp 1623895985
+transform 1 0 580 0 1 616
+box -53 -616 665 643
+use inverter_min_x4  inverter_min_x4_1
+timestamp 1623895985
+transform 1 0 1298 0 1 616
+box -53 -616 665 643
+<< labels >>
+rlabel metal1 1 535 213 589 1 in_vco
+rlabel metal1 397 523 639 603 1 o1
+rlabel metal1 1078 519 1490 603 1 out_div
+rlabel metal1 1796 519 1963 597 1 out_pad
+rlabel metal1 491 1132 1954 1187 1 vdd
+rlabel metal1 0 40 1963 94 1 vss
+<< end >>

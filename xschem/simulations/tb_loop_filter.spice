@@ -1,0 +1,66 @@
+**.subckt tb_loop_filter
+VSS vss GND {vss} 
+vdd vdd vss {vdd} 
+Vref A vss PULSE(0 1.0 0 1p 1p {Tref/2} {Tref}) DC {vin} AC 0 
+x1 vss A vc loop_filter
+x2 vss A vc_pex loop_filter_pex_c
+**** begin user architecture code
+
+
+
+* Parameters
+.param kp = 1.0
+.param vdd = kp*1.8
+.param vss = 0.0
+.param vin = vdd
+.param fref = 5e6
+.param Tref = 1/fref
+.param iref = 100u
+.param vd0 = 0.0
+.param R1 = 1.6k
+.param C1 = 33.5p
+.param C2 = 6.7p
+
+.options TEMP = 50.0
+.options RSHUNT = 1e20
+
+* Models
+.lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/corners/sky130.lib TT
+.include ~/caravel_analog_fulgor/xschem/simulations/loop_filter_pex_c.spice
+
+* Data to save
+
+
+* Simulation
+.control
+
+	tran 0.01ns 200ns
+	meas tran t1 when v(vc)=0.63
+	meas tran t2 when v(vc_pex)=0.63
+	let R = t1/0.5p
+	let Rpex = t2/05.p
+	print R Rpex
+	plot v(vc) v(vc_pex)
+.endc
+
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  loop_filter.sym # of pins=3
+* sym_path: /home/dhernando/caravel_analog_fulgor/xschem/loop_filter.sym
+* sch_path: /home/dhernando/caravel_analog_fulgor/xschem/loop_filter.sch
+.subckt loop_filter  vss in vc_pex
+*.iopin in
+*.iopin vss
+*.iopin vc_pex
+XC1 vc_pex vss sky130_fd_pr__cap_mim_m3_1 W=25 L=25 MF=25 m=25
+XC2 in vss sky130_fd_pr__cap_mim_m3_1 W=20 L=20 MF=9 m=9
+XR2 vc_pex net1 vss sky130_fd_pr__res_high_po_5p73 W=5.73 L=22.92 mult=1 m=1
+XR1 vc_pex net1 vss sky130_fd_pr__res_high_po_5p73 W=5.73 L=22.92 mult=1 m=1
+XR3 net1 in vss sky130_fd_pr__res_high_po_5p73 W=5.73 L=22.92 mult=1 m=1
+.ends
+
+.GLOBAL GND
+** flattened .save nodes
+.end

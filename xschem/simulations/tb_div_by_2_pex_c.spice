@@ -1,0 +1,76 @@
+**.subckt tb_div_by_2_pex_c
+VSS vss GND {vss} 
+VDD vdd vss {vdd} 
+x1 nout vss A vdd out net9 net10 net11 net12 div_by_2_pex_c
+Vref net2 vss PULSE(0 {vin} 0 1p 1p {Tref/2} {Tref}) DC {vin} AC 0 
+x3 vdd net3 net2 vss inverter_min_x2_pex_c
+x4 vdd A net3 vss inverter_min_x4_pex_c
+x2 vdd net1 out vss nout net4 net5 net7 net8 net6 div_by_5_pex_c
+**** begin user architecture code
+
+
+
+* Parameters
+.param kp = 1.0
+.param vdd = kp*1.8
+.param vss = 0.0
+.param vin = vdd
+.param fref = 1e9
+.param Tref = 1/fref
+.param C = 1f
+.param iref=100u
+
+.options TEMP = 100.0
+.options RSHUNT = 1e20
+
+* Models
+.lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/corners/sky130.lib SS
+.include ~/caravel_analog_fulgor/xschem/simulations/inverter_min_x2_pex_c.spice
+.include ~/caravel_analog_fulgor/xschem/simulations/inverter_min_x4_pex_c.spice
+.include ~/caravel_analog_fulgor/xschem/simulations/div_by_2_pex_c.spice
+.include ~/caravel_analog_fulgor/xschem/simulations/div_by_5_pex_c.spice
+
+* Data to save
+.save all
+
+.ic v(A) = 0.0
+.ic v(x2.q0) = 0.0
+.ic v(x2.nq0) = 0.0
+.ic v(x2.q1) = 0.0
+.ic v(x2.nq1) = 0.0
+.ic v(x2.q1_shift) = 0.0
+.ic v(x2.nq1_shift) = 0.0
+.ic v(x2.q2) = 0.0
+.ic v(x2.nq2) = 0.0
+.ic v(x2.x1.a) = 0.0
+.ic v(x2.x1.na) = 0.0
+.ic v(x2.x1.D_d) = 0.0
+.ic v(x2.x1.nD_d) = 0.0
+.ic v(out) = 0.0
+.ic v(nout) = 0.0
+
+* Simulation
+.control
+	tran 0.01ns 200ns
+	*meas tran Tosc trig v(out) val=0.9 fall=5 targ v(out) val=0.9 fall=15
+	*meas tran Td1  trig v(out) val=0.9 fall=5 targ v(out1) val=0.9 rise=6
+	*meas tran Td2  trig v(out1) val=0.9 fall=5 targ v(out2) val=0.9 rise=6
+	*meas tran Td3  trig v(out2) val=0.9 fall=5 targ v(out) val=0.9 rise=5
+	*let  T = Tosc/10.0
+	*let  f = 1/T
+	*let Td = 1/(2*3*f)
+	*print T f Td
+	write tb_div_by_2_tran.raw
+	plot v(out) v(A) v(nout)+2 v(A)+2
+.endc
+
+
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+**** begin user architecture code
+
+**** end user architecture code
+** flattened .save nodes
+.end

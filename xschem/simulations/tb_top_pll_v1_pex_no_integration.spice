@@ -1,0 +1,149 @@
+**.subckt tb_top_pll_v1_pex_no_integration
+VSS vss GND {vss} 
+VDD vdd vss {vdd} 
+Vref A vss PULSE(0 {vin} 0 1p 1p {Tref/2} {Tref}) DC {vin} AC 0 
+VD0 D0 vss {vd0} 
+I0 net1 vss {iref} 
+x2 vdd net1 vss iref_cp net2 net3 net4 net5 net6 net7 net8 net9 net10 bias_pex_c
+x1 iref_cp vss vdd vco_out vctrl Up QB nUp A out_to_pad Down nDown QA D0 lf_vc vco_buffer_out biasp
++ pswitch pfd_reset nswitch out_by_2 out_to_div out_by_5 n_out_by_2 div_5_nQ0 div_5_Q1_shift div_5_Q1
++ out_buffer_div_2 n_out_buffer_div_2 div_5_Q0 n_out_div_2 div_5_nQ2 out_div_2 top_pll_v1_pex_no_integration
+**** begin user architecture code
+
+
+
+* Parameters
+.param kp = 1.0
+.param vdd = kp*1.8
+.param vss = 0.0
+.param vin = vdd
+.param fref = 100e6
+.param Tref = 1/fref
+.param iref = 100u
+.param vd0 = vdd
+
+.options TEMP = 0.0
+.options RSHUNT = 1e20
+
+* Models
+.lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/corners/sky130.lib FF
+.include ~/caravel_analog_fulgor/xschem/simulations/PFD_pex_c.spice
+.include ~/caravel_analog_fulgor/xschem/simulations/pfd_cp_interface_pex_c.spice
+.include ~/caravel_analog_fulgor/xschem/simulations/charge_pump_pex_c.spice
+.include ~/caravel_analog_fulgor/xschem/simulations/loop_filter_pex_c.spice
+.include ~/caravel_analog_fulgor/xschem/simulations/csvco_pex_c.spice
+.include ~/caravel_analog_fulgor/xschem/simulations/ring_osc_buffer_pex_c.spice
+.include ~/caravel_analog_fulgor/xschem/simulations/div_by_2_pex_c.spice
+.include ~/caravel_analog_fulgor/xschem/simulations/div_by_5_pex_c.spice
+.include ~/caravel_analog_fulgor/xschem/simulations/bias_pex_c.spice
+
+
+* Data to save
+
+.ic v(A) = 0.0
+.ic v(QA) = 0.0
+.ic v(QB) = 0.0
+.ic v(Up) = 0.0
+.ic v(nUp) = 0.0
+.ic v(Down) = 0.0
+.ic v(nDown) = 0.0
+.ic v(vctrl) = 0.0
+.ic v(D0) = 0.0
+.ic v(vco_out) = 0.0
+.ic v(vco_buffer_out) = 0.0
+.ic v(out_to_div) = 0.0
+.ic v(out_to_pad) = 0.0
+.ic v(out_div_2) = 0.0
+.ic v(n_out_div_2) = 0.0
+.ic v(out_buffer_div_2) = 0.0
+.ic v(n_out_buffer_div_2) = 0.0
+.ic v(out_by_2) = 0.0
+.ic v(n_out_by_2) = 0.0
+.ic v(div_5_Q0) = 0.0
+.ic v(div_5_nQ0) = 0.0
+.ic v(div_5_Q1) = 0.0
+.ic v(div_5_Q1_shift) = 0.0
+.ic v(div_5_nQ2) = 0.0
+.ic v(out_by_5) = 0.0
+
+* Simulation
+.control
+	tran 0.01ns 1.5us
+	meas tran Tosc trig v(out_to_pad) val=0.9 fall=1005 targ v(out_to_pad) val=0.9 fall=1105
+	let  T = Tosc/100.0
+	let  f = 1/T
+	echo .
+	echo ------ PLL simulation ------
+	print T f
+	*write tb_PLL_tran.raw
+	plot v(vctrl) v(pfd_reset)+2 v(nDown)+4 v(Down)+6 v(nUp)+8 v(Up)+10 v(QA)+12 v(QB)+12 v(A)+14
++ v(out_by_5)+16
+ 	plot v(out_to_pad)+9 v(out_to_div)+6 v(out_by_2)+3 v(out_by_5)
+	plot v(out_by_5) v(out_by_2) v(out_to_div)
+	plot v(vctrl)
+	plot v(pswitch) v(nswitch) xlimit 1.4us 1.444us
+.endc
+
+
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  top_pll_v1_pex_no_integration.sym # of pins=33
+* sym_path: /home/dhernando/caravel_analog_fulgor/xschem/top_pll_v1_pex_no_integration.sym
+* sch_path: /home/dhernando/caravel_analog_fulgor/xschem/top_pll_v1_pex_no_integration.sch
+.subckt top_pll_v1_pex_no_integration  iref_cp vss vdd vco_out vco_vctrl Up pfd_QA nUp in_ref
++ out_to_pad Down nDown pfd_QB vco_D0 lf_vc out_first_buffer cp_biasp cp_pswitch pfd_reset cp_nswitch out_by_2
++ out_to_div out_div_by_5 n_out_by_2 div_5_nQ0 div_5_Q1_shift div_5_Q1 n_out_buffer_div_2 out_buffer_div_2
++ div_5_Q0 n_out_div_2 div_5_nQ2 out_div_2
+*.iopin vdd
+*.iopin vss
+*.ipin in_ref
+*.iopin pfd_QA
+*.iopin pfd_QB
+*.iopin Up
+*.iopin nUp
+*.iopin Down
+*.iopin nDown
+*.iopin pfd_reset
+*.iopin cp_nswitch
+*.iopin cp_pswitch
+*.iopin cp_biasp
+*.ipin iref_cp
+*.iopin lf_vc
+*.iopin vco_D0
+*.iopin vco_vctrl
+*.iopin vco_out
+*.iopin out_first_buffer
+*.opin out_to_pad
+*.iopin out_to_div
+*.iopin out_by_2
+*.iopin n_out_by_2
+*.iopin out_div_2
+*.iopin n_out_div_2
+*.iopin out_buffer_div_2
+*.iopin n_out_buffer_div_2
+*.iopin div_5_Q1
+*.iopin div_5_Q1_shift
+*.iopin div_5_nQ0
+*.iopin div_5_Q0
+*.iopin div_5_nQ2
+*.iopin out_div_by_5
+x1 vss vdd pfd_QA in_ref out_div_by_5 pfd_QB pfd_reset PFD_pex_c
+x2 vdd Up nUp vco_vctrl Down nDown vss iref_cp cp_nswitch cp_pswitch cp_biasp charge_pump_pex_c
+x3 vdd vco_out vco_vctrl vss vco_D0 csvco_pex_c
+x5 vdd out_div_by_5 out_by_2 vss n_out_by_2 div_5_nQ2 div_5_Q1 div_5_nQ0 div_5_Q0 div_5_Q1_shift
++ div_by_5_pex_c
+x6 vss vco_vctrl lf_vc loop_filter_pex_c
+x7 Up vdd pfd_QA nUp Down pfd_QB vss nDown pfd_cp_interface_pex_c
+x8 vdd vco_out out_to_pad out_to_div vss out_first_buffer ring_osc_buffer_pex_c
+x4 n_out_by_2 vss out_to_div vdd out_by_2 out_div_2 n_out_div_2 out_buffer_div_2 n_out_buffer_div_2
++ div_by_2_pex_c
+.ends
+
+.GLOBAL GND
+**** begin user architecture code
+
+**** end user architecture code
+** flattened .save nodes
+.end

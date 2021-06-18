@@ -1,0 +1,47 @@
+* NGSPICE file created from inverter_min_x2.ext - technology: sky130A
+
+.subckt sky130_fd_pr__nfet_01v8_5RJ8EK_inv2 a_n33_n42# a_33_n68# w_n263_n252# a_n63_n68#
++ a_n125_n42# a_63_n42#
+X0 a_63_n42# a_33_n68# a_n33_n42# w_n263_n252# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=420000u l=150000u
+X1 a_n33_n42# a_n63_n68# a_n125_n42# w_n263_n252# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=420000u l=150000u
+C0 a_n125_n42# a_63_n42# 0.05fF
+C1 a_63_n42# a_n33_n42# 0.12fF
+C2 a_n125_n42# a_n33_n42# 0.12fF
+C3 a_33_n68# a_n63_n68# 0.02fF
+C4 a_63_n42# w_n263_n252# 0.09fF
+C5 a_n33_n42# w_n263_n252# 0.07fF
+C6 a_n125_n42# w_n263_n252# 0.09fF
+C7 a_33_n68# w_n263_n252# 0.05fF
+C8 a_n63_n68# w_n263_n252# 0.05fF
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_ZPB9BB_inv2 VSUBS a_n63_n110# a_33_n110# a_n125_n84# a_63_n84#
++ w_n263_n303# a_n33_n84#
+X0 a_63_n84# a_33_n110# a_n33_n84# w_n263_n303# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=840000u l=150000u
+X1 a_n33_n84# a_n63_n110# a_n125_n84# w_n263_n303# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=840000u l=150000u
+C0 a_n33_n84# a_n125_n84# 0.24fF
+C1 a_63_n84# a_n33_n84# 0.24fF
+C2 a_n125_n84# w_n263_n303# 0.10fF
+C3 a_63_n84# w_n263_n303# 0.10fF
+C4 a_33_n110# a_n63_n110# 0.02fF
+C5 a_63_n84# a_n125_n84# 0.09fF
+C6 a_n33_n84# w_n263_n303# 0.07fF
+C7 a_63_n84# VSUBS 0.03fF
+C8 a_n33_n84# VSUBS 0.03fF
+C9 a_n125_n84# VSUBS 0.03fF
+C10 a_33_n110# VSUBS 0.05fF
+C11 a_n63_n110# VSUBS 0.05fF
+C12 w_n263_n303# VSUBS 1.74fF
+.ends
+
+.subckt inverter_min_x2_pex_c vdd out in vss
+Xsky130_fd_pr__nfet_01v8_5RJ8EK_0 vss in vss in out out sky130_fd_pr__nfet_01v8_5RJ8EK_inv2
+Xsky130_fd_pr__pfet_01v8_ZPB9BB_0 vss in in out out vdd vdd sky130_fd_pr__pfet_01v8_ZPB9BB_inv2
+C0 out vdd 0.15fF
+C1 out in 0.30fF
+C2 vdd in 0.01fF
+C3 out vss 0.66fF
+C4 in vss 0.72fF
+C5 vdd vss 2.93fF
+.ends
+

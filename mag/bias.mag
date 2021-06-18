@@ -1,0 +1,89 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1623869799
+<< metal1 >>
+rect -53 2101 44316 2168
+rect 20168 984 24096 1056
+rect 20259 715 20305 778
+rect 20555 710 20601 773
+rect 20851 716 20897 779
+rect 21147 716 21193 779
+rect 21442 716 21488 779
+rect 21739 718 21785 781
+rect 22035 719 22081 782
+rect 22331 718 22377 781
+rect 22627 719 22673 782
+rect 22923 719 22969 782
+rect 23219 721 23265 784
+rect 23515 722 23561 785
+rect 23811 721 23857 784
+rect 14 -412 3913 -273
+rect 4048 -412 7947 -273
+rect 8082 -412 11981 -273
+rect 12115 -412 16014 -273
+rect 16149 -412 20048 -273
+rect 20182 -412 24081 -273
+rect 24214 -412 28113 -273
+rect 28248 -412 32147 -273
+rect 32282 -412 36181 -273
+rect 36316 -412 40215 -273
+rect 40350 -412 44249 -273
+use sky130_fd_pr__pfet_01v8_lvt_8P223X  sky130_fd_pr__pfet_01v8_lvt_8P223X_1
+timestamp 1623863898
+transform -1 0 5997 0 1 1042
+box -2018 -1454 2017 1196
+use sky130_fd_pr__pfet_01v8_lvt_8P223X  sky130_fd_pr__pfet_01v8_lvt_8P223X_0
+timestamp 1623863898
+transform 1 0 1964 0 1 1042
+box -2018 -1454 2017 1196
+use sky130_fd_pr__pfet_01v8_lvt_8P223X  sky130_fd_pr__pfet_01v8_lvt_8P223X_2
+timestamp 1623863898
+transform -1 0 10031 0 1 1042
+box -2018 -1454 2017 1196
+use sky130_fd_pr__pfet_01v8_lvt_8P223X  sky130_fd_pr__pfet_01v8_lvt_8P223X_3
+timestamp 1623863898
+transform -1 0 14064 0 1 1042
+box -2018 -1454 2017 1196
+use sky130_fd_pr__pfet_01v8_lvt_8P223X  sky130_fd_pr__pfet_01v8_lvt_8P223X_4
+timestamp 1623863898
+transform -1 0 18098 0 1 1042
+box -2018 -1454 2017 1196
+use sky130_fd_pr__pfet_01v8_lvt_8P223X  sky130_fd_pr__pfet_01v8_lvt_8P223X_5
+timestamp 1623863898
+transform 1 0 22132 0 1 1042
+box -2018 -1454 2017 1196
+use sky130_fd_pr__pfet_01v8_lvt_8P223X  sky130_fd_pr__pfet_01v8_lvt_8P223X_6
+timestamp 1623863898
+transform -1 0 26163 0 1 1042
+box -2018 -1454 2017 1196
+use sky130_fd_pr__pfet_01v8_lvt_8P223X  sky130_fd_pr__pfet_01v8_lvt_8P223X_7
+timestamp 1623863898
+transform -1 0 30197 0 1 1042
+box -2018 -1454 2017 1196
+use sky130_fd_pr__pfet_01v8_lvt_8P223X  sky130_fd_pr__pfet_01v8_lvt_8P223X_8
+timestamp 1623863898
+transform -1 0 34231 0 1 1042
+box -2018 -1454 2017 1196
+use sky130_fd_pr__pfet_01v8_lvt_8P223X  sky130_fd_pr__pfet_01v8_lvt_8P223X_9
+timestamp 1623863898
+transform -1 0 38265 0 1 1042
+box -2018 -1454 2017 1196
+use sky130_fd_pr__pfet_01v8_lvt_8P223X  sky130_fd_pr__pfet_01v8_lvt_8P223X_10
+timestamp 1623863898
+transform -1 0 42299 0 1 1042
+box -2018 -1454 2017 1196
+<< labels >>
+rlabel metal1 -53 2101 44316 2168 1 vdd
+rlabel metal1 20182 -412 24081 -273 1 iref
+rlabel metal1 8082 -412 11981 -273 1 iref_2
+rlabel metal1 12115 -412 16014 -273 1 iref_3
+rlabel metal1 16149 -412 20048 -273 1 iref_4
+rlabel metal1 24214 -412 28113 -273 1 iref_5
+rlabel metal1 28248 -412 32147 -273 1 iref_6
+rlabel metal1 32282 -412 36181 -273 1 iref_7
+rlabel metal1 36316 -412 40215 -273 1 iref_8
+rlabel metal1 40350 -412 44249 -273 1 iref_9
+rlabel metal1 14 -412 3913 -273 1 iref_0
+rlabel metal1 4048 -412 7947 -273 1 iref_1
+<< end >>

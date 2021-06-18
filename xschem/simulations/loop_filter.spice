@@ -1,0 +1,12 @@
+**.subckt loop_filter in vss vc_pex
+*.iopin in
+*.iopin vss
+*.iopin vc_pex
+XC1 vc_pex vss sky130_fd_pr__cap_mim_m3_1 W=25 L=25 MF=25 m=25
+XC2 in vss sky130_fd_pr__cap_mim_m3_1 W=20 L=20 MF=9 m=9
+XR2 vc_pex net1 vss sky130_fd_pr__res_high_po_5p73 W=5.73 L=22.92 mult=1 m=1
+XR1 vc_pex net1 vss sky130_fd_pr__res_high_po_5p73 W=5.73 L=22.92 mult=1 m=1
+XR3 net1 in vss sky130_fd_pr__res_high_po_5p73 W=5.73 L=22.92 mult=1 m=1
+**.ends
+** flattened .save nodes
+.end

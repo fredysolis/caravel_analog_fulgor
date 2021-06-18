@@ -1,0 +1,96 @@
+**.subckt tb_inverter_csvco
+VSS vss GND {vss} 
+VDD vdd vss {vdd} 
+VIN in vss PULSE(0 {vin} 0 1p 1p {T/2} {T}) DC {vin} AC 0 
+C1 out vss 10f m=1
+x1 vdd out in vss vdd vss inverter_csvco
+x2 vdd out_pex_c in vss vdd vss inverter_csvco_pex_c
+C2 out_pex_c vss 10f m=1
+**** begin user architecture code
+
+
+
+* Parameters
+.param kp = 1.0
+.param vdd = kp*1.8
+.param vss = 0
+.param vin = vdd
+.param T   = 100n
+
+.options TEMP = 50.0
+
+* Models
+.lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/corners/sky130.lib TT
+.include ~/sky130-mpw2-fulgor/inverter_csvco/sch/simulations/inverter_csvco_pex_c.spice
+
+* Initial Conditions
+.ic v(out) = 0.0
+.ic v(out_wp) = 0.0
+.ic v(out_wp_rc) = 0.0
+.ic v(out_pex_c) = 0.0
+
+* Data to save
+.save all  @M.X1.XM1.msky130_fd_pr__nfet_01v8[id]  @M.X1.XM2.msky130_fd_pr__pfet_01v8[id]  @M.X1.XM1.msky130_fd_pr__nfet_01v8[vds]  @M.X1.XM2.msky130_fd_pr__pfet_01v8[vds]  @M.X1.XM1.msky130_fd_pr__nfet_01v8[vdsat]  @M.X1.XM2.msky130_fd_pr__pfet_01v8[vdsat]  @M.X1.XM1.msky130_fd_pr__nfet_01v8[cgs]  @M.X1.XM2.msky130_fd_pr__pfet_01v8[cgs]  @M.X1.XM1.msky130_fd_pr__nfet_01v8[cgd]  @M.X1.XM2.msky130_fd_pr__pfet_01v8[cgd]  @M.X1.XM1.msky130_fd_pr__nfet_01v8[csb]  @M.X1.XM2.msky130_fd_pr__pfet_01v8[csb]  @M.X1.XM1.msky130_fd_pr__nfet_01v8[cdb]  @M.X1.XM2.msky130_fd_pr__pfet_01v8[cdb]  @M.X1.XM1.msky130_fd_pr__nfet_01v8[cgg]  @M.X1.XM2.msky130_fd_pr__pfet_01v8[cgg]  @M.X1.XM1.msky130_fd_pr__nfet_01v8[cgb]  @M.X1.XM2.msky130_fd_pr__pfet_01v8[cgb]
+
+* Simulation
+.control
+	set filetype = ascii
+	op
+	write tb_inverter_min.raw
+	echo .
+	echo ------ OP Results -----
+	print all
+
+	reset
+
+	dc vin 0 1.8 0.01
+	setplot dc1
+	plot v(in) v(out) v(out_pex_c)
+	write tb_inverter_min_dc.raw
+
+	reset
+
+	tran 1ns 1us
+	meas tran tpLH trig v(in) val=0.9 fall=5 targ v(out) val=0.9 rise=5
+	meas tran tpHL trig v(in) val=0.9 rise=5 targ v(out) val=0.9 fall=4
+	meas tran tpLHc trig v(in) val=0.9 fall=5 targ v(out_pex_c) val=0.9 rise=5
+	meas tran tpHLc trig v(in) val=0.9 rise=5 targ v(out_pex_c) val=0.9 fall=4
+	let tp = (0.5*(tpLH + tpHL))
+	let tp_c = (0.5*(tpLHc + tpHLc))
+	echo .
+	echo ---- tp Ideal ----
+	print tpLH tpHL tp
+	echo .
+	echo ---- tp PEX C ----
+	print tpLHc tpHLc tp_c
+	write tb_inverter_tran.raw
+	plot v(in) v(out) v(out_pex_c)+2
+
+.endc
+
+
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  inverter_csvco.sym # of pins=6
+* sym_path: /home/dhernando/sky130-mpw2-fulgor/inverter_csvco/sch/inverter_csvco.sym
+* sch_path: /home/dhernando/sky130-mpw2-fulgor/inverter_csvco/sch/inverter_csvco.sch
+.subckt inverter_csvco  vdd out in vss vbulkp vbulkn
+*.iopin vss
+*.ipin in
+*.opin out
+*.iopin vdd
+*.iopin vbulkn
+*.iopin vbulkp
+XM1 out in vss vbulkn sky130_fd_pr__nfet_01v8 L=0.2 W=0.75 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+XM2 out in vdd vbulkp sky130_fd_pr__pfet_01v8 L=0.2 W=1.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+.ends
+
+.GLOBAL GND
+** flattened .save nodes
+.end
