@@ -395,76 +395,76 @@ Xsky130_fd_pr__pfet_01v8_58ZKDE_5 vss a_678_n100# a_3996_n100# vdd vdd sky130_fd
 Xsky130_fd_pr__nfet_01v8_T69Y3A_2 a_3996_n100# vss vss a_678_n100# sky130_fd_pr__nfet_01v8_T69Y3A
 Xsky130_fd_pr__nfet_01v8_T69Y3A_3 a_3996_n100# vss vss a_678_n100# sky130_fd_pr__nfet_01v8_T69Y3A
 Xsky130_fd_pr__pfet_01v8_58ZKDE_6 vss a_678_n100# a_3996_n100# vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
+Xsky130_fd_pr__nfet_01v8_T69Y3A_70 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
 Xsky130_fd_pr__nfet_01v8_T69Y3A_4 a_3996_n100# vss vss a_678_n100# sky130_fd_pr__nfet_01v8_T69Y3A
 Xsky130_fd_pr__pfet_01v8_58ZKDE_7 vss a_678_n100# a_3996_n100# vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
-Xsky130_fd_pr__nfet_01v8_T69Y3A_70 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
 Xsky130_fd_pr__pfet_01v8_58ZKDE_8 vss a_678_n100# a_3996_n100# vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
-Xsky130_fd_pr__nfet_01v8_T69Y3A_5 a_3996_n100# vss vss a_678_n100# sky130_fd_pr__nfet_01v8_T69Y3A
 Xsky130_fd_pr__nfet_01v8_T69Y3A_71 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
 Xsky130_fd_pr__nfet_01v8_T69Y3A_60 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
-Xsky130_fd_pr__nfet_01v8_T69Y3A_6 a_3996_n100# vss vss a_678_n100# sky130_fd_pr__nfet_01v8_T69Y3A
-Xsky130_fd_pr__pfet_01v8_58ZKDE_9 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
+Xsky130_fd_pr__nfet_01v8_T69Y3A_5 a_3996_n100# vss vss a_678_n100# sky130_fd_pr__nfet_01v8_T69Y3A
 Xsky130_fd_pr__nfet_01v8_T69Y3A_72 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
 Xsky130_fd_pr__nfet_01v8_T69Y3A_61 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
 Xsky130_fd_pr__nfet_01v8_T69Y3A_50 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
-Xsky130_fd_pr__nfet_01v8_T69Y3A_7 a_3996_n100# vss vss a_678_n100# sky130_fd_pr__nfet_01v8_T69Y3A
+Xsky130_fd_pr__nfet_01v8_T69Y3A_6 a_3996_n100# vss vss a_678_n100# sky130_fd_pr__nfet_01v8_T69Y3A
+Xsky130_fd_pr__pfet_01v8_58ZKDE_9 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
 Xsky130_fd_pr__nfet_01v8_T69Y3A_62 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
 Xsky130_fd_pr__nfet_01v8_T69Y3A_51 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
+Xsky130_fd_pr__nfet_01v8_T69Y3A_7 a_3996_n100# vss vss a_678_n100# sky130_fd_pr__nfet_01v8_T69Y3A
 Xsky130_fd_pr__nfet_01v8_T69Y3A_40 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
 Xsky130_fd_pr__nfet_01v8_T69Y3A_8 a_3996_n100# vss vss a_678_n100# sky130_fd_pr__nfet_01v8_T69Y3A
 Xsky130_fd_pr__nfet_01v8_T69Y3A_63 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
 Xsky130_fd_pr__nfet_01v8_T69Y3A_52 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
-Xsky130_fd_pr__nfet_01v8_T69Y3A_41 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
 Xsky130_fd_pr__nfet_01v8_T69Y3A_30 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
-Xsky130_fd_pr__nfet_01v8_T69Y3A_9 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
-Xsky130_fd_pr__nfet_01v8_T69Y3A_20 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
+Xsky130_fd_pr__nfet_01v8_T69Y3A_41 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
 Xsky130_fd_pr__nfet_01v8_T69Y3A_64 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
 Xsky130_fd_pr__nfet_01v8_T69Y3A_53 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
-Xsky130_fd_pr__nfet_01v8_T69Y3A_42 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
+Xsky130_fd_pr__nfet_01v8_T69Y3A_9 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
+Xsky130_fd_pr__nfet_01v8_T69Y3A_20 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
 Xsky130_fd_pr__nfet_01v8_T69Y3A_31 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
-Xsky130_fd_pr__nfet_01v8_T69Y3A_10 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
-Xsky130_fd_pr__nfet_01v8_T69Y3A_21 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
+Xsky130_fd_pr__nfet_01v8_T69Y3A_42 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
 Xsky130_fd_pr__nfet_01v8_T69Y3A_65 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
 Xsky130_fd_pr__nfet_01v8_T69Y3A_54 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
-Xsky130_fd_pr__nfet_01v8_T69Y3A_43 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
+Xsky130_fd_pr__nfet_01v8_T69Y3A_10 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
+Xsky130_fd_pr__nfet_01v8_T69Y3A_21 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
 Xsky130_fd_pr__nfet_01v8_T69Y3A_32 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
-Xsky130_fd_pr__nfet_01v8_T69Y3A_11 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
-Xsky130_fd_pr__nfet_01v8_T69Y3A_22 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
+Xsky130_fd_pr__nfet_01v8_T69Y3A_43 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
 Xsky130_fd_pr__nfet_01v8_T69Y3A_66 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
 Xsky130_fd_pr__nfet_01v8_T69Y3A_55 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
-Xsky130_fd_pr__nfet_01v8_T69Y3A_44 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
+Xsky130_fd_pr__nfet_01v8_T69Y3A_11 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
+Xsky130_fd_pr__nfet_01v8_T69Y3A_22 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
 Xsky130_fd_pr__nfet_01v8_T69Y3A_33 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
-Xsky130_fd_pr__nfet_01v8_T69Y3A_12 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
-Xsky130_fd_pr__nfet_01v8_T69Y3A_23 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
+Xsky130_fd_pr__nfet_01v8_T69Y3A_44 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
 Xsky130_fd_pr__nfet_01v8_T69Y3A_67 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
 Xsky130_fd_pr__nfet_01v8_T69Y3A_56 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
-Xsky130_fd_pr__nfet_01v8_T69Y3A_45 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
+Xsky130_fd_pr__nfet_01v8_T69Y3A_12 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
+Xsky130_fd_pr__nfet_01v8_T69Y3A_23 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
 Xsky130_fd_pr__nfet_01v8_T69Y3A_34 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
-Xsky130_fd_pr__nfet_01v8_T69Y3A_13 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
-Xsky130_fd_pr__nfet_01v8_T69Y3A_24 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
+Xsky130_fd_pr__nfet_01v8_T69Y3A_45 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
 Xsky130_fd_pr__nfet_01v8_T69Y3A_68 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
 Xsky130_fd_pr__nfet_01v8_T69Y3A_57 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
-Xsky130_fd_pr__nfet_01v8_T69Y3A_46 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
+Xsky130_fd_pr__nfet_01v8_T69Y3A_13 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
+Xsky130_fd_pr__nfet_01v8_T69Y3A_24 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
 Xsky130_fd_pr__nfet_01v8_T69Y3A_35 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
-Xsky130_fd_pr__nfet_01v8_T69Y3A_14 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
+Xsky130_fd_pr__nfet_01v8_T69Y3A_46 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
 Xsky130_fd_pr__nfet_01v8_T69Y3A_69 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
 Xsky130_fd_pr__nfet_01v8_T69Y3A_58 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
-Xsky130_fd_pr__nfet_01v8_T69Y3A_47 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
-Xsky130_fd_pr__nfet_01v8_T69Y3A_36 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
+Xsky130_fd_pr__nfet_01v8_T69Y3A_14 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
 Xsky130_fd_pr__nfet_01v8_T69Y3A_25 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
-Xsky130_fd_pr__nfet_01v8_T69Y3A_15 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
+Xsky130_fd_pr__nfet_01v8_T69Y3A_36 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
+Xsky130_fd_pr__nfet_01v8_T69Y3A_47 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
 Xsky130_fd_pr__nfet_01v8_T69Y3A_59 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
 Xsky130_fd_pr__nfet_01v8_T69Y3A_48 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
-Xsky130_fd_pr__nfet_01v8_T69Y3A_37 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
+Xsky130_fd_pr__nfet_01v8_T69Y3A_15 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
 Xsky130_fd_pr__nfet_01v8_T69Y3A_26 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
-Xsky130_fd_pr__nfet_01v8_T69Y3A_16 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
+Xsky130_fd_pr__nfet_01v8_T69Y3A_37 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
 Xsky130_fd_pr__nfet_01v8_T69Y3A_49 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
-Xsky130_fd_pr__nfet_01v8_T69Y3A_38 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
+Xsky130_fd_pr__nfet_01v8_T69Y3A_16 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
 Xsky130_fd_pr__nfet_01v8_T69Y3A_27 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
+Xsky130_fd_pr__nfet_01v8_T69Y3A_38 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
 Xsky130_fd_pr__pfet_01v8_58ZKDE_70 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
 Xsky130_fd_pr__nfet_01v8_T69Y3A_17 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
-Xsky130_fd_pr__nfet_01v8_T69Y3A_39 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
 Xsky130_fd_pr__nfet_01v8_T69Y3A_28 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
+Xsky130_fd_pr__nfet_01v8_T69Y3A_39 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
 Xsky130_fd_pr__pfet_01v8_58ZKDE_71 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
 Xsky130_fd_pr__pfet_01v8_58ZKDE_60 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
 Xsky130_fd_pr__nfet_01v8_T69Y3A_18 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
@@ -472,61 +472,61 @@ Xsky130_fd_pr__nfet_01v8_T69Y3A_29 out vss vss a_3996_n100# sky130_fd_pr__nfet_0
 Xsky130_fd_pr__pfet_01v8_58ZKDE_72 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
 Xsky130_fd_pr__pfet_01v8_58ZKDE_61 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
 Xsky130_fd_pr__pfet_01v8_58ZKDE_50 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
-Xsky130_fd_pr__nfet_01v8_T69Y3A_19 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
 Xsky130_fd_pr__pfet_01v8_58ZKDE_62 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
 Xsky130_fd_pr__pfet_01v8_58ZKDE_51 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
+Xsky130_fd_pr__nfet_01v8_T69Y3A_19 out vss vss a_3996_n100# sky130_fd_pr__nfet_01v8_T69Y3A
 Xsky130_fd_pr__pfet_01v8_58ZKDE_40 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
 Xsky130_fd_pr__pfet_01v8_58ZKDE_63 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
 Xsky130_fd_pr__pfet_01v8_58ZKDE_52 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
-Xsky130_fd_pr__pfet_01v8_58ZKDE_41 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
 Xsky130_fd_pr__pfet_01v8_58ZKDE_30 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
-Xsky130_fd_pr__pfet_01v8_58ZKDE_20 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
+Xsky130_fd_pr__pfet_01v8_58ZKDE_41 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
 Xsky130_fd_pr__pfet_01v8_58ZKDE_64 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
 Xsky130_fd_pr__pfet_01v8_58ZKDE_53 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
-Xsky130_fd_pr__pfet_01v8_58ZKDE_42 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
+Xsky130_fd_pr__pfet_01v8_58ZKDE_20 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
 Xsky130_fd_pr__pfet_01v8_58ZKDE_31 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
-Xsky130_fd_pr__pfet_01v8_58ZKDE_10 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
-Xsky130_fd_pr__pfet_01v8_58ZKDE_21 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
+Xsky130_fd_pr__pfet_01v8_58ZKDE_42 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
 Xsky130_fd_pr__pfet_01v8_58ZKDE_65 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
 Xsky130_fd_pr__pfet_01v8_58ZKDE_54 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
-Xsky130_fd_pr__pfet_01v8_58ZKDE_43 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
+Xsky130_fd_pr__pfet_01v8_58ZKDE_10 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
+Xsky130_fd_pr__pfet_01v8_58ZKDE_21 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
 Xsky130_fd_pr__pfet_01v8_58ZKDE_32 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
-Xsky130_fd_pr__pfet_01v8_58ZKDE_11 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
-Xsky130_fd_pr__pfet_01v8_58ZKDE_22 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
+Xsky130_fd_pr__pfet_01v8_58ZKDE_43 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
 Xsky130_fd_pr__pfet_01v8_58ZKDE_66 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
 Xsky130_fd_pr__pfet_01v8_58ZKDE_55 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
-Xsky130_fd_pr__pfet_01v8_58ZKDE_44 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
+Xsky130_fd_pr__pfet_01v8_58ZKDE_11 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
+Xsky130_fd_pr__pfet_01v8_58ZKDE_22 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
 Xsky130_fd_pr__pfet_01v8_58ZKDE_33 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
-Xsky130_fd_pr__pfet_01v8_58ZKDE_12 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
-Xsky130_fd_pr__pfet_01v8_58ZKDE_23 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
+Xsky130_fd_pr__pfet_01v8_58ZKDE_44 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
 Xsky130_fd_pr__pfet_01v8_58ZKDE_67 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
 Xsky130_fd_pr__pfet_01v8_58ZKDE_56 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
-Xsky130_fd_pr__pfet_01v8_58ZKDE_45 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
+Xsky130_fd_pr__pfet_01v8_58ZKDE_12 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
+Xsky130_fd_pr__pfet_01v8_58ZKDE_23 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
 Xsky130_fd_pr__pfet_01v8_58ZKDE_34 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
-Xsky130_fd_pr__pfet_01v8_58ZKDE_13 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
-Xsky130_fd_pr__pfet_01v8_58ZKDE_24 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
+Xsky130_fd_pr__pfet_01v8_58ZKDE_45 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
 Xsky130_fd_pr__pfet_01v8_58ZKDE_68 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
 Xsky130_fd_pr__pfet_01v8_58ZKDE_57 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
 Xsky130_fd_pr__pfet_01v8_58ZKDE_46 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
+Xsky130_fd_pr__pfet_01v8_58ZKDE_13 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
+Xsky130_fd_pr__pfet_01v8_58ZKDE_24 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
 Xsky130_fd_pr__pfet_01v8_58ZKDE_35 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
-Xsky130_fd_pr__pfet_01v8_58ZKDE_14 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
 Xsky130_fd_pr__pfet_01v8_58ZKDE_69 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
 Xsky130_fd_pr__pfet_01v8_58ZKDE_58 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
-Xsky130_fd_pr__pfet_01v8_58ZKDE_47 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
-Xsky130_fd_pr__pfet_01v8_58ZKDE_36 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
+Xsky130_fd_pr__pfet_01v8_58ZKDE_14 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
 Xsky130_fd_pr__pfet_01v8_58ZKDE_25 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
-Xsky130_fd_pr__pfet_01v8_58ZKDE_15 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
+Xsky130_fd_pr__pfet_01v8_58ZKDE_36 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
+Xsky130_fd_pr__pfet_01v8_58ZKDE_47 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
 Xsky130_fd_pr__pfet_01v8_58ZKDE_59 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
-Xsky130_fd_pr__pfet_01v8_58ZKDE_48 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
-Xsky130_fd_pr__pfet_01v8_58ZKDE_37 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
+Xsky130_fd_pr__pfet_01v8_58ZKDE_15 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
 Xsky130_fd_pr__pfet_01v8_58ZKDE_26 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
-Xsky130_fd_pr__pfet_01v8_58ZKDE_16 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
+Xsky130_fd_pr__pfet_01v8_58ZKDE_37 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
+Xsky130_fd_pr__pfet_01v8_58ZKDE_48 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
 Xsky130_fd_pr__pfet_01v8_58ZKDE_49 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
-Xsky130_fd_pr__pfet_01v8_58ZKDE_38 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
+Xsky130_fd_pr__pfet_01v8_58ZKDE_16 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
 Xsky130_fd_pr__pfet_01v8_58ZKDE_27 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
+Xsky130_fd_pr__pfet_01v8_58ZKDE_38 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
 Xsky130_fd_pr__pfet_01v8_58ZKDE_17 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
-Xsky130_fd_pr__pfet_01v8_58ZKDE_39 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
 Xsky130_fd_pr__pfet_01v8_58ZKDE_28 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
+Xsky130_fd_pr__pfet_01v8_58ZKDE_39 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
 Xsky130_fd_pr__pfet_01v8_58ZKDE_18 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
 Xsky130_fd_pr__pfet_01v8_58ZKDE_29 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
 Xsky130_fd_pr__pfet_01v8_58ZKDE_19 vss a_3996_n100# out vdd vdd sky130_fd_pr__pfet_01v8_58ZKDE
@@ -594,6 +594,7 @@ C0 t b 5.78fF
 *C1 t VSUBS 0.42fF
 *C2 b VSUBS 0.09fF
 .ends
+
 
 .subckt csvco_branch vctrl in vbp D0 out vss vdd
 Xsky130_fd_pr__nfet_01v8_7H8F5S_0 vctrl inverter_csvco_0/vss inverter_csvco_0/vss
@@ -857,6 +858,46 @@ Xsky130_fd_pr__pfet_01v8_lvt_8P223X_4 VSUBS iref sky130_fd_pr__pfet_01v8_lvt_8P2
 + iref_4 m1_20168_984# vdd sky130_fd_pr__pfet_01v8_lvt_8P223X
 .ends
 
+.subckt sky130_fd_pr__cap_mim_m3_1_WHJTNJ VSUBS m3_n4309_50# m3_n4309_n4250# c1_n4209_n4150#
++ c1_110_n4150# m3_10_n4250#
+X0 c1_n4209_n4150# m3_n4309_n4250# sky130_fd_pr__cap_mim_m3_1 l=2e+07u w=2e+07u
+X1 c1_110_n4150# m3_10_n4250# sky130_fd_pr__cap_mim_m3_1 l=2e+07u w=2e+07u
+X2 c1_n4209_n4150# m3_n4309_50# sky130_fd_pr__cap_mim_m3_1 l=2e+07u w=2e+07u
+X3 c1_110_n4150# m3_10_n4250# sky130_fd_pr__cap_mim_m3_1 l=2e+07u w=2e+07u
+.ends
+
+.subckt cap3_loop_filter VSUBS in out
+Xsky130_fd_pr__cap_mim_m3_1_WHJTNJ_0 VSUBS out out in in out sky130_fd_pr__cap_mim_m3_1_WHJTNJ
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_U2JGXT w_n226_n510# a_n118_n388# a_n88_n300# a_30_n300#
+X0 a_30_n300# a_n118_n388# a_n88_n300# w_n226_n510# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=3e+06u l=300000u
+.ends
+
+.subckt loop_filter_v2 vc_pex D0_cap in vss
+Xcap1_loop_filter_0 vss vc_pex vss cap1_loop_filter
+Xcap3_loop_filter_0 vss cap3_loop_filter_0/in vss cap3_loop_filter
+Xcap2_loop_filter_0 vss in vss cap2_loop_filter
+Xsky130_fd_pr__nfet_01v8_U2JGXT_0 vss D0_cap in cap3_loop_filter_0/in sky130_fd_pr__nfet_01v8_U2JGXT
+Xres_loop_filter_0 vss res_loop_filter_2/out in res_loop_filter
+Xres_loop_filter_1 vss res_loop_filter_2/out vc_pex res_loop_filter
+Xres_loop_filter_2 vss res_loop_filter_2/out vc_pex res_loop_filter
+.ends
+
+.subckt top_pll_v2 vdd in_ref w_13905_n238# vss D0_vco iref_cp DO_cap out_to_pad
+Xcharge_pump_0 Down vco_vctrl iref_cp pswitch nDown biasp Up nswitch vss vdd nUp charge_pump
+Xloop_filter_v2_0 lf_vc DO_cap vco_vctrl vss loop_filter_v2
+Xdiv_by_2_0 vss vdd out_by_2 n_out_by_2 out_buffer_div_2 out_to_div out_div_2 n_out_buffer_div_2
++ n_out_div_2 div_by_2
+Xbuffer_salida_0 out_to_buffer out_to_pad vss vdd buffer_salida
+Xring_osc_0 vco_vctrl vdd vss D0_vco vco_out ring_osc
+Xring_osc_buffer_0 vss vco_out vdd out_first_buffer out_to_div out_to_buffer ring_osc_buffer
+Xdiv_by_5_0 n_out_by_2 vdd div_5_Q0 out_by_2 div_5_nQ0 out_div_by_5 div_5_nQ2 vss
++ div_5_Q1 div_5_Q1_shift div_by_5
+Xpfd_cp_interface_0 vss vdd Down QA QB nDown Up nUp pfd_cp_interface
+XPFD_0 vss vdd QB QA in_ref out_div_by_5 pfd_reset PFD
+.ends
+
 *.subckt user_analog_project_wrapper gpio_analog[0] gpio_analog[10] gpio_analog[11]
 *+ gpio_analog[12] gpio_analog[13] gpio_analog[14] gpio_analog[15] gpio_analog[16]
 *+ gpio_analog[17] gpio_analog[1] gpio_analog[2] gpio_analog[3] gpio_analog[4] gpio_analog[5]
@@ -962,13 +1003,10 @@ Xsky130_fd_pr__pfet_01v8_lvt_8P223X_4 VSUBS iref sky130_fd_pr__pfet_01v8_lvt_8P2
 *+ wbs_dat_o[26] wbs_dat_o[27] wbs_dat_o[28] wbs_dat_o[29] wbs_dat_o[2] wbs_dat_o[30]
 *+ wbs_dat_o[31] wbs_dat_o[3] wbs_dat_o[4] wbs_dat_o[5] wbs_dat_o[6] wbs_dat_o[7] wbs_dat_o[8]
 *+ wbs_dat_o[9] wbs_sel_i[0] wbs_sel_i[1] wbs_sel_i[2] wbs_sel_i[3] wbs_stb_i wbs_we_i
-
-* TOP Circuit modified to pass LVS
-
 Xtop_pll_v1_0 vdda1 io_analog[10] vssa1 vssa1 io_in[14] bias_0/iref_2 io_analog[9]
 + top_pll_v1
-Xtop_pll_v1_1 vdda1 io_analog[10] vssa1 vssa1 io_in[14] bias_0/iref_1 io_analog[8]
-+ top_pll_v1
 Xbias_0 vssa1 vdda1 bias_0/iref_1 bias_0/iref_2 io_analog[5] bias
+Xtop_pll_v2_0 vdda1 io_analog[10] vssa1 vssa1 io_in[14] bias_0/iref_1 io_in[15] io_analog[8]
++ top_pll_v2
 .ends
 

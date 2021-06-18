@@ -16,7 +16,7 @@ N -360 -290 -310 -290 { lab=Up}
 N 410 -330 410 -300 { lab=vdd}
 N 410 -160 410 -130 { lab=vss}
 N 530 260 570 260 { lab=out_to_div}
-N 330 -190 340 -190 { lab=vco_D0}
+N 330 -190 340 -190 { lab=D0_vco}
 N 230 -230 340 -230 { lab=vco_vctrl}
 N 480 -230 520 -230 { lab=vco_out}
 N -460 -170 -360 -170 { lab=nDown}
@@ -27,7 +27,7 @@ N -700 -190 -600 -190 { lab=pfd_QB}
 N -530 -360 -530 -330 { lab=vdd}
 N -530 -130 -530 -100 { lab=vss}
 N -890 -190 -890 260 { lab=out_div_by_5}
-N 330 -190 330 -150 { lab=vco_D0}
+N 330 -190 330 -150 { lab=D0_vco}
 N 180 150 180 180 { lab=vdd}
 N -210 -360 -210 -330 { lab=vdd}
 N -180 -360 -180 -330 { lab=vss}
@@ -95,8 +95,11 @@ N -130 340 -130 380 { lab=div_5_nQ2}
 N -390 260 -390 300 { lab=out_div_by_5}
 N 960 -200 960 -170 { lab=vss}
 N 960 -330 960 -300 { lab=vdd}
-N 700 -250 920 -250 { lab=vco_out}
-N 810 -340 810 -250 { lab=vco_out}
+N 700 -250 920 -250 { lab=out_to_buffer}
+N 810 -340 810 -250 { lab=out_to_buffer}
+N -20 -140 0 -140 { lab=D0_vco}
+N -20 -190 -20 -140 { lab=D0_vco}
+N -30 -190 -20 -190 { lab=D0_vco}
 C {lab_pin.sym} 410 -330 1 0 {name=l38 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 410 -130 3 0 {name=l39 sig_type=std_logic lab=vss}
 C {lab_pin.sym} -530 -360 1 0 {name=l7 sig_type=std_logic lab=vdd}
@@ -125,7 +128,7 @@ C {iopin.sym} -230 -100 1 0 {name=p12 lab=cp_pswitch}
 C {iopin.sym} -200 -100 1 0 {name=p13 lab=cp_biasp}
 C {ipin.sym} -270 -370 1 0 {name=p14 lab=iref_cp}
 C {iopin.sym} 160 -140 0 0 {name=p15 lab=lf_vc}
-C {iopin.sym} 330 -150 1 0 {name=p16 lab=vco_D0}
+C {iopin.sym} 330 -150 1 0 {name=p16 lab=D0_vco}
 C {iopin.sym} 160 -320 3 0 {name=p17 lab=vco_vctrl}
 C {iopin.sym} 520 -320 3 0 {name=p18 lab=vco_out}
 C {iopin.sym} 640 -120 1 0 {name=p19 lab=out_first_buffer}
@@ -147,7 +150,6 @@ C {PFD_pex_c.sym} -770 -230 0 0 {name=x1}
 C {charge_pump_pex_c.sym} -230 -230 0 0 {name=x2}
 C {csvco_pex_c.sym} 410 -230 0 0 {name=x3}
 C {div_by_5_pex_c.sym} -170 260 0 1 {name=x5}
-C {loop_filter_pex_c.sym} 60 -140 0 0 {name=x6}
 C {pfd_cp_interface_pex_c.sym} -530 -230 0 0 {name=x7}
 C {ring_osc_buffer_pex_c.sym} 640 -230 0 0 {name=x8}
 C {div_by_2_pex_c.sym} 160 260 0 1 {name=x4}
@@ -155,3 +157,5 @@ C {buffer_salida_pex_c.sym} 980 -250 0 0 {name=x9}
 C {lab_pin.sym} 960 -170 3 0 {name=l1 sig_type=std_logic lab=vss}
 C {lab_pin.sym} 960 -330 1 0 {name=l2 sig_type=std_logic lab=vdd}
 C {iopin.sym} 810 -340 3 0 {name=p34 lab=out_to_buffer}
+C {loop_filter_v2.sym} 60 -140 0 0 {name=x6}
+C {iopin.sym} -30 -190 2 0 {name=p35 lab=D0_cap}

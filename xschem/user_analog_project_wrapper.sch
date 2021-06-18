@@ -152,6 +152,7 @@ N 5200 150 5200 220 { lab=iref_cp1}
 N 5280 150 5280 220 { lab=io_in[14]}
 N 5030 350 5070 350 { lab=io_analog[10]}
 N 3950 -310 3990 -310 { lab=iref_cp1}
+N 5340 150 5340 220 { lab=io_in[13]}
 C {iopin.sym} 3240 -470 0 0 {name=p1 lab=vdda1}
 C {iopin.sym} 3240 -440 0 0 {name=p2 lab=vdda2}
 C {iopin.sym} 3240 -410 0 0 {name=p3 lab=vssa1}
@@ -231,7 +232,6 @@ C {lab_pin.sym} 3780 350 0 0 {name=l45 sig_type=std_logic lab=io_analog[10]}
 C {lab_pin.sym} 4750 350 2 0 {name=l55 sig_type=std_logic lab=io_analog[9]}
 C {lab_pin.sym} 4030 150 3 1 {name=l56 sig_type=std_logic lab=io_in[14]}
 C {lab_pin.sym} 3890 -50 3 0 {name=l1 sig_type=std_logic lab=io_analog[5]}
-C {top_pll_v1.sym} 5490 350 0 0 {name=x3}
 C {lab_pin.sym} 5660 160 1 0 {name=l2 sig_type=std_logic lab=vdda1}
 C {lab_pin.sym} 5720 160 1 0 {name=l3 sig_type=std_logic lab=vssa1}
 C {noconn.sym} 5240 580 3 0 {name=l4}
@@ -267,3 +267,5 @@ C {lab_pin.sym} 5030 350 0 0 {name=l78 sig_type=std_logic lab=io_analog[10]}
 C {lab_pin.sym} 6000 350 2 0 {name=l79 sig_type=std_logic lab=io_analog[8]}
 C {lab_pin.sym} 5280 150 3 1 {name=l80 sig_type=std_logic lab=io_in[14]}
 C {lab_pin.sym} 3990 -310 2 0 {name=l81 sig_type=std_logic lab=iref_cp1}
+C {top_pll_v2.sym} 5490 350 0 0 {name=x3}
+C {lab_pin.sym} 5340 150 3 1 {name=l47 sig_type=std_logic lab=io_in[15]}

@@ -65,7 +65,7 @@ x1 iref_cp2 vssa1 vdda1 net13 net12 net6 net1 net5 io_analog[10] io_analog[9] ne
 x2 vdda1 io_analog[5] net29 iref_cp1 iref_cp2 net30 net31 net32 net33 net34 net35 net36 bias
 x3 iref_cp1 vssa1 vdda1 net49 net48 net42 net37 net41 io_analog[10] io_analog[8] net40 net43 net38
 + io_in[14] net47 net50 net44 net45 net39 net46 net56 net51 net63 net57 net59 net61 net60 net54 net55 net58
-+ net53 net62 net52 net64 top_pll_v1
++ net53 net62 net52 net64 io_in[15] top_pll_v2
 **.ends
 
 * expanding   symbol:  top_pll_v1.sym # of pins=34
@@ -205,6 +205,62 @@ XM21 net10 vbp1 vdd vdd sky130_fd_pr__pfet_01v8_lvt L=0.45 W=4.5 nf=1 ad='int((n
 XM22 iref_9 iref net10 vdd sky130_fd_pr__pfet_01v8_lvt L=0.45 W=4.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
 + as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
 + nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=25 m=25 
+.ends
+
+
+* expanding   symbol:  top_pll_v2.sym # of pins=35
+* sym_path: /home/dhernando/caravel_analog_fulgor/xschem/top_pll_v2.sym
+* sch_path: /home/dhernando/caravel_analog_fulgor/xschem/top_pll_v2.sch
+.subckt top_pll_v2  iref_cp vss vdd vco_out vco_vctrl Up pfd_QA nUp in_ref out_to_pad Down nDown
++ pfd_QB D0_vco lf_vc out_first_buffer cp_biasp cp_pswitch pfd_reset cp_nswitch out_by_2 out_to_div
++ out_div_by_5 n_out_by_2 div_5_nQ0 div_5_Q1_shift div_5_Q1 n_out_buffer_div_2 out_buffer_div_2 div_5_Q0
++ n_out_div_2 div_5_nQ2 out_div_2 out_to_buffer D0_cap
+*.iopin vdd
+*.iopin vss
+*.ipin in_ref
+*.iopin pfd_QA
+*.iopin pfd_QB
+*.iopin Up
+*.iopin nUp
+*.iopin Down
+*.iopin nDown
+*.iopin pfd_reset
+*.iopin cp_nswitch
+*.iopin cp_pswitch
+*.iopin cp_biasp
+*.ipin iref_cp
+*.iopin lf_vc
+*.iopin D0_vco
+*.iopin vco_vctrl
+*.iopin vco_out
+*.iopin out_first_buffer
+*.iopin out_to_buffer
+*.iopin out_to_div
+*.iopin out_by_2
+*.iopin n_out_by_2
+*.iopin out_div_2
+*.iopin n_out_div_2
+*.iopin out_buffer_div_2
+*.iopin n_out_buffer_div_2
+*.iopin div_5_Q1
+*.iopin div_5_Q1_shift
+*.iopin div_5_nQ0
+*.iopin div_5_Q0
+*.iopin div_5_nQ2
+*.iopin out_div_by_5
+*.iopin out_to_pad
+*.ipin D0_cap
+x1 vss vdd pfd_QA in_ref out_div_by_5 pfd_QB pfd_reset PFD
+x2 vdd Up nUp vco_vctrl Down nDown vss iref_cp cp_nswitch cp_pswitch cp_biasp charge_pump
+x3 Up vdd pfd_QA nUp Down pfd_QB vss nDown pfd_cp_interface
+x5 vdd vco_out D0_vco vco_vctrl vss csvco
+x6 vdd vco_out out_to_buffer out_to_div vss out_first_buffer ring_osc_buffer
+x7 vdd out_div_by_5 out_by_2 vss n_out_by_2 div_5_nQ2 div_5_Q1 div_5_nQ0 div_5_Q0 div_5_Q1_shift
++ div_by_5
+x8 n_out_by_2 vss out_to_div vdd out_by_2 out_div_2 n_out_div_2 out_buffer_div_2 n_out_buffer_div_2
++ div_by_2
+x9 vdd out_to_pad out_to_buffer vss buffer_salida
+x4 vss vco_vctrl lf_vc D0_cap loop_filter_v2
 .ends
 
 
@@ -422,6 +478,26 @@ XM5 out net2 vdd vdd sky130_fd_pr__pfet_01v8 L=0.15 W=6 nf=1 ad='int((nf+1)/2) *
 XM6 out net2 vss vss sky130_fd_pr__nfet_01v8 L=0.15 W=3 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=256 m=256 
+.ends
+
+
+* expanding   symbol:  loop_filter_v2.sym # of pins=4
+* sym_path: /home/dhernando/caravel_analog_fulgor/xschem/loop_filter_v2.sym
+* sch_path: /home/dhernando/caravel_analog_fulgor/xschem/loop_filter_v2.sch
+.subckt loop_filter_v2  vss in vc_pex D0_cap
+*.iopin in
+*.iopin vss
+*.iopin vc_pex
+*.iopin D0_cap
+x1 in net1 vss res_loop_filter
+x2 vc_pex net1 vss res_loop_filter
+x3 vc_pex net1 vss res_loop_filter
+x4 vc_pex vss cap1_loop_filter
+x5 in vss cap2_loop_filter
+XM1 in D0_cap net2 vss sky130_fd_pr__nfet_01v8 L=0.3 W=3 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+x6 net2 vss cap3_loop_filter
 .ends
 
 
@@ -648,6 +724,16 @@ x5 vdd nCLK_d net1 vss trans_gate
 x1 vdd CLK_d net2 vss inverter_cp_x1
 x2 vdd net2 CLK vss inverter_cp_x1
 x3 vdd net1 CLK vss inverter_cp_x1
+.ends
+
+
+* expanding   symbol:  cap3_loop_filter.sym # of pins=2
+* sym_path: /home/dhernando/caravel_analog_fulgor/xschem/cap3_loop_filter.sym
+* sch_path: /home/dhernando/caravel_analog_fulgor/xschem/cap3_loop_filter.sch
+.subckt cap3_loop_filter  in out
+*.iopin in
+*.iopin out
+XC1 in out sky130_fd_pr__cap_mim_m3_1 W=20 L=20 MF=4 m=4
 .ends
 
 

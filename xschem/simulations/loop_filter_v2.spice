@@ -1,0 +1,58 @@
+**.subckt loop_filter_v2 in vss vc_pex D0_cap
+*.iopin in
+*.iopin vss
+*.iopin vc_pex
+*.iopin D0_cap
+x1 in net1 vss res_loop_filter
+x2 vc_pex net1 vss res_loop_filter
+x3 vc_pex net1 vss res_loop_filter
+x4 vc_pex vss cap1_loop_filter
+x5 in vss cap2_loop_filter
+XM1 in D0_cap net2 vss sky130_fd_pr__nfet_01v8 L=0.3 W=3 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+x6 net2 vss cap3_loop_filter
+**.ends
+
+* expanding   symbol:  res_loop_filter.sym # of pins=3
+* sym_path: /home/dhernando/caravel_analog_fulgor/xschem/res_loop_filter.sym
+* sch_path: /home/dhernando/caravel_analog_fulgor/xschem/res_loop_filter.sch
+.subckt res_loop_filter  in out vss
+*.iopin in
+*.iopin vss
+*.iopin out
+XR3 out in vss sky130_fd_pr__res_high_po_5p73 L=22.92 mult=1 m=1
+.ends
+
+
+* expanding   symbol:  cap1_loop_filter.sym # of pins=2
+* sym_path: /home/dhernando/caravel_analog_fulgor/xschem/cap1_loop_filter.sym
+* sch_path: /home/dhernando/caravel_analog_fulgor/xschem/cap1_loop_filter.sch
+.subckt cap1_loop_filter  in out
+*.iopin in
+*.iopin out
+XC1 in out sky130_fd_pr__cap_mim_m3_1 W=25 L=25 MF=25 m=25
+.ends
+
+
+* expanding   symbol:  cap2_loop_filter.sym # of pins=2
+* sym_path: /home/dhernando/caravel_analog_fulgor/xschem/cap2_loop_filter.sym
+* sch_path: /home/dhernando/caravel_analog_fulgor/xschem/cap2_loop_filter.sch
+.subckt cap2_loop_filter  in out
+*.iopin in
+*.iopin out
+XC1 in out sky130_fd_pr__cap_mim_m3_1 W=20 L=20 MF=9 m=9
+.ends
+
+
+* expanding   symbol:  cap3_loop_filter.sym # of pins=2
+* sym_path: /home/dhernando/caravel_analog_fulgor/xschem/cap3_loop_filter.sym
+* sch_path: /home/dhernando/caravel_analog_fulgor/xschem/cap3_loop_filter.sch
+.subckt cap3_loop_filter  in out
+*.iopin in
+*.iopin out
+XC1 in out sky130_fd_pr__cap_mim_m3_1 W=20 L=20 MF=4 m=4
+.ends
+
+** flattened .save nodes
+.end
