@@ -111,7 +111,7 @@ value="
 .options RSHUNT = 1e20
 
 * Models
-.lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/corners/sky130.lib SS
+.lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/corners/sky130.lib FF
 .include ~/caravel_analog_fulgor/xschem/simulations/top_pll_v2_pex_c.spice
 .include ~/caravel_analog_fulgor/xschem/simulations/bias_pex_c.spice
 

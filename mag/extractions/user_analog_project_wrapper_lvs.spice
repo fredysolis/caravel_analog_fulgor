@@ -595,7 +595,6 @@ C0 t b 5.78fF
 *C2 b VSUBS 0.09fF
 .ends
 
-
 .subckt csvco_branch vctrl in vbp D0 out vss vdd
 Xsky130_fd_pr__nfet_01v8_7H8F5S_0 vctrl inverter_csvco_0/vss inverter_csvco_0/vss
 + vss vss inverter_csvco_0/vss vss vss inverter_csvco_0/vss vss inverter_csvco_0/vss
@@ -1003,10 +1002,10 @@ XPFD_0 vss vdd QB QA in_ref out_div_by_5 pfd_reset PFD
 *+ wbs_dat_o[26] wbs_dat_o[27] wbs_dat_o[28] wbs_dat_o[29] wbs_dat_o[2] wbs_dat_o[30]
 *+ wbs_dat_o[31] wbs_dat_o[3] wbs_dat_o[4] wbs_dat_o[5] wbs_dat_o[6] wbs_dat_o[7] wbs_dat_o[8]
 *+ wbs_dat_o[9] wbs_sel_i[0] wbs_sel_i[1] wbs_sel_i[2] wbs_sel_i[3] wbs_stb_i wbs_we_i
-Xtop_pll_v1_0 vdda1 io_analog[10] vssa1 vssa1 io_in[14] bias_0/iref_2 io_analog[9]
+Xtop_pll_v1_0 vdda1 io_analog[10] vssa1 vssa1 gpio_noesd[7] bias_0/iref_2 io_analog[9]
 + top_pll_v1
 Xbias_0 vssa1 vdda1 bias_0/iref_1 bias_0/iref_2 io_analog[5] bias
-Xtop_pll_v2_0 vdda1 io_analog[10] vssa1 vssa1 io_in[14] bias_0/iref_1 io_in[15] io_analog[8]
-+ top_pll_v2
+Xtop_pll_v2_0 vdda1 io_analog[10] vssa1 vssa1 gpio_noesd[7] bias_0/iref_1 gpio_noesd[8]
++ io_analog[8] top_pll_v2
 .ends
 

@@ -60,12 +60,12 @@
 *.ipin
 *+ la_oenb[127],la_oenb[126],la_oenb[125],la_oenb[124],la_oenb[123],la_oenb[122],la_oenb[121],la_oenb[120],la_oenb[119],la_oenb[118],la_oenb[117],la_oenb[116],la_oenb[115],la_oenb[114],la_oenb[113],la_oenb[112],la_oenb[111],la_oenb[110],la_oenb[109],la_oenb[108],la_oenb[107],la_oenb[106],la_oenb[105],la_oenb[104],la_oenb[103],la_oenb[102],la_oenb[101],la_oenb[100],la_oenb[99],la_oenb[98],la_oenb[97],la_oenb[96],la_oenb[95],la_oenb[94],la_oenb[93],la_oenb[92],la_oenb[91],la_oenb[90],la_oenb[89],la_oenb[88],la_oenb[87],la_oenb[86],la_oenb[85],la_oenb[84],la_oenb[83],la_oenb[82],la_oenb[81],la_oenb[80],la_oenb[79],la_oenb[78],la_oenb[77],la_oenb[76],la_oenb[75],la_oenb[74],la_oenb[73],la_oenb[72],la_oenb[71],la_oenb[70],la_oenb[69],la_oenb[68],la_oenb[67],la_oenb[66],la_oenb[65],la_oenb[64],la_oenb[63],la_oenb[62],la_oenb[61],la_oenb[60],la_oenb[59],la_oenb[58],la_oenb[57],la_oenb[56],la_oenb[55],la_oenb[54],la_oenb[53],la_oenb[52],la_oenb[51],la_oenb[50],la_oenb[49],la_oenb[48],la_oenb[47],la_oenb[46],la_oenb[45],la_oenb[44],la_oenb[43],la_oenb[42],la_oenb[41],la_oenb[40],la_oenb[39],la_oenb[38],la_oenb[37],la_oenb[36],la_oenb[35],la_oenb[34],la_oenb[33],la_oenb[32],la_oenb[31],la_oenb[30],la_oenb[29],la_oenb[28],la_oenb[27],la_oenb[26],la_oenb[25],la_oenb[24],la_oenb[23],la_oenb[22],la_oenb[21],la_oenb[20],la_oenb[19],la_oenb[18],la_oenb[17],la_oenb[16],la_oenb[15],la_oenb[14],la_oenb[13],la_oenb[12],la_oenb[11],la_oenb[10],la_oenb[9],la_oenb[8],la_oenb[7],la_oenb[6],la_oenb[5],la_oenb[4],la_oenb[3],la_oenb[2],la_oenb[1],la_oenb[0]
 x1 iref_cp2 vssa1 vdda1 net13 net12 net6 net1 net5 io_analog[10] io_analog[9] net4 net7 net2
-+ io_in[14] net11 net14 net8 net9 net3 net10 net20 net15 net27 net21 net23 net25 net24 net18 net19 net22 net17
++ gpio_noesd[7] net11 net14 net8 net9 net3 net10 net20 net15 net27 net21 net23 net25 net24 net18 net19 net22 net17
 + net26 net16 net28 top_pll_v1
 x2 vdda1 io_analog[5] net29 iref_cp1 iref_cp2 net30 net31 net32 net33 net34 net35 net36 bias
 x3 iref_cp1 vssa1 vdda1 net49 net48 net42 net37 net41 io_analog[10] io_analog[8] net40 net43 net38
-+ io_in[14] net47 net50 net44 net45 net39 net46 net56 net51 net63 net57 net59 net61 net60 net54 net55 net58
-+ net53 net62 net52 net64 io_in[15] top_pll_v2
++ gpio_noesd[7] net47 net50 net44 net45 net39 net46 net56 net51 net63 net57 net59 net61 net60 net54 net55 net58
++ net53 net62 net52 net64 gpio_noesd[8] top_pll_v2
 **.ends
 
 * expanding   symbol:  top_pll_v1.sym # of pins=34
