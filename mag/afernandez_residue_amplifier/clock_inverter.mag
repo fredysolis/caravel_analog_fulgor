@@ -1,0 +1,89 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1623799048
+<< metal1 >>
+rect 520 2998 530 3028
+rect 0 2944 530 2998
+rect 520 2914 530 2944
+rect 714 2998 724 3028
+rect 714 2944 1244 2998
+rect 714 2914 724 2944
+rect 210 2264 220 2320
+rect 334 2264 344 2320
+rect 442 2259 848 2325
+rect 1054 2070 1100 2523
+rect 0 1504 1244 1564
+rect 221 804 226 809
+rect 210 748 220 804
+rect 334 748 344 804
+rect 221 743 226 748
+rect 478 743 720 809
+rect 1094 307 1152 1328
+rect 520 124 530 154
+rect 0 70 530 124
+rect 520 40 530 70
+rect 714 124 724 154
+rect 714 70 1244 124
+rect 714 40 724 70
+<< via1 >>
+rect 530 2914 714 3028
+rect 220 2264 334 2320
+rect 220 748 334 804
+rect 530 40 714 154
+<< metal2 >>
+rect 530 3028 714 3038
+rect 530 2904 714 2914
+rect 220 2320 334 2330
+rect 220 2254 334 2264
+rect 220 804 334 814
+rect 220 738 334 748
+rect 530 154 714 164
+rect 530 30 714 40
+<< via2 >>
+rect 530 2914 714 3028
+rect 220 2264 334 2320
+rect 220 748 334 804
+rect 530 40 714 154
+<< metal3 >>
+rect 520 3028 724 3033
+rect 520 2914 530 3028
+rect 714 2914 724 3028
+rect 520 2909 724 2914
+rect 210 2320 344 2325
+rect 210 2264 220 2320
+rect 334 2264 344 2320
+rect 210 2259 344 2264
+rect 247 809 307 2259
+rect 210 804 344 809
+rect 210 748 220 804
+rect 334 748 344 804
+rect 210 743 344 748
+rect 586 159 658 2909
+rect 520 154 724 159
+rect 520 40 530 154
+rect 714 40 724 154
+rect 520 35 724 40
+use inverter_cp_x1 *inverter_cp_x1_1 ~/sky130-mpw2-fulgor/inverter_cp_x1/mag
+timestamp 1623798692
+transform 1 0 0 0 1 2292
+box 0 -758 622 776
+use inverter_cp_x1 *inverter_cp_x1_2
+timestamp 1623798692
+transform 1 0 622 0 1 2292
+box 0 -758 622 776
+use inverter_cp_x1 *inverter_cp_x1_0
+timestamp 1623798692
+transform 1 0 0 0 -1 776
+box 0 -758 622 776
+use trans_gate *trans_gate_0 ~/sky130-mpw2-fulgor/trans_gate/mag
+timestamp 1623610677
+transform 1 0 675 0 -1 723
+box -53 -811 569 723
+<< labels >>
+rlabel metal1 0 1504 1244 1564 1 vss
+rlabel metal1 0 2944 1244 2998 1 vdd
+rlabel metal3 247 1504 307 1564 1 CLK
+rlabel metal1 1054 2070 1100 2523 1 CLK_d
+rlabel metal1 1094 307 1152 1328 1 nCLK_d
+<< end >>

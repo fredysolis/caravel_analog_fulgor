@@ -1,0 +1,27 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1624038785
+<< metal1 >>
+rect 418 1060 443 1086
+rect 423 119 448 123
+rect 420 97 448 119
+rect 420 93 445 97
+rect 418 49 443 75
+<< metal2 >>
+rect 14 526 39 552
+rect 823 529 848 555
+use inverter_min  inverter_min_1 ~/sky130-mpw2-fulgor/inverter_min/mag
+timestamp 1624038681
+transform 1 0 485 0 1 -6
+box -53 16 369 1179
+use inverter_min  inverter_min_0
+timestamp 1624038681
+transform 1 0 63 0 1 -6
+box -53 16 369 1179
+<< labels >>
+rlabel metal2 14 526 39 552 1 in
+rlabel metal2 823 529 848 555 1 out
+rlabel metal1 418 1060 443 1086 1 avdd1p8
+rlabel metal1 418 49 443 75 1 avss1p8
+<< end >>

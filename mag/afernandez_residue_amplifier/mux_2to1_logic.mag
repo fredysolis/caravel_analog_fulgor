@@ -1,0 +1,170 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1624063007
+<< nwell >>
+rect -475 579 -53 607
+rect 64 537 341 571
+rect 509 537 963 571
+<< pwell >>
+rect -53 -584 -1 -53
+rect -475 -633 -1 -584
+rect 421 -633 525 -53
+rect 561 -597 911 -563
+rect 947 -633 999 -53
+<< psubdiff >>
+rect 109 -597 133 -563
+rect 291 -597 315 -563
+rect 561 -597 659 -563
+rect 817 -597 911 -563
+<< nsubdiff >>
+rect 509 537 590 571
+rect 867 537 963 571
+<< psubdiffcont >>
+rect 133 -597 291 -563
+rect 659 -597 817 -563
+<< nsubdiffcont >>
+rect 64 537 341 571
+rect 590 537 867 571
+<< poly >>
+rect 123 419 297 485
+rect 649 423 823 489
+<< viali >>
+rect -17 537 64 571
+rect 64 537 341 571
+rect 341 537 437 571
+rect 509 537 590 571
+rect 590 537 867 571
+rect 867 537 963 571
+rect 35 -597 133 -563
+rect 133 -597 291 -563
+rect 291 -597 385 -563
+rect 561 -597 659 -563
+rect 659 -597 817 -563
+rect 817 -597 911 -563
+<< metal1 >>
+rect -475 571 999 607
+rect -475 537 -17 571
+rect 437 537 509 571
+rect 963 537 999 571
+rect -57 531 999 537
+rect 138 425 148 477
+rect 268 425 278 477
+rect 388 425 823 477
+rect 171 178 181 242
+rect 239 178 249 242
+rect 94 170 137 178
+rect 91 129 137 170
+rect 283 129 329 166
+rect 91 86 329 129
+rect 143 -204 189 86
+rect 221 -277 231 -213
+rect 289 -277 299 -213
+rect 388 -453 440 425
+rect 649 423 823 425
+rect 697 178 707 242
+rect 765 178 775 242
+rect 620 170 663 178
+rect 617 129 663 170
+rect 809 129 855 166
+rect 617 86 855 129
+rect 669 -204 715 86
+rect 747 -277 757 -213
+rect 815 -277 825 -213
+rect 167 -505 177 -453
+rect 236 -505 440 -453
+rect 693 -504 703 -452
+rect 762 -504 772 -452
+rect -475 -557 -53 -554
+rect -475 -563 999 -557
+rect -475 -597 35 -563
+rect 385 -597 561 -563
+rect 911 -597 999 -563
+rect -475 -633 999 -597
+<< via1 >>
+rect 148 425 268 477
+rect 181 178 239 242
+rect 231 -277 289 -213
+rect 707 178 765 242
+rect 757 -277 815 -213
+rect 177 -505 236 -453
+rect 703 -504 762 -452
+<< metal2 >>
+rect 148 477 268 487
+rect -76 425 148 477
+rect 268 425 522 477
+rect -76 116 -24 425
+rect 148 415 268 425
+rect 181 242 239 252
+rect 181 168 239 178
+rect -294 64 -24 116
+rect 187 129 233 168
+rect 187 83 288 129
+rect -294 -27 -242 64
+rect -345 -79 -242 -27
+rect -105 -79 7 -27
+rect -45 -453 7 -79
+rect 242 -73 288 83
+rect 242 -83 303 -73
+rect 242 -165 303 -155
+rect 242 -203 288 -165
+rect 231 -213 289 -203
+rect 231 -287 289 -277
+rect 177 -453 236 -443
+rect -45 -505 177 -453
+rect 470 -450 522 425
+rect 707 242 765 252
+rect 707 168 765 178
+rect 713 129 759 168
+rect 713 83 814 129
+rect 768 -73 814 83
+rect 768 -83 829 -73
+rect 768 -165 829 -155
+rect 768 -203 814 -165
+rect 757 -213 815 -203
+rect 757 -287 815 -277
+rect 703 -450 762 -442
+rect 470 -452 762 -450
+rect 470 -502 703 -452
+rect 177 -515 236 -505
+rect 703 -514 762 -504
+<< via2 >>
+rect 242 -155 303 -83
+rect 768 -155 829 -83
+<< metal3 >>
+rect 232 -83 313 -78
+rect 758 -83 839 -78
+rect 232 -155 242 -83
+rect 303 -155 768 -83
+rect 829 -155 839 -83
+rect 232 -160 313 -155
+rect 758 -160 839 -155
+use sky130_fd_pr__pfet_01v8_XA7ZMQ  sky130_fd_pr__pfet_01v8_XA7ZMQ_0
+timestamp 1623900471
+transform 1 0 210 0 1 277
+box -263 -330 263 330
+use inverter_min  inverter_min_0 ~/sky130-mpw2-fulgor/inverter_min/mag
+timestamp 1624038681
+transform 1 0 -422 0 1 -600
+box -53 16 369 1179
+use sky130_fd_pr__nfet_01v8_HAN8QX  sky130_fd_pr__nfet_01v8_HAN8QX_1
+timestamp 1623900471
+transform 1 0 736 0 -1 -343
+box -211 -290 211 290
+use sky130_fd_pr__pfet_01v8_XA7ZMQ  sky130_fd_pr__pfet_01v8_XA7ZMQ_1
+timestamp 1623900471
+transform 1 0 736 0 1 277
+box -263 -330 263 330
+use sky130_fd_pr__nfet_01v8_HAN8QX  sky130_fd_pr__nfet_01v8_HAN8QX_0
+timestamp 1623900471
+transform 1 0 210 0 -1 -343
+box -211 -290 211 290
+<< labels >>
+rlabel metal2 -332 -64 -311 -46 1 sel
+rlabel metal2 -94 -63 -73 -45 1 sel_b
+rlabel metal1 152 -61 173 -43 1 DinA
+rlabel metal1 681 -62 702 -44 1 DinB
+rlabel via2 786 -132 807 -114 1 out
+rlabel metal1 -390 563 -366 588 1 avdd1p8
+rlabel metal1 -310 -612 -286 -587 1 avss1p8
+<< end >>
