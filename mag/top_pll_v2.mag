@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1624395098
+timestamp 1624396964
 << nwell >>
 rect 0 2846 20536 2860
 rect 0 2838 6183 2846
@@ -524,15 +524,15 @@ timestamp 1624053471
 transform 1 0 15820 0 1 -9473
 box -16462 -24206 34360 5780
 use div_by_2  div_by_2_0
-timestamp 1624395098
+timestamp 1624396964
 transform -1 0 18034 0 -1 -350
 box -1244 0 4228 3068
 use div_by_5  div_by_5_0
-timestamp 1624395098
+timestamp 1624396964
 transform -1 0 13250 0 1 -3418
 box -556 0 13892 3068
 use ring_osc_buffer  ring_osc_buffer_0
-timestamp 1624395098
+timestamp 1624396964
 transform 1 0 18509 0 1 653
 box 0 0 1963 1270
 use ring_osc  ring_osc_0

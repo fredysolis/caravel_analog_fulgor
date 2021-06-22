@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1624395098
+timestamp 1624397236
 << nwell >>
 rect 14730 660108 64962 661110
 rect 14730 660034 64841 660108
@@ -2924,7 +2924,7 @@ timestamp 1624376995
 transform 1 0 38481 0 1 560871
 box 0 -159 34500 6363
 use top_pll_v1  top_pll_v1_0
-timestamp 1624395098
+timestamp 1624396964
 transform 1 0 14782 0 1 657248
 box -642 -33679 50180 2860
 use sky130_fd_pr__cap_mim_m3_2_2Y8F6P  sky130_fd_pr__cap_mim_m3_2_2Y8F6P_0
@@ -2933,7 +2933,7 @@ timestamp 1624129585
 transform 1 0 74005 0 1 616157
 box -3351 -3261 3373 3261
 use top_pll_v2 *top_pll_v2_0
-timestamp 1624395098
+timestamp 1624396964
 transform -1 0 133068 0 1 657248
 box -642 -33679 50180 2860
 use mimcap_decoup_1x5  mimcap_decoup_1x5_1
@@ -2947,7 +2947,7 @@ timestamp 1624129585
 transform 1 0 144463 0 1 616442
 box -3351 -3261 3373 3261
 use top_pll_v1 *top_pll_v1_1
-timestamp 1624395098
+timestamp 1624396964
 transform -1 0 206380 0 1 656706
 box -642 -33679 50180 2860
 use sky130_fd_pr__cap_mim_m3_2_2Y8F6P  sky130_fd_pr__cap_mim_m3_2_2Y8F6P_2
@@ -2975,7 +2975,7 @@ timestamp 1624376995
 transform 1 0 291410 0 1 559700
 box 0 -159 34500 6363
 use res_amp_top  res_amp_top_0 ~/caravel_analog_fulgor/mag/afernandez_residue_amplifier
-timestamp 1624395098
+timestamp 1624397222
 transform 1 0 349695 0 1 630386
 box -5005 -972 31038 12726
 use mimcap_decoup_1x5  mimcap_decoup_1x5_4
