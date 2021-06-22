@@ -595,6 +595,7 @@ C0 t b 5.78fF
 *C2 b VSUBS 0.09fF
 .ends
 
+
 .subckt csvco_branch vctrl in vbp D0 out vss vdd
 Xsky130_fd_pr__nfet_01v8_7H8F5S_0 vctrl inverter_csvco_0/vss inverter_csvco_0/vss
 + vss vss inverter_csvco_0/vss vss vss inverter_csvco_0/vss vss inverter_csvco_0/vss
@@ -778,6 +779,10 @@ Xpfd_cp_interface_0 vss vdd Down QA QB nDown Up nUp pfd_cp_interface
 XPFD_0 vss vdd QB QA in_ref out_div_by_5 pfd_reset PFD
 .ends
 
+.subckt sky130_fd_pr__cap_mim_m3_2_2Y8F6P VSUBS c2_n3251_n3000# m4_n3351_n3100#
+X0 c2_n3251_n3000# m4_n3351_n3100# sky130_fd_pr__cap_mim_m3_2 l=3e+07u w=3e+07u
+.ends
+
 .subckt sky130_fd_pr__pfet_01v8_lvt_8P223X VSUBS a_n2017_n1317# a_n1731_n1219# a_n1879_n1219#
 + a_n2017_n61# w_n2018_n202#
 X0 a_n1731_n1219# a_n2017_n61# w_n2018_n202# w_n2018_n202# sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=4.5e+06u l=450000u
@@ -832,7 +837,7 @@ X48 a_n1731_n1219# a_n2017_n1317# a_n1879_n1219# w_n2018_n202# sky130_fd_pr__pfe
 X49 a_n1731_n1219# a_n2017_n1317# a_n1879_n1219# w_n2018_n202# sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=4.5e+06u l=450000u
 .ends
 
-.subckt bias VSUBS vdd iref_1 iref_2 iref
+.subckt bias VSUBS vdd iref_0 iref_1 iref_2 iref
 Xsky130_fd_pr__pfet_01v8_lvt_8P223X_5 VSUBS iref m1_20168_984# iref m1_20168_984#
 + vdd sky130_fd_pr__pfet_01v8_lvt_8P223X
 Xsky130_fd_pr__pfet_01v8_lvt_8P223X_6 VSUBS iref sky130_fd_pr__pfet_01v8_lvt_8P223X_6/a_n1731_n1219#
@@ -855,6 +860,14 @@ Xsky130_fd_pr__pfet_01v8_lvt_8P223X_3 VSUBS iref sky130_fd_pr__pfet_01v8_lvt_8P2
 + iref_3 m1_20168_984# vdd sky130_fd_pr__pfet_01v8_lvt_8P223X
 Xsky130_fd_pr__pfet_01v8_lvt_8P223X_4 VSUBS iref sky130_fd_pr__pfet_01v8_lvt_8P223X_4/a_n1731_n1219#
 + iref_4 m1_20168_984# vdd sky130_fd_pr__pfet_01v8_lvt_8P223X
+.ends
+
+.subckt mimcap_decoup_1x5 VSUBS t b
+Xdecap[0] VSUBS t b sky130_fd_pr__cap_mim_m3_2_2Y8F6P
+Xdecap[1] VSUBS t b sky130_fd_pr__cap_mim_m3_2_2Y8F6P
+Xdecap[2] VSUBS t b sky130_fd_pr__cap_mim_m3_2_2Y8F6P
+Xdecap[3] VSUBS t b sky130_fd_pr__cap_mim_m3_2_2Y8F6P
+Xdecap[4] VSUBS t b sky130_fd_pr__cap_mim_m3_2_2Y8F6P
 .ends
 
 .subckt sky130_fd_pr__cap_mim_m3_1_WHJTNJ VSUBS m3_n4309_50# m3_n4309_n4250# c1_n4209_n4150#
@@ -1004,7 +1017,54 @@ XPFD_0 vss vdd QB QA in_ref out_div_by_5 pfd_reset PFD
 *+ wbs_dat_o[9] wbs_sel_i[0] wbs_sel_i[1] wbs_sel_i[2] wbs_sel_i[3] wbs_stb_i wbs_we_i
 Xtop_pll_v1_0 vdda1 io_analog[10] vssa1 vssa1 gpio_noesd[7] bias_0/iref_2 io_analog[9]
 + top_pll_v1
-Xbias_0 vssa1 vdda1 bias_0/iref_1 bias_0/iref_2 io_analog[5] bias
+Xtop_pll_v1_1 vdda1 io_analog[10] vssa1 vssa1 gpio_noesd[7] bias_0/iref_0 io_analog[7]
++ top_pll_v1
+Xsky130_fd_pr__cap_mim_m3_2_2Y8F6P_0[0] vssa1 vdda1 vssa1 sky130_fd_pr__cap_mim_m3_2_2Y8F6P
+Xsky130_fd_pr__cap_mim_m3_2_2Y8F6P_0[1] vssa1 vdda1 vssa1 sky130_fd_pr__cap_mim_m3_2_2Y8F6P
+Xsky130_fd_pr__cap_mim_m3_2_2Y8F6P_0[2] vssa1 vdda1 vssa1 sky130_fd_pr__cap_mim_m3_2_2Y8F6P
+Xsky130_fd_pr__cap_mim_m3_2_2Y8F6P_0[3] vssa1 vdda1 vssa1 sky130_fd_pr__cap_mim_m3_2_2Y8F6P
+Xsky130_fd_pr__cap_mim_m3_2_2Y8F6P_0[4] vssa1 vdda1 vssa1 sky130_fd_pr__cap_mim_m3_2_2Y8F6P
+Xsky130_fd_pr__cap_mim_m3_2_2Y8F6P_0[5] vssa1 vdda1 vssa1 sky130_fd_pr__cap_mim_m3_2_2Y8F6P
+Xsky130_fd_pr__cap_mim_m3_2_2Y8F6P_0[6] vssa1 vdda1 vssa1 sky130_fd_pr__cap_mim_m3_2_2Y8F6P
+Xsky130_fd_pr__cap_mim_m3_2_2Y8F6P_0[7] vssa1 vdda1 vssa1 sky130_fd_pr__cap_mim_m3_2_2Y8F6P
+Xsky130_fd_pr__cap_mim_m3_2_2Y8F6P_0[8] vssa1 vdda1 vssa1 sky130_fd_pr__cap_mim_m3_2_2Y8F6P
+Xbias_0 vssa1 vdda1 bias_0/iref_0 bias_0/iref_1 bias_0/iref_2 io_analog[5] bias
+Xsky130_fd_pr__cap_mim_m3_2_2Y8F6P_1[0] vssa1 vdda1 vssa1 sky130_fd_pr__cap_mim_m3_2_2Y8F6P
+Xsky130_fd_pr__cap_mim_m3_2_2Y8F6P_1[1] vssa1 vdda1 vssa1 sky130_fd_pr__cap_mim_m3_2_2Y8F6P
+Xsky130_fd_pr__cap_mim_m3_2_2Y8F6P_1[2] vssa1 vdda1 vssa1 sky130_fd_pr__cap_mim_m3_2_2Y8F6P
+Xsky130_fd_pr__cap_mim_m3_2_2Y8F6P_1[3] vssa1 vdda1 vssa1 sky130_fd_pr__cap_mim_m3_2_2Y8F6P
+Xsky130_fd_pr__cap_mim_m3_2_2Y8F6P_1[4] vssa1 vdda1 vssa1 sky130_fd_pr__cap_mim_m3_2_2Y8F6P
+Xsky130_fd_pr__cap_mim_m3_2_2Y8F6P_1[5] vssa1 vdda1 vssa1 sky130_fd_pr__cap_mim_m3_2_2Y8F6P
+Xsky130_fd_pr__cap_mim_m3_2_2Y8F6P_1[6] vssa1 vdda1 vssa1 sky130_fd_pr__cap_mim_m3_2_2Y8F6P
+Xsky130_fd_pr__cap_mim_m3_2_2Y8F6P_1[7] vssa1 vdda1 vssa1 sky130_fd_pr__cap_mim_m3_2_2Y8F6P
+Xsky130_fd_pr__cap_mim_m3_2_2Y8F6P_1[8] vssa1 vdda1 vssa1 sky130_fd_pr__cap_mim_m3_2_2Y8F6P
+Xmimcap_decoup_1x5_0[0] vssa1 vdda1 vssa1 mimcap_decoup_1x5
+Xmimcap_decoup_1x5_0[1] vssa1 vdda1 vssa1 mimcap_decoup_1x5
+Xmimcap_decoup_1x5_0[2] vssa1 vdda1 vssa1 mimcap_decoup_1x5
+Xmimcap_decoup_1x5_1[0] vssa1 vdda1 vssa1 mimcap_decoup_1x5
+Xmimcap_decoup_1x5_1[1] vssa1 vdda1 vssa1 mimcap_decoup_1x5
+Xmimcap_decoup_1x5_1[2] vssa1 vdda1 vssa1 mimcap_decoup_1x5
+Xsky130_fd_pr__cap_mim_m3_2_2Y8F6P_2[0] vssa1 vdda1 vssa1 sky130_fd_pr__cap_mim_m3_2_2Y8F6P
+Xsky130_fd_pr__cap_mim_m3_2_2Y8F6P_2[1] vssa1 vdda1 vssa1 sky130_fd_pr__cap_mim_m3_2_2Y8F6P
+Xsky130_fd_pr__cap_mim_m3_2_2Y8F6P_2[2] vssa1 vdda1 vssa1 sky130_fd_pr__cap_mim_m3_2_2Y8F6P
+Xsky130_fd_pr__cap_mim_m3_2_2Y8F6P_2[3] vssa1 vdda1 vssa1 sky130_fd_pr__cap_mim_m3_2_2Y8F6P
+Xsky130_fd_pr__cap_mim_m3_2_2Y8F6P_2[4] vssa1 vdda1 vssa1 sky130_fd_pr__cap_mim_m3_2_2Y8F6P
+Xsky130_fd_pr__cap_mim_m3_2_2Y8F6P_2[5] vssa1 vdda1 vssa1 sky130_fd_pr__cap_mim_m3_2_2Y8F6P
+Xsky130_fd_pr__cap_mim_m3_2_2Y8F6P_2[6] vssa1 vdda1 vssa1 sky130_fd_pr__cap_mim_m3_2_2Y8F6P
+Xsky130_fd_pr__cap_mim_m3_2_2Y8F6P_2[7] vssa1 vdda1 vssa1 sky130_fd_pr__cap_mim_m3_2_2Y8F6P
+Xsky130_fd_pr__cap_mim_m3_2_2Y8F6P_2[8] vssa1 vdda1 vssa1 sky130_fd_pr__cap_mim_m3_2_2Y8F6P
+Xmimcap_decoup_1x5_2[0] vssa1 vdda1 vssa1 mimcap_decoup_1x5
+Xmimcap_decoup_1x5_2[1] vssa1 vdda1 vssa1 mimcap_decoup_1x5
+Xmimcap_decoup_1x5_2[2] vssa1 vdda1 vssa1 mimcap_decoup_1x5
+Xmimcap_decoup_1x5_3[0] vssa1 vdda1 vssa1 mimcap_decoup_1x5
+Xmimcap_decoup_1x5_3[1] vssa1 vdda1 vssa1 mimcap_decoup_1x5
+Xmimcap_decoup_1x5_3[2] vssa1 vdda1 vssa1 mimcap_decoup_1x5
+Xmimcap_decoup_1x5_4[0] vssa1 vdda1 vssa1 mimcap_decoup_1x5
+Xmimcap_decoup_1x5_4[1] vssa1 vdda1 vssa1 mimcap_decoup_1x5
+Xmimcap_decoup_1x5_4[2] vssa1 vdda1 vssa1 mimcap_decoup_1x5
+Xmimcap_decoup_1x5_5[0] vssa1 vdda1 vssa1 mimcap_decoup_1x5
+Xmimcap_decoup_1x5_5[1] vssa1 vdda1 vssa1 mimcap_decoup_1x5
+Xmimcap_decoup_1x5_5[2] vssa1 vdda1 vssa1 mimcap_decoup_1x5
 Xtop_pll_v2_0 vdda1 io_analog[10] vssa1 vssa1 gpio_noesd[7] bias_0/iref_1 gpio_noesd[8]
 + io_analog[8] top_pll_v2
 .ends
