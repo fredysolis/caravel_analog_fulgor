@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1624119678
+timestamp 1624395098
 << nwell >>
 rect 19730 11269 20704 12071
 rect 19753 11233 20704 11269
@@ -450,15 +450,19 @@ rect 19282 10325 19283 10465
 rect 19485 10325 19486 10465
 rect 19282 10324 19486 10325
 rect 19283 10315 19485 10324
-use res_amp_lin  res_amp_lin_0 ~/sky130-mpw2-fulgor/res_amp_lin/mag
+use inverter_min_x4  inverter_min_x4_0
+timestamp 1624049879
+transform 1 0 18411 0 -1 8928
+box -53 -616 665 643
+use res_amp_lin  res_amp_lin_0
 timestamp 1624115960
 transform 1 0 13177 0 1 11829
 box 1054 -2058 5121 915
-use delay_cell_buff  delay_cell_buff_0 ~/sky130-mpw2-fulgor/delay_cell_buff/mag
+use delay_cell_buff  delay_cell_buff_0
 timestamp 1624063007
 transform 1 0 6173 0 1 7077
 box -208 0 11816 2601
-use sky130_fd_pr__nfet_01v8_lvt_72JNYZ  sky130_fd_pr__nfet_01v8_lvt_72JNYZ_0 ~/sky130-mpw2-fulgor/iref_ctrl_res_amp/mag
+use sky130_fd_pr__nfet_01v8_lvt_72JNYZ  sky130_fd_pr__nfet_01v8_lvt_72JNYZ_0
 timestamp 1624032293
 transform 1 0 20195 0 -1 9465
 box -311 -310 311 310
@@ -466,10 +470,6 @@ use sky130_fd_pr__nfet_01v8_lvt_595QY5  sky130_fd_pr__nfet_01v8_lvt_595QY5_0
 timestamp 1624030292
 transform 1 0 20214 0 1 10085
 box -407 -310 407 310
-use inverter_min_x4  inverter_min_x4_0 ~/sky130-mpw2-fulgor/inverter_min_x4/mag
-timestamp 1623895985
-transform 1 0 18411 0 -1 8928
-box -53 -616 665 643
 use sky130_fd_pr__nfet_01v8_lvt_72JNYZ  sky130_fd_pr__nfet_01v8_lvt_72JNYZ_1
 timestamp 1624032293
 transform 1 0 20195 0 1 13001
@@ -486,7 +486,7 @@ use sky130_fd_pr__nfet_01v8_lvt_595QY5  sky130_fd_pr__nfet_01v8_lvt_595QY5_1
 timestamp 1624030292
 transform 1 0 20214 0 -1 12381
 box -407 -310 407 310
-use iref_ctrl_res_amp  iref_ctrl_res_amp_0 ~/sky130-mpw2-fulgor/iref_ctrl_res_amp/mag
+use iref_ctrl_res_amp  iref_ctrl_res_amp_0
 timestamp 1624113259
 transform 1 0 15406 0 -1 14113
 box -586 -686 2888 1369

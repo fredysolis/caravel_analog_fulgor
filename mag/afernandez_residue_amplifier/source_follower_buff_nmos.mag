@@ -870,7 +870,7 @@ rect 5928 -85 5994 133
 rect 5928 -503 5994 -285
 rect 5928 -921 5994 -703
 rect 5928 -1131 5994 -1121
-use sky130_fd_pr__nfet_01v8_lvt_9B2JY7  sky130_fd_pr__nfet_01v8_lvt_9B2JY7_0 ~/sky130-mpw2-fulgor/iref_ctrl_res_amp/mag
+use sky130_fd_pr__nfet_01v8_lvt_9B2JY7  sky130_fd_pr__nfet_01v8_lvt_9B2JY7_0 
 timestamp 1624020979
 transform 1 0 791 0 1 -1029
 box -455 -310 455 310

@@ -381,7 +381,7 @@ rect 11734 503 11744 559
 rect 11805 503 11815 559
 rect 11734 498 11815 503
 rect 85 52 11012 112
-use mux_2to1_logic  mux_2to1_logic_1 ~/sky130-mpw2-fulgor/mux_2to1_logic/mag
+use mux_2to1_logic  mux_2to1_logic_1 
 timestamp 1624063007
 transform 1 0 1949 0 -1 1770
 box -475 -633 999 607
@@ -389,7 +389,7 @@ use mux_2to1_logic  mux_2to1_logic_0
 timestamp 1624063007
 transform 1 0 475 0 -1 1770
 box -475 -633 999 607
-use buffer_no_inv_x05  buffer_no_inv_x05_0 ~/sky130-mpw2-fulgor/buffer_no_inv_x05/mag
+use buffer_no_inv_x05  buffer_no_inv_x05_0 
 timestamp 1624038785
 transform 1 0 -10 0 1 -10
 box 10 10 854 1173
@@ -465,7 +465,7 @@ use buffer_no_inv_x05  buffer_no_inv_x05_13
 timestamp 1624038785
 transform 1 0 10962 0 1 -10
 box 10 10 854 1173
-use nand_logic  nand_logic_0 ~/sky130-mpw2-fulgor/nand_logic/mag
+use nand_logic  nand_logic_0 
 timestamp 1623952422
 transform 1 0 10695 0 -1 1870
 box -219 -731 833 707

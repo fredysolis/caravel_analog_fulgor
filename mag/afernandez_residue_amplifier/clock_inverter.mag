@@ -64,7 +64,7 @@ rect 520 154 724 159
 rect 520 40 530 154
 rect 714 40 724 154
 rect 520 35 724 40
-use inverter_cp_x1 *inverter_cp_x1_1 ~/sky130-mpw2-fulgor/inverter_cp_x1/mag
+use inverter_cp_x1 *inverter_cp_x1_1 
 timestamp 1623798692
 transform 1 0 0 0 1 2292
 box 0 -758 622 776
@@ -76,7 +76,7 @@ use inverter_cp_x1 *inverter_cp_x1_0
 timestamp 1623798692
 transform 1 0 0 0 -1 776
 box 0 -758 622 776
-use trans_gate *trans_gate_0 ~/sky130-mpw2-fulgor/trans_gate/mag
+use trans_gate *trans_gate_0 
 timestamp 1623610677
 transform 1 0 675 0 -1 723
 box -53 -811 569 723

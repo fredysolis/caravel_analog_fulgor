@@ -11,7 +11,7 @@ rect 418 49 443 75
 << metal2 >>
 rect 14 526 39 552
 rect 823 529 848 555
-use inverter_min  inverter_min_1 ~/sky130-mpw2-fulgor/inverter_min/mag
+use inverter_min  inverter_min_1
 timestamp 1624038681
 transform 1 0 485 0 1 -6
 box -53 16 369 1179

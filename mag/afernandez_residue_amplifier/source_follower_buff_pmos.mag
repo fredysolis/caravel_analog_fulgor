@@ -217,7 +217,7 @@ use sky130_fd_pr__pfet_01v8_lvt_D3F744  sky130_fd_pr__pfet_01v8_lvt_D3F744_0
 timestamp 1623976832
 transform 1 0 2584 0 1 185
 box -807 -384 807 384
-use sky130_fd_pr__nfet_01v8_lvt_9B2JY7  sky130_fd_pr__nfet_01v8_lvt_9B2JY7_0 ~/sky130-mpw2-fulgor/iref_ctrl_res_amp/mag
+use sky130_fd_pr__nfet_01v8_lvt_9B2JY7  sky130_fd_pr__nfet_01v8_lvt_9B2JY7_0 
 timestamp 1624020979
 transform 1 0 404 0 1 259
 box -455 -310 455 310

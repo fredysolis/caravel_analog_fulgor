@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1624120204
+timestamp 1624395098
 << nwell >>
 rect 3636 6239 4733 7015
 rect 7538 6935 8332 7015
@@ -352,56 +352,56 @@ rect -92 -1313 2667 -1241
 rect 2926 -1313 5650 -1241
 rect 5909 -1313 5910 -1241
 rect -92 -1314 5910 -1313
-use DFlipFlop  DFlipFlop_4 ~/sky130-mpw2-fulgor/DFlipFlop/mag
-timestamp 1623898709
-transform 1 0 4910 0 -1 879
-box -1244 0 1740 3068
-use DFlipFlop  DFlipFlop_3
-timestamp 1623898709
-transform 1 0 1926 0 -1 879
-box -1244 0 1740 3068
 use DFlipFlop  DFlipFlop_2
-timestamp 1623898709
+timestamp 1624049879
 transform 1 0 1926 0 1 879
 box -1244 0 1740 3068
-use nand_logic  nand_logic_0 ~/sky130-mpw2-fulgor/nand_logic/mag
+use DFlipFlop  DFlipFlop_3
+timestamp 1624049879
+transform 1 0 1926 0 -1 879
+box -1244 0 1740 3068
+use DFlipFlop  DFlipFlop_4
+timestamp 1624049879
+transform 1 0 4910 0 -1 879
+box -1244 0 1740 3068
+use nand_logic  nand_logic_0
 timestamp 1623952422
 transform 1 0 3885 0 1 3205
 box -219 -731 833 707
 use DFlipFlop  DFlipFlop_0
-timestamp 1623898709
+timestamp 1624049879
 transform 1 0 1926 0 1 3947
 box -1244 0 1740 3068
-use inverter_min_x4  inverter_min_x4_4 ~/sky130-mpw2-fulgor/inverter_min_x4/mag
-timestamp 1623895985
-transform 1 0 4115 0 -1 1602
-box -53 -616 665 643
-use inverter_min_x16  inverter_min_x16_0 ~/sky130-mpw2-fulgor/inverter_min_x16/mag
+use inverter_min_x16  inverter_min_x16_0
 timestamp 1624046389
 transform 1 0 4833 0 -1 1602
 box -53 -616 1817 643
-use inverter_min_x4  inverter_min_x4_3
-timestamp 1623895985
-transform 1 0 6541 0 1 3224
-box -53 -616 665 643
 use nand_logic  nand_logic_1
 timestamp 1623952422
 transform 1 0 5655 0 1 3205
 box -219 -731 833 707
 use inverter_min_x4  inverter_min_x4_1
-timestamp 1623895985
+timestamp 1624049879
 transform 1 0 4771 0 1 3224
 box -53 -616 665 643
+use inverter_min_x4  inverter_min_x4_3
+timestamp 1624049879
+transform 1 0 6541 0 1 3224
+box -53 -616 665 643
+use inverter_min_x4  inverter_min_x4_4
+timestamp 1624049879
+transform 1 0 4115 0 -1 1602
+box -53 -616 665 643
 use DFlipFlop  DFlipFlop_1
-timestamp 1623898709
+timestamp 1624049879
 transform 1 0 5798 0 1 3947
 box -1244 0 1740 3068
 use inverter_min_x4  inverter_min_x4_0
-timestamp 1623895985
+timestamp 1624049879
 transform 1 0 3795 0 1 6292
 box -53 -616 665 643
 use inverter_min_x4  inverter_min_x4_2
-timestamp 1623895985
+timestamp 1624049879
 transform 1 0 7667 0 1 6292
 box -53 -616 665 643
 << labels >>

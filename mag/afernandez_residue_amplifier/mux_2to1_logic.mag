@@ -143,7 +143,7 @@ use sky130_fd_pr__pfet_01v8_XA7ZMQ  sky130_fd_pr__pfet_01v8_XA7ZMQ_0
 timestamp 1623900471
 transform 1 0 210 0 1 277
 box -263 -330 263 330
-use inverter_min  inverter_min_0 ~/sky130-mpw2-fulgor/inverter_min/mag
+use inverter_min  inverter_min_0 
 timestamp 1624038681
 transform 1 0 -422 0 1 -600
 box -53 16 369 1179

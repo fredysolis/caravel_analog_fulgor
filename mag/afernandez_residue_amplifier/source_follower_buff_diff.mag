@@ -62,11 +62,11 @@ rect 2752 2001 2762 2057
 rect 2818 2001 2828 2057
 rect 2752 1460 2828 2001
 rect 863 1384 2828 1460
-use source_follower_buff_nmos  source_follower_buff_nmos_1 ~/sky130-mpw2-fulgor/source_follower_buff_nmos/mag
+use source_follower_buff_nmos  source_follower_buff_nmos_1
 timestamp 1624043228
 transform 1 0 3483 0 -1 4622
 box 336 -1409 7209 1545
-use source_follower_buff_pmos  source_follower_buff_pmos_1 ~/sky130-mpw2-fulgor/source_follower_buff_pmos/mag
+use source_follower_buff_pmos  source_follower_buff_pmos_1
 timestamp 1624113565
 transform 1 0 1078 0 -1 4373
 box -51 -311 3503 1296
