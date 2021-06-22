@@ -62,10 +62,22 @@
 x1 iref_cp2 vssa1 vdda1 net13 net12 net6 net1 net5 io_analog[10] io_analog[9] net4 net7 net2
 + gpio_noesd[7] net11 net14 net8 net9 net3 net10 net20 net15 net27 net21 net23 net25 net24 net18 net19 net22 net17
 + net26 net16 net28 top_pll_v1
-x2 vdda1 io_analog[5] net29 iref_cp1 iref_cp2 net30 net31 net32 net33 net34 net35 net36 bias
-x3 iref_cp1 vssa1 vdda1 net49 net48 net42 net37 net41 io_analog[10] io_analog[8] net40 net43 net38
-+ gpio_noesd[7] net47 net50 net44 net45 net39 net46 net56 net51 net63 net57 net59 net61 net60 net54 net55 net58
-+ net53 net62 net52 net64 gpio_noesd[8] top_pll_v2
+x2 vdda1 io_analog[5] iref_cp0 iref_cp1 iref_cp2 net29 net30 net31 net32 net33 net34 net35 bias
+x3 iref_cp1 vssa1 vdda1 net48 net47 net41 net36 net40 io_analog[10] io_analog[8] net39 net42 net37
++ gpio_noesd[7] net46 net49 net43 net44 net38 net45 net55 net50 net62 net56 net58 net60 net59 net53 net54 net57
++ net52 net61 net51 net63 gpio_noesd[8] top_pll_v2
+x4 iref_cp0 vssa1 vdda1 net76 net75 net69 net64 net68 io_analog[10] io_analog[7] net67 net70 net65
++ gpio_noesd[7] net74 net77 net71 net72 net66 net73 net83 net78 net90 net84 net86 net88 net87 net81 net82 net85
++ net80 net89 net79 net91 top_pll_v1
+XC1 vdda1 vssa1 sky130_fd_pr__cap_mim_m3_2 W=30 L=30 MF=9 m=9
+XC2 vdda1 vssa1 sky130_fd_pr__cap_mim_m3_2 W=30 L=30 MF=9 m=9
+XC3 vdda1 vssa1 sky130_fd_pr__cap_mim_m3_2 W=30 L=30 MF=9 m=9
+XC4 vdda1 vssa1 sky130_fd_pr__cap_mim_m3_2 W=30 L=30 MF=15 m=15
+XC5 vdda1 vssa1 sky130_fd_pr__cap_mim_m3_2 W=30 L=30 MF=15 m=15
+XC6 vdda1 vssa1 sky130_fd_pr__cap_mim_m3_2 W=30 L=30 MF=15 m=15
+XC7 vdda1 vssa1 sky130_fd_pr__cap_mim_m3_2 W=30 L=30 MF=15 m=15
+XC8 vdda1 vssa1 sky130_fd_pr__cap_mim_m3_2 W=30 L=30 MF=15 m=15
+XC9 vdda1 vssa1 sky130_fd_pr__cap_mim_m3_2 W=30 L=30 MF=15 m=15
 **.ends
 
 * expanding   symbol:  top_pll_v1.sym # of pins=34
