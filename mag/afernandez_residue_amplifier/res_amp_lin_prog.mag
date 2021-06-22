@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1624397222
+timestamp 1624402156
 << nwell >>
 rect 19730 11269 20704 12071
 rect 19753 11233 20704 11269
@@ -458,7 +458,7 @@ rect 19485 10325 19486 10465
 rect 19282 10324 19486 10325
 rect 19283 10315 19485 10324
 use inverter_min_x4  inverter_min_x4_0
-timestamp 1623895985
+timestamp 1624049879
 transform 1 0 18411 0 -1 8928
 box -53 -616 665 643
 use res_amp_lin  res_amp_lin_0
