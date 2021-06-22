@@ -1,0 +1,78 @@
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_AQR2CW in circuit inverter_csvco (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_HRYSXS in circuit inverter_csvco (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_CBSTVW in circuit csvco_branch_v2 (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_MJP3BN in circuit csvco_branch_v2 (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_EDT3AT in circuit csvco_branch_v2 (0)(1 instance)
+Flattening unmatched subcell cap_vco in circuit csvco_branch_v2 (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_CBAU6Y in circuit mag/extractions/ring_osc_v2_lvs.spice (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_4757AC in circuit mag/extractions/ring_osc_v2_lvs.spice (0)(1 instance)
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+
+Subcircuit summary:
+Circuit 1: inverter_csvco                  |Circuit 2: inverter_csvco                  
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (1)                |sky130_fd_pr__nfet_01v8 (1)                
+sky130_fd_pr__pfet_01v8 (1)                |sky130_fd_pr__pfet_01v8 (1)                
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 6                          |Number of nets: 6                          
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: inverter_csvco                  |Circuit 2: inverter_csvco                  
+-------------------------------------------|-------------------------------------------
+vss                                        |vss                                        
+vbulkn                                     |vbulkn                                     
+vdd                                        |vdd                                        
+vbulkp                                     |vbulkp                                     
+out                                        |out                                        
+in                                         |in                                         
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes inverter_csvco and inverter_csvco are equivalent.
+
+Subcircuit summary:
+Circuit 1: csvco_branch_v2                 |Circuit 2: csvco_branch_v2                 
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (2)                |sky130_fd_pr__nfet_01v8 (2)                
+sky130_fd_pr__pfet_01v8 (1)                |sky130_fd_pr__pfet_01v8 (1)                
+inverter_csvco (1)                         |inverter_csvco (1)                         
+c (1)                                      |c (1)                                      
+Number of devices: 5                       |Number of devices: 5                       
+Number of nets: 10                         |Number of nets: 10                         
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: csvco_branch_v2                 |Circuit 2: csvco_branch_v2                 
+-------------------------------------------|-------------------------------------------
+vdd                                        |vdd                                        
+vss                                        |vss                                        
+m1_185_1641#                               |vbp **Mismatch**                           
+vctrl                                      |vctrl                                      
+D0                                         |D0                                         
+in                                         |in                                         
+out                                        |out                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes csvco_branch_v2 and csvco_branch_v2 are equivalent.
+
+Subcircuit summary:
+Circuit 1: mag/extractions/ring_osc_v2_lvs |Circuit 2: xschem/simulations/csvco_v2.spi 
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (1)                |sky130_fd_pr__nfet_01v8 (1)                
+csvco_branch_v2 (3)                        |csvco_branch_v2 (3)                        
+sky130_fd_pr__pfet_01v8 (1)                |sky130_fd_pr__pfet_01v8 (1)                
+Number of devices: 5                       |Number of devices: 5                       
+Number of nets: 8                          |Number of nets: 8                          
+---------------------------------------------------------------------------------------
+Resolving automorphisms by property value.
+Resolving automorphisms by pin name.
+Netlists match with 2 symmetries.
+Circuits match correctly.
+Cells have no pins;  pin matching not needed.
+Device classes mag/extractions/ring_osc_v2_lvs.spice and xschem/simulations/csvco_v2.spice are equivalent.
+Circuits match uniquely.
