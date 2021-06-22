@@ -1,0 +1,43 @@
+* NGSPICE file created from csvco_branch_v2.ext - technology: sky130A
+
+.subckt sky130_fd_pr__nfet_01v8_CBSTVW a_n73_n119# a_n33_n207# w_n211_n329# a_15_n119#
+X0 a_15_n119# a_n33_n207# a_n73_n119# w_n211_n329# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=150000u
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_MJP3BN VSUBS a_15_n186# w_n211_n334# a_n33_145# a_n73_n186#
+X0 a_15_n186# a_n33_145# a_n73_n186# w_n211_n334# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=150000u
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_EDT3AT a_15_n11# a_n33_n99# w_n211_n221# a_n73_n11#
+X0 a_15_n11# a_n33_n99# a_n73_n11# w_n211_n221# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=420000u l=150000u
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_AQR2CW a_n33_66# a_n78_n106# w_n216_n254# a_20_n106#
+X0 a_20_n106# a_n33_66# a_n78_n106# w_n216_n254# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=750000u l=200000u
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_HRYSXS VSUBS a_n33_n211# a_n78_n114# w_n216_n334#
++ a_20_n114#
+X0 a_20_n114# a_n33_n211# a_n78_n114# w_n216_n334# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=200000u
+.ends
+
+.subckt inverter_csvco in vbulkn out vbulkp vdd vss
+Xsky130_fd_pr__nfet_01v8_AQR2CW_0 in vss vbulkn out sky130_fd_pr__nfet_01v8_AQR2CW
+Xsky130_fd_pr__pfet_01v8_HRYSXS_0 vbulkn in vdd vbulkp out sky130_fd_pr__pfet_01v8_HRYSXS
+.ends
+
+.subckt cap_vco t b VSUBS
+C0 t b 5.78fF
+*C1 t VSUBS 0.42fF
+*C2 b VSUBS 0.09fF
+.ends
+
+* Top level circuit csvco_branch_v2
+
+Xsky130_fd_pr__nfet_01v8_CBSTVW_0 inverter_csvco_0/vss vctrl vss vss sky130_fd_pr__nfet_01v8_CBSTVW
+Xsky130_fd_pr__pfet_01v8_MJP3BN_0 vss vdd vdd m1_185_1641# inverter_csvco_0/vdd sky130_fd_pr__pfet_01v8_MJP3BN
+Xsky130_fd_pr__nfet_01v8_EDT3AT_0 cap_vco_0/t D0 vss out sky130_fd_pr__nfet_01v8_EDT3AT
+Xinverter_csvco_0 in vss out vdd inverter_csvco_0/vdd inverter_csvco_0/vss inverter_csvco
+Xcap_vco_0 cap_vco_0/t vss vss cap_vco
+.end
+

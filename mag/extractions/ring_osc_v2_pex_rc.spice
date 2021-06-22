@@ -1,0 +1,169 @@
+* NGSPICE file created from ring_osc_v2.ext - technology: sky130A
+
+.subckt sky130_fd_pr__nfet_01v8_CBAU6Y a_n73_n150# a_n33_n238# w_n211_n360# a_15_n150#
+X0 a_15_n150# a_n33_n238# a_n73_n150# w_n211_n360# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=150000u
+C0 a_n73_n150# a_n33_n238# 0.02fF
+C1 a_15_n150# a_n73_n150# 0.51fF
+C2 a_15_n150# a_n33_n238# 0.02fF
+C3 a_15_n150# w_n211_n360# 0.23fF
+C4 a_n73_n150# w_n211_n360# 0.23fF
+C5 a_n33_n238# w_n211_n360# 0.17fF
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_CBSTVW a_n73_n119# a_n33_n207# w_n211_n329# a_15_n119#
+X0 a_15_n119# a_n33_n207# a_n73_n119# w_n211_n329# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=150000u
+C0 a_n73_n119# a_n33_n207# 0.02fF
+C1 a_15_n119# a_n73_n119# 0.51fF
+C2 a_15_n119# a_n33_n207# 0.02fF
+C3 a_15_n119# w_n211_n329# 0.24fF
+C4 a_n73_n119# w_n211_n329# 0.24fF
+C5 a_n33_n207# w_n211_n329# 0.17fF
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_MJP3BN VSUBS a_15_n186# w_n211_n334# a_n33_145# a_n73_n186#
+X0 a_15_n186# a_n33_145# a_n73_n186# w_n211_n334# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=150000u
+C0 a_n33_145# w_n211_n334# 0.05fF
+C1 a_15_n186# a_n73_n186# 0.51fF
+C2 a_n73_n186# a_n33_145# 0.01fF
+C3 a_15_n186# a_n33_145# 0.01fF
+C4 a_n73_n186# w_n211_n334# 0.21fF
+C5 a_15_n186# w_n211_n334# 0.21fF
+C6 a_15_n186# VSUBS 0.03fF
+C7 a_n73_n186# VSUBS 0.03fF
+C8 a_n33_145# VSUBS 0.12fF
+C9 w_n211_n334# VSUBS 1.81fF
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_EDT3AT a_15_n11# a_n33_n99# w_n211_n221# a_n73_n11#
+X0 a_15_n11# a_n33_n99# a_n73_n11# w_n211_n221# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=420000u l=150000u
+C0 a_n73_n11# a_n33_n99# 0.02fF
+C1 a_15_n11# a_n73_n11# 0.15fF
+C2 a_15_n11# a_n33_n99# 0.02fF
+C3 a_15_n11# w_n211_n221# 0.09fF
+C4 a_n73_n11# w_n211_n221# 0.09fF
+C5 a_n33_n99# w_n211_n221# 0.17fF
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_AQR2CW a_n33_66# a_n78_n106# w_n216_n254# a_20_n106#
+X0 a_20_n106# a_n33_66# a_n78_n106# w_n216_n254# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=750000u l=200000u
+C0 a_20_n106# a_n78_n106# 0.21fF
+C1 a_20_n106# w_n216_n254# 0.14fF
+C2 a_n78_n106# w_n216_n254# 0.14fF
+C3 a_n33_66# w_n216_n254# 0.12fF
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_HRYSXS VSUBS a_n33_n211# a_n78_n114# w_n216_n334#
++ a_20_n114#
+X0 a_20_n114# a_n33_n211# a_n78_n114# w_n216_n334# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=200000u
+C0 a_20_n114# a_n78_n114# 0.42fF
+C1 a_n78_n114# w_n216_n334# 0.20fF
+C2 a_20_n114# w_n216_n334# 0.20fF
+C3 a_20_n114# VSUBS 0.03fF
+C4 a_n78_n114# VSUBS 0.03fF
+C5 a_n33_n211# VSUBS 0.12fF
+C6 w_n216_n334# VSUBS 1.66fF
+.ends
+
+.subckt inverter_csvco in vbulkn out vbulkp vdd vss
+Xsky130_fd_pr__nfet_01v8_AQR2CW_0 in vss vbulkn out sky130_fd_pr__nfet_01v8_AQR2CW
+Xsky130_fd_pr__pfet_01v8_HRYSXS_0 vbulkn in vdd vbulkp out sky130_fd_pr__pfet_01v8_HRYSXS
+C0 in vdd 0.01fF
+C1 out vbulkp 0.08fF
+C2 in out 0.11fF
+C3 vdd vbulkp 0.04fF
+C4 in vss 0.01fF
+C5 vbulkp vbulkn 2.49fF
+C6 out vbulkn 0.60fF
+C7 vdd vbulkn 0.06fF
+C8 in vbulkn 0.54fF
+C9 vss vbulkn 0.17fF
+.ends
+
+.subckt csvco_branch_v2 vctrl in cap_vco_0/t D0 out m1_185_1641# vss vdd inverter_csvco_0/vss
+Xsky130_fd_pr__nfet_01v8_CBSTVW_0 inverter_csvco_0/vss vctrl vss vss sky130_fd_pr__nfet_01v8_CBSTVW
+Xsky130_fd_pr__pfet_01v8_MJP3BN_0 vss vdd vdd m1_185_1641# inverter_csvco_0/vdd sky130_fd_pr__pfet_01v8_MJP3BN
+Xsky130_fd_pr__nfet_01v8_EDT3AT_0 cap_vco_0/t D0 vss out sky130_fd_pr__nfet_01v8_EDT3AT
+Xinverter_csvco_0 in vss out vdd inverter_csvco_0/vdd inverter_csvco_0/vss inverter_csvco
+C0 out in 0.06fF
+C1 out inverter_csvco_0/vss 0.03fF
+C2 vctrl cap_vco_0/t 0.03fF
+C3 vdd inverter_csvco_0/vdd 0.97fF
+C4 out inverter_csvco_0/vdd 0.02fF
+C5 out D0 0.09fF
+C6 vdd out 0.03fF
+C7 vctrl inverter_csvco_0/vss 0.23fF
+C8 inverter_csvco_0/vdd m1_185_1641# 0.13fF
+C9 vdd m1_185_1641# 0.48fF
+C10 inverter_csvco_0/vss cap_vco_0/t 0.12fF
+C11 in inverter_csvco_0/vss 0.01fF
+C12 D0 cap_vco_0/t 0.18fF
+C13 out cap_vco_0/t 0.11fF
+C14 inverter_csvco_0/vdd in 0.01fF
+C15 D0 inverter_csvco_0/vss 0.01fF
+C16 vdd vss 3.58fF
+C17 out vss 0.87fF
+C18 inverter_csvco_0/vdd vss 0.14fF
+C19 in vss 0.70fF
+C20 inverter_csvco_0/vss vss 0.72fF
+C21 D0 vss -0.49fF
+C22 m1_185_1641# vss -0.03fF
+C23 cap_vco_0/t vss 8.30fF
+C24 vctrl vss 0.44fF
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_4757AC VSUBS a_n73_n150# a_n33_181# w_n211_n369# a_15_n150#
+X0 a_15_n150# a_n33_181# a_n73_n150# w_n211_n369# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=150000u
+C0 a_n33_181# w_n211_n369# 0.05fF
+C1 a_n73_n150# w_n211_n369# 0.20fF
+C2 a_15_n150# w_n211_n369# 0.20fF
+C3 a_n73_n150# a_n33_181# 0.01fF
+C4 a_n33_181# a_15_n150# 0.01fF
+C5 a_n73_n150# a_15_n150# 0.51fF
+C6 a_15_n150# VSUBS 0.03fF
+C7 a_n73_n150# VSUBS 0.03fF
+C8 a_n33_181# VSUBS 0.13fF
+C9 w_n211_n369# VSUBS 1.98fF
+.ends
+
+
+* Top level circuit ring_osc_v2
+
+Xsky130_fd_pr__nfet_01v8_CBAU6Y_0 vss vctrl vss vbp sky130_fd_pr__nfet_01v8_CBAU6Y
+Xcsvco_branch_v2_1 vctrl csvco_branch_v2_1/in csvco_branch_v2_1/cap_vco_0/t D0 csvco_branch_v2_2/in
++ vbp vss vdd csvco_branch_v2_1/inverter_csvco_0/vss csvco_branch_v2
+Xcsvco_branch_v2_0 vctrl out_vco csvco_branch_v2_0/cap_vco_0/t D0 csvco_branch_v2_1/in
++ vbp vss vdd csvco_branch_v2_0/inverter_csvco_0/vss csvco_branch_v2
+Xcsvco_branch_v2_2 vctrl csvco_branch_v2_2/in csvco_branch_v2_2/cap_vco_0/t D0 out_vco
++ vbp vss vdd csvco_branch_v2_2/inverter_csvco_0/vss csvco_branch_v2
+Xsky130_fd_pr__pfet_01v8_4757AC_0 vss vdd vbp vdd vbp sky130_fd_pr__pfet_01v8_4757AC
+C0 csvco_branch_v2_1/in vdd 0.01fF
+C1 csvco_branch_v2_1/in out_vco 0.76fF
+C2 vctrl csvco_branch_v2_0/cap_vco_0/t 0.24fF
+C3 vctrl csvco_branch_v2_1/cap_vco_0/t 0.24fF
+C4 csvco_branch_v2_2/in vdd 0.01fF
+C5 csvco_branch_v2_2/in out_vco 0.59fF
+C6 D0 csvco_branch_v2_0/cap_vco_0/t 0.12fF
+C7 vdd vbp 3.04fF
+C8 D0 csvco_branch_v2_1/cap_vco_0/t 0.12fF
+C9 D0 csvco_branch_v2_2/cap_vco_0/t 1.03fF
+C10 D0 csvco_branch_v2_2/inverter_csvco_0/vss 0.04fF
+C11 D0 csvco_branch_v2_1/inverter_csvco_0/vss 0.04fF
+C12 vctrl vbp 0.06fF
+C13 vdd vss 14.19fF
+C14 csvco_branch_v2_2/inverter_csvco_0/vdd vss 0.14fF
+C15 csvco_branch_v2_2/inverter_csvco_0/vss vss 0.44fF
+C16 csvco_branch_v2_2/cap_vco_0/t vss 7.06fF
+C17 csvco_branch_v2_1/in vss 1.66fF
+C18 csvco_branch_v2_0/inverter_csvco_0/vdd vss 0.14fF
+C19 out_vco vss 0.49fF
+C20 csvco_branch_v2_0/inverter_csvco_0/vss vss 0.44fF
+C21 D0 vss -1.46fF
+C22 vbp vss -0.38fF
+C23 csvco_branch_v2_0/cap_vco_0/t vss 7.07fF
+C24 vctrl vss 5.55fF
+C25 csvco_branch_v2_2/in vss 1.67fF
+C26 csvco_branch_v2_1/inverter_csvco_0/vdd vss 0.14fF
+C27 csvco_branch_v2_1/inverter_csvco_0/vss vss 0.44fF
+C28 csvco_branch_v2_1/cap_vco_0/t vss 7.07fF
+.end
+

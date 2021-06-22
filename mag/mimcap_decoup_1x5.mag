@@ -1,0 +1,32 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1624376995
+<< metal5 >>
+rect 42 43 278 6161
+rect 664 142 6584 6062
+rect 6986 43 7222 6161
+rect 7608 142 13528 6062
+rect 13930 43 14166 6161
+rect 14552 142 20472 6062
+rect 20874 43 21110 6161
+rect 21496 142 27416 6062
+rect 27818 43 28054 6161
+rect 28440 142 34360 6062
+use sky130_fd_pr__cap_mim_m3_2_2Y8F6P  decap
+array 0 4 -6944 0 0 -991
+timestamp 1624129585
+transform -1 0 3373 0 -1 3102
+box -3351 -3261 3373 3261
+<< labels >>
+rlabel metal5 27818 43 28054 6161 1 b
+rlabel metal5 20874 43 21110 6161 1 b
+rlabel metal5 13930 43 14166 6161 1 b
+rlabel metal5 6986 43 7222 6161 1 b
+rlabel metal5 42 43 278 6161 1 b
+rlabel metal5 664 142 6584 6062 1 t
+rlabel metal5 7608 142 13528 6062 1 t
+rlabel metal5 14552 142 20472 6062 1 t
+rlabel metal5 21496 142 27416 6062 1 t
+rlabel metal5 28440 142 34360 6062 1 t
+<< end >>
