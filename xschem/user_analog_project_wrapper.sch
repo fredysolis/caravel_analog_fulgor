@@ -75,74 +75,74 @@ N 4000 -270 4050 -270 { lab=#net29}
 N 3950 -270 4000 -270 { lab=#net29}
 N 4000 -250 4050 -250 { lab=#net30}
 N 3950 -250 4000 -250 { lab=#net30}
-N 4000 -230 4050 -230 { lab=#net31}
-N 3950 -230 4000 -230 { lab=#net31}
-N 4000 -210 4050 -210 { lab=#net32}
-N 3950 -210 4000 -210 { lab=#net32}
-N 4000 -190 4050 -190 { lab=#net33}
-N 3950 -190 4000 -190 { lab=#net33}
-N 4000 -170 4050 -170 { lab=#net34}
-N 3950 -170 4000 -170 { lab=#net34}
-N 4000 -150 4050 -150 { lab=#net35}
-N 3950 -150 4000 -150 { lab=#net35}
+N 4000 -230 4050 -230 { lab=iref4}
+N 3950 -230 4000 -230 { lab=iref4}
+N 4000 -210 4050 -210 { lab=iref2}
+N 3950 -210 4000 -210 { lab=iref2}
+N 4000 -190 4050 -190 { lab=iref3}
+N 3950 -190 4000 -190 { lab=iref3}
+N 4000 -170 4050 -170 { lab=iref1}
+N 3950 -170 4000 -170 { lab=iref1}
+N 4000 -150 4050 -150 { lab=iref0}
+N 3950 -150 4000 -150 { lab=iref0}
 N 5660 160 5660 220 { lab=vdda1}
 N 5720 160 5720 220 { lab=vssa1}
-N 5240 530 5240 580 { lab=#net36}
-N 5240 480 5240 530 { lab=#net36}
-N 5220 530 5220 580 { lab=#net37}
-N 5220 480 5220 530 { lab=#net37}
-N 5200 530 5200 580 { lab=#net38}
-N 5200 480 5200 530 { lab=#net38}
-N 5310 530 5310 580 { lab=#net39}
-N 5310 480 5310 530 { lab=#net39}
-N 5290 530 5290 580 { lab=#net40}
-N 5290 480 5290 530 { lab=#net40}
-N 5270 530 5270 580 { lab=#net41}
-N 5270 480 5270 530 { lab=#net41}
-N 5330 530 5330 580 { lab=#net42}
-N 5330 480 5330 530 { lab=#net42}
-N 5400 530 5400 580 { lab=#net43}
-N 5400 480 5400 530 { lab=#net43}
-N 5380 530 5380 580 { lab=#net44}
-N 5380 480 5380 530 { lab=#net44}
-N 5360 530 5360 580 { lab=#net45}
-N 5360 480 5360 530 { lab=#net45}
-N 5430 530 5430 580 { lab=#net46}
-N 5430 480 5430 530 { lab=#net46}
-N 5460 530 5460 580 { lab=#net47}
-N 5460 480 5460 530 { lab=#net47}
-N 5480 530 5480 580 { lab=#net48}
-N 5480 480 5480 530 { lab=#net48}
-N 5500 530 5500 580 { lab=#net49}
-N 5500 480 5500 530 { lab=#net49}
-N 5520 530 5520 580 { lab=#net50}
-N 5520 480 5520 530 { lab=#net50}
-N 5550 530 5550 580 { lab=#net51}
-N 5550 480 5550 530 { lab=#net51}
-N 5570 530 5570 580 { lab=#net52}
-N 5570 480 5570 530 { lab=#net52}
-N 5590 530 5590 580 { lab=#net53}
-N 5590 480 5590 530 { lab=#net53}
-N 5610 530 5610 580 { lab=#net54}
-N 5610 480 5610 530 { lab=#net54}
-N 5630 530 5630 580 { lab=#net55}
-N 5630 480 5630 530 { lab=#net55}
-N 5650 530 5650 580 { lab=#net56}
-N 5650 480 5650 530 { lab=#net56}
-N 5680 530 5680 580 { lab=#net57}
-N 5680 480 5680 530 { lab=#net57}
-N 5700 530 5700 580 { lab=#net58}
-N 5700 480 5700 530 { lab=#net58}
-N 5720 530 5720 580 { lab=#net59}
-N 5720 480 5720 530 { lab=#net59}
-N 5740 530 5740 580 { lab=#net60}
-N 5740 480 5740 530 { lab=#net60}
-N 5760 530 5760 580 { lab=#net61}
-N 5760 480 5760 530 { lab=#net61}
-N 5780 530 5780 580 { lab=#net62}
-N 5780 480 5780 530 { lab=#net62}
-N 5830 530 5830 580 { lab=#net63}
-N 5830 480 5830 530 { lab=#net63}
+N 5240 530 5240 580 { lab=#net31}
+N 5240 480 5240 530 { lab=#net31}
+N 5220 530 5220 580 { lab=#net32}
+N 5220 480 5220 530 { lab=#net32}
+N 5200 530 5200 580 { lab=#net33}
+N 5200 480 5200 530 { lab=#net33}
+N 5310 530 5310 580 { lab=#net34}
+N 5310 480 5310 530 { lab=#net34}
+N 5290 530 5290 580 { lab=#net35}
+N 5290 480 5290 530 { lab=#net35}
+N 5270 530 5270 580 { lab=#net36}
+N 5270 480 5270 530 { lab=#net36}
+N 5330 530 5330 580 { lab=#net37}
+N 5330 480 5330 530 { lab=#net37}
+N 5400 530 5400 580 { lab=#net38}
+N 5400 480 5400 530 { lab=#net38}
+N 5380 530 5380 580 { lab=#net39}
+N 5380 480 5380 530 { lab=#net39}
+N 5360 530 5360 580 { lab=#net40}
+N 5360 480 5360 530 { lab=#net40}
+N 5430 530 5430 580 { lab=#net41}
+N 5430 480 5430 530 { lab=#net41}
+N 5460 530 5460 580 { lab=#net42}
+N 5460 480 5460 530 { lab=#net42}
+N 5480 530 5480 580 { lab=#net43}
+N 5480 480 5480 530 { lab=#net43}
+N 5500 530 5500 580 { lab=#net44}
+N 5500 480 5500 530 { lab=#net44}
+N 5520 530 5520 580 { lab=#net45}
+N 5520 480 5520 530 { lab=#net45}
+N 5550 530 5550 580 { lab=#net46}
+N 5550 480 5550 530 { lab=#net46}
+N 5570 530 5570 580 { lab=#net47}
+N 5570 480 5570 530 { lab=#net47}
+N 5590 530 5590 580 { lab=#net48}
+N 5590 480 5590 530 { lab=#net48}
+N 5610 530 5610 580 { lab=#net49}
+N 5610 480 5610 530 { lab=#net49}
+N 5630 530 5630 580 { lab=#net50}
+N 5630 480 5630 530 { lab=#net50}
+N 5650 530 5650 580 { lab=#net51}
+N 5650 480 5650 530 { lab=#net51}
+N 5680 530 5680 580 { lab=#net52}
+N 5680 480 5680 530 { lab=#net52}
+N 5700 530 5700 580 { lab=#net53}
+N 5700 480 5700 530 { lab=#net53}
+N 5720 530 5720 580 { lab=#net54}
+N 5720 480 5720 530 { lab=#net54}
+N 5740 530 5740 580 { lab=#net55}
+N 5740 480 5740 530 { lab=#net55}
+N 5760 530 5760 580 { lab=#net56}
+N 5760 480 5760 530 { lab=#net56}
+N 5780 530 5780 580 { lab=#net57}
+N 5780 480 5780 530 { lab=#net57}
+N 5830 530 5830 580 { lab=#net58}
+N 5830 480 5830 530 { lab=#net58}
 N 5950 350 6000 350 { lab=io_analog[8]}
 N 5900 350 5950 350 { lab=io_analog[8]}
 N 5070 350 5140 350 { lab=io_analog[10]}
@@ -153,62 +153,62 @@ N 3950 -310 3990 -310 { lab=iref_cp1}
 N 5340 150 5340 220 { lab=gpio_noesd[8]}
 N 6880 160 6880 220 { lab=vdda1}
 N 6940 160 6940 220 { lab=vssa1}
-N 6460 530 6460 580 { lab=#net64}
-N 6460 480 6460 530 { lab=#net64}
-N 6440 530 6440 580 { lab=#net65}
-N 6440 480 6440 530 { lab=#net65}
-N 6420 530 6420 580 { lab=#net66}
-N 6420 480 6420 530 { lab=#net66}
-N 6530 530 6530 580 { lab=#net67}
-N 6530 480 6530 530 { lab=#net67}
-N 6510 530 6510 580 { lab=#net68}
-N 6510 480 6510 530 { lab=#net68}
-N 6490 530 6490 580 { lab=#net69}
-N 6490 480 6490 530 { lab=#net69}
-N 6550 530 6550 580 { lab=#net70}
-N 6550 480 6550 530 { lab=#net70}
-N 6620 530 6620 580 { lab=#net71}
-N 6620 480 6620 530 { lab=#net71}
-N 6600 530 6600 580 { lab=#net72}
-N 6600 480 6600 530 { lab=#net72}
-N 6580 530 6580 580 { lab=#net73}
-N 6580 480 6580 530 { lab=#net73}
-N 6650 530 6650 580 { lab=#net74}
-N 6650 480 6650 530 { lab=#net74}
-N 6680 530 6680 580 { lab=#net75}
-N 6680 480 6680 530 { lab=#net75}
-N 6700 530 6700 580 { lab=#net76}
-N 6700 480 6700 530 { lab=#net76}
-N 6720 530 6720 580 { lab=#net77}
-N 6720 480 6720 530 { lab=#net77}
-N 6740 530 6740 580 { lab=#net78}
-N 6740 480 6740 530 { lab=#net78}
-N 6770 530 6770 580 { lab=#net79}
-N 6770 480 6770 530 { lab=#net79}
-N 6790 530 6790 580 { lab=#net80}
-N 6790 480 6790 530 { lab=#net80}
-N 6810 530 6810 580 { lab=#net81}
-N 6810 480 6810 530 { lab=#net81}
-N 6830 530 6830 580 { lab=#net82}
-N 6830 480 6830 530 { lab=#net82}
-N 6850 530 6850 580 { lab=#net83}
-N 6850 480 6850 530 { lab=#net83}
-N 6870 530 6870 580 { lab=#net84}
-N 6870 480 6870 530 { lab=#net84}
-N 6900 530 6900 580 { lab=#net85}
-N 6900 480 6900 530 { lab=#net85}
-N 6920 530 6920 580 { lab=#net86}
-N 6920 480 6920 530 { lab=#net86}
-N 6940 530 6940 580 { lab=#net87}
-N 6940 480 6940 530 { lab=#net87}
-N 6960 530 6960 580 { lab=#net88}
-N 6960 480 6960 530 { lab=#net88}
-N 6980 530 6980 580 { lab=#net89}
-N 6980 480 6980 530 { lab=#net89}
-N 7000 530 7000 580 { lab=#net90}
-N 7000 480 7000 530 { lab=#net90}
-N 7050 530 7050 580 { lab=#net91}
-N 7050 480 7050 530 { lab=#net91}
+N 6460 530 6460 580 { lab=#net59}
+N 6460 480 6460 530 { lab=#net59}
+N 6440 530 6440 580 { lab=#net60}
+N 6440 480 6440 530 { lab=#net60}
+N 6420 530 6420 580 { lab=#net61}
+N 6420 480 6420 530 { lab=#net61}
+N 6530 530 6530 580 { lab=#net62}
+N 6530 480 6530 530 { lab=#net62}
+N 6510 530 6510 580 { lab=#net63}
+N 6510 480 6510 530 { lab=#net63}
+N 6490 530 6490 580 { lab=#net64}
+N 6490 480 6490 530 { lab=#net64}
+N 6550 530 6550 580 { lab=#net65}
+N 6550 480 6550 530 { lab=#net65}
+N 6620 530 6620 580 { lab=#net66}
+N 6620 480 6620 530 { lab=#net66}
+N 6600 530 6600 580 { lab=#net67}
+N 6600 480 6600 530 { lab=#net67}
+N 6580 530 6580 580 { lab=#net68}
+N 6580 480 6580 530 { lab=#net68}
+N 6650 530 6650 580 { lab=#net69}
+N 6650 480 6650 530 { lab=#net69}
+N 6680 530 6680 580 { lab=#net70}
+N 6680 480 6680 530 { lab=#net70}
+N 6700 530 6700 580 { lab=#net71}
+N 6700 480 6700 530 { lab=#net71}
+N 6720 530 6720 580 { lab=#net72}
+N 6720 480 6720 530 { lab=#net72}
+N 6740 530 6740 580 { lab=#net73}
+N 6740 480 6740 530 { lab=#net73}
+N 6770 530 6770 580 { lab=#net74}
+N 6770 480 6770 530 { lab=#net74}
+N 6790 530 6790 580 { lab=#net75}
+N 6790 480 6790 530 { lab=#net75}
+N 6810 530 6810 580 { lab=#net76}
+N 6810 480 6810 530 { lab=#net76}
+N 6830 530 6830 580 { lab=#net77}
+N 6830 480 6830 530 { lab=#net77}
+N 6850 530 6850 580 { lab=#net78}
+N 6850 480 6850 530 { lab=#net78}
+N 6870 530 6870 580 { lab=#net79}
+N 6870 480 6870 530 { lab=#net79}
+N 6900 530 6900 580 { lab=#net80}
+N 6900 480 6900 530 { lab=#net80}
+N 6920 530 6920 580 { lab=#net81}
+N 6920 480 6920 530 { lab=#net81}
+N 6940 530 6940 580 { lab=#net82}
+N 6940 480 6940 530 { lab=#net82}
+N 6960 530 6960 580 { lab=#net83}
+N 6960 480 6960 530 { lab=#net83}
+N 6980 530 6980 580 { lab=#net84}
+N 6980 480 6980 530 { lab=#net84}
+N 7000 530 7000 580 { lab=#net85}
+N 7000 480 7000 530 { lab=#net85}
+N 7050 530 7050 580 { lab=#net86}
+N 7050 480 7050 530 { lab=#net86}
 N 7170 350 7220 350 { lab=io_analog[7]}
 N 7120 350 7170 350 { lab=io_analog[7]}
 N 6290 350 6360 350 { lab=io_analog[10]}
@@ -234,6 +234,27 @@ N 5600 -360 5600 -300 { lab=vdda1}
 N 5600 -240 5600 -180 { lab=vssa1}
 N 5750 -360 5750 -300 { lab=vdda1}
 N 5750 -240 5750 -180 { lab=vssa1}
+N 6680 -510 6680 -460 { lab=vdda1}
+N 6720 -230 6720 -180 { lab=vssa1}
+N 6850 -350 6960 -350 { lab=io_analog[0]}
+N 6850 -370 6960 -370 { lab=io_analog[1]}
+N 6450 -410 6560 -410 { lab=io_analog[4]}
+N 6450 -430 6560 -430 { lab=io_analog[6]}
+N 6450 -350 6560 -350 { lab=io_analog[2]}
+N 6450 -370 6560 -370 { lab=io_analog[3]}
+N 6450 -280 6560 -280 { lab=iref2}
+N 6450 -300 6560 -300 { lab=iref0}
+N 6450 -270 6560 -270 { lab=iref3}
+N 6450 -290 6560 -290 { lab=iref1}
+N 6450 -260 6560 -260 { lab=iref4}
+N 6610 -230 6610 -120 { lab=gpio_noesd[6]}
+N 6630 -230 6630 -120 { lab=gpio_noesd[2]}
+N 6600 -230 6600 -120 { lab=gpio_noesd[5]}
+N 6620 -230 6620 -120 { lab=gpio_noesd[3]}
+N 6590 -230 6590 -120 { lab=gpio_noesd[4]}
+N 6640 -230 6640 -120 { lab=gpio_noesd[1]}
+N 5880 -360 5880 -300 { lab=vdda1}
+N 5880 -240 5880 -180 { lab=vssa1}
 C {iopin.sym} 3240 -470 0 0 {name=p1 lab=vdda1}
 C {iopin.sym} 3240 -440 0 0 {name=p2 lab=vdda2}
 C {iopin.sym} 3240 -410 0 0 {name=p3 lab=vssa1}
@@ -303,11 +324,6 @@ C {lab_pin.sym} 3990 -290 2 0 {name=l43 sig_type=std_logic lab=iref_cp2}
 C {lab_pin.sym} 3950 150 1 0 {name=l44 sig_type=std_logic lab=iref_cp2}
 C {noconn.sym} 4050 -270 2 0 {name=l48}
 C {noconn.sym} 4050 -250 2 0 {name=l49}
-C {noconn.sym} 4050 -230 2 0 {name=l50}
-C {noconn.sym} 4050 -210 2 0 {name=l51}
-C {noconn.sym} 4050 -190 2 0 {name=l52}
-C {noconn.sym} 4050 -170 2 0 {name=l53}
-C {noconn.sym} 4050 -150 2 0 {name=l54}
 C {lab_pin.sym} 3780 350 0 0 {name=l45 sig_type=std_logic lab=io_analog[10]}
 C {lab_pin.sym} 4750 350 2 0 {name=l55 sig_type=std_logic lab=io_analog[9]}
 C {lab_pin.sym} 4030 150 3 1 {name=l56 sig_type=std_logic lab=gpio_noesd[7]}
@@ -391,7 +407,7 @@ C {lab_pin.sym} 4540 -180 3 0 {name=l117 sig_type=std_logic lab=vssa1}
 C {sky130_fd_pr/cap_mim_m3_2.sym} 4680 -270 0 0 {name=C2 model=cap_mim_m3_2 W=30 L=30 MF=9 spiceprefix=X}
 C {lab_pin.sym} 4680 -360 1 0 {name=l118 sig_type=std_logic lab=vdda1}
 C {lab_pin.sym} 4680 -180 3 0 {name=l119 sig_type=std_logic lab=vssa1}
-C {sky130_fd_pr/cap_mim_m3_2.sym} 4820 -270 0 0 {name=C3 model=cap_mim_m3_2 W=30 L=30 MF=9 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_2.sym} 4820 -270 0 0 {name=C3 model=cap_mim_m3_2 W=30 L=30 MF=7 spiceprefix=X}
 C {lab_pin.sym} 4820 -360 1 0 {name=l120 sig_type=std_logic lab=vdda1}
 C {lab_pin.sym} 4820 -180 3 0 {name=l121 sig_type=std_logic lab=vssa1}
 C {sky130_fd_pr/cap_mim_m3_2.sym} 5050 -270 0 0 {name=C4 model=cap_mim_m3_2 W=30 L=30 MF=15 spiceprefix=X}
@@ -412,3 +428,31 @@ C {lab_pin.sym} 5600 -180 3 0 {name=l131 sig_type=std_logic lab=vssa1}
 C {sky130_fd_pr/cap_mim_m3_2.sym} 5750 -270 0 0 {name=C9 model=cap_mim_m3_2 W=30 L=30 MF=15 spiceprefix=X}
 C {lab_pin.sym} 5750 -360 1 0 {name=l132 sig_type=std_logic lab=vdda1}
 C {lab_pin.sym} 5750 -180 3 0 {name=l133 sig_type=std_logic lab=vssa1}
+C {lab_pin.sym} 6680 -490 2 0 {name=l134 sig_type=std_logic lab=vdda1}
+C {lab_pin.sym} 6720 -190 2 0 {name=l135 sig_type=std_logic lab=vssa1}
+C {res_amp_top.sym} 6730 -190 0 0 {name=x5}
+C {lab_pin.sym} 6960 -370 2 0 {name=l136 sig_type=std_logic lab=io_analog[1]}
+C {lab_pin.sym} 6960 -350 2 0 {name=l137 sig_type=std_logic lab=io_analog[0]}
+C {lab_pin.sym} 6450 -410 0 0 {name=l138 sig_type=std_logic lab=io_analog[4]}
+C {lab_pin.sym} 6450 -430 0 0 {name=l139 sig_type=std_logic lab=io_analog[6]}
+C {lab_pin.sym} 6450 -350 0 0 {name=l140 sig_type=std_logic lab=io_analog[2]}
+C {lab_pin.sym} 6450 -370 0 0 {name=l141 sig_type=std_logic lab=io_analog[3]}
+C {lab_pin.sym} 4050 -150 2 0 {name=l50 sig_type=std_logic lab=iref0}
+C {lab_pin.sym} 4050 -170 2 0 {name=l51 sig_type=std_logic lab=iref1}
+C {lab_pin.sym} 4050 -190 2 0 {name=l52 sig_type=std_logic lab=iref3}
+C {lab_pin.sym} 4050 -210 2 0 {name=l53 sig_type=std_logic lab=iref2}
+C {lab_pin.sym} 4050 -230 2 0 {name=l54 sig_type=std_logic lab=iref4}
+C {lab_pin.sym} 6450 -280 0 0 {name=l142 sig_type=std_logic lab=iref2}
+C {lab_pin.sym} 6450 -300 0 0 {name=l143 sig_type=std_logic lab=iref0}
+C {lab_pin.sym} 6450 -270 0 0 {name=l144 sig_type=std_logic lab=iref3}
+C {lab_pin.sym} 6450 -290 0 0 {name=l145 sig_type=std_logic lab=iref1}
+C {lab_pin.sym} 6450 -260 0 0 {name=l146 sig_type=std_logic lab=iref4}
+C {lab_pin.sym} 6610 -120 3 0 {name=l147 sig_type=std_logic lab=gpio_noesd[6]}
+C {lab_pin.sym} 6600 -120 3 0 {name=l148 sig_type=std_logic lab=gpio_noesd[5]}
+C {lab_pin.sym} 6590 -120 3 0 {name=l149 sig_type=std_logic lab=gpio_noesd[4]}
+C {lab_pin.sym} 6640 -120 3 0 {name=l150 sig_type=std_logic lab=gpio_noesd[1]}
+C {lab_pin.sym} 6630 -120 3 0 {name=l151 sig_type=std_logic lab=gpio_noesd[2]}
+C {lab_pin.sym} 6620 -120 3 0 {name=l152 sig_type=std_logic lab=gpio_noesd[3]}
+C {sky130_fd_pr/cap_mim_m3_2.sym} 5880 -270 0 0 {name=C10 model=cap_mim_m3_2 W=30 L=30 MF=10 spiceprefix=X}
+C {lab_pin.sym} 5880 -360 1 0 {name=l153 sig_type=std_logic lab=vdda1}
+C {lab_pin.sym} 5880 -180 3 0 {name=l154 sig_type=std_logic lab=vssa1}
