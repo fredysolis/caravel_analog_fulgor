@@ -1,13 +1,13 @@
 ---
 project:
-  description: "An analog project for Google sponsored Open MPW shuttles for SKY130."
+  description: "Analog Test Chip of several circuits used as master tesis"
   foundry: "SkyWater"
-  git_url: "https://github.com/efabless/caravel_analog_user.git"
-  organization: "Efabless"
-  organization_url: "http://efabless.com"
-  owner: "Tim Edwards"
+  git_url: "https://https://github.com/fredysolis/caravel_analog_fulgor.git"
+  organization: "Fundación Fulgor"
+  organization_url: "http://www.fundacionfulgor.org.ar/sitio/index.php"
+  owner: "Diego Hernando"
   process: "SKY130"
-  project_name: "Caravel Analog User"
+  project_name: "Caravel Analog Fulgor"
   project_id: "00000000"
   tags:
     - "Open MPW"
