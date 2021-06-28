@@ -1,0 +1,63 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1624653480
+<< poly >>
+rect 420 -552 654 -486
+rect 1659 -552 1929 -486
+rect 588 -670 654 -552
+rect 1056 -670 1421 -607
+rect 588 -736 833 -670
+rect 1358 -792 1421 -670
+rect 1863 -670 1929 -552
+rect 1863 -736 2108 -670
+rect 1358 -858 1509 -792
+<< metal1 >>
+rect -11 -76 2541 2
+rect 198 -670 290 -580
+rect 332 -760 424 -670
+rect -11 -1360 2541 -1282
+<< metal2 >>
+rect 586 -424 670 -131
+rect 1849 -424 1945 -131
+rect 616 -583 1041 -517
+rect 1891 -583 2316 -517
+rect 616 -679 682 -583
+rect 404 -745 682 -679
+rect 1211 -681 1544 -619
+rect 1891 -679 1957 -583
+rect 1211 -750 1273 -681
+rect 1633 -745 1957 -679
+rect 850 -812 1273 -750
+rect 41 -1224 111 -929
+rect 1145 -1225 1215 -930
+rect 1311 -1225 1381 -930
+rect 2417 -1223 2487 -928
+use trans_gate_mux2to8  trans_gate_mux2to8_3
+timestamp 1624653480
+transform -1 0 2477 0 -1 -723
+box -64 -725 579 637
+use trans_gate_mux2to8  trans_gate_mux2to8_2
+timestamp 1624653480
+transform 1 0 1323 0 -1 -723
+box -64 -725 579 637
+use trans_gate_mux2to8  trans_gate_mux2to8_1
+timestamp 1624653480
+transform -1 0 1203 0 -1 -723
+box -64 -725 579 637
+use trans_gate_mux2to8  trans_gate_mux2to8_0
+timestamp 1624653480
+transform 1 0 53 0 -1 -723
+box -64 -725 579 637
+<< labels >>
+rlabel metal2 586 -424 670 -131 1 in_a
+rlabel metal2 1849 -424 1945 -131 1 in_b
+rlabel metal1 -11 -76 2541 2 1 vss
+rlabel metal1 -11 -1360 2541 -1282 1 vdd
+rlabel metal2 41 -1224 111 -929 1 out_a_0
+rlabel metal2 1145 -1225 1215 -930 1 out_a_1
+rlabel metal2 1311 -1225 1381 -930 1 out_b_0
+rlabel metal2 2417 -1223 2487 -928 1 out_b_1
+rlabel metal1 198 -670 290 -580 1 select_0_neg
+rlabel metal1 332 -760 424 -670 1 select_0
+<< end >>

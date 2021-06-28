@@ -1,0 +1,260 @@
+**.subckt tb_top_pll_v3_pex_no_integration
+VSS vss GND {vss} 
+VDD vdd vss {vdd} 
+Vref A vss PULSE(0 {vin} 0 1p 1p {Tref/2} {Tref}) DC {vin} AC 0 
+VD0 D0 vss {vd0} 
+I0 net1 vss {iref} 
+x2 vdd net1 iref_cp net2 net3 net4 net5 net6 net7 net8 net9 net10 bias
+C1 out_to_pad vss 20p m=1
+VD1 D1 vss {vd1} 
+VMC S1 vss PULSE(0.0 0.0 0 1p 1p 400n 800n) DC {vin} AC 0 
+VMC1 S0 vss PULSE({vin} {vin} 0 1p 1p 200n 400n) DC {vin} AC 0 
+VMC2 MC vss PULSE({vin} {vin} 0 1p 1p 100n 200n) DC {vin} AC 0 
+x1 iref_cp vss vdd vco_out vctrl Up QA out_to_buffer A nUp out_to_pad Down nDown QB D0 lf_vc
++ vco_buffer_out biasp pswitch nswitch pfd_reset S0 MC S1 out_by_2 out_to_div out_div n_out_by_2 n_out_div_2
++ out_div_2 out_buffer_div_2 n_out_buffer_div_2 n_clk_0 s1n s0n clk_2_f clk_d clk_out_div clk_5 clk_pre n_clk_1
++ clk_1 clk_0 D1 top_pll_v3_pex_no_integration
+**** begin user architecture code
+
+
+
+* Parameters
+.param kp = 1.0
+.param vdd = kp*1.8
+.param vss = 0.0
+.param vin = vdd
+.param fref = 100e6
+.param Tref = 1/fref
+.param iref = 100u
+.param vd0 = 0.0
+.param vd1 = 0.0
+
+.options TEMP = 100.0
+.options RSHUNT = 1e20
+.options GMIN = 1e-10
+
+* Models
+.lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/corners/sky130.lib SS
+.include ~/caravel_analog_fulgor/xschem/simulations/PFD_pex_c.spice
+.include ~/caravel_analog_fulgor/xschem/simulations/pfd_cp_interface_pex_c.spice
+.include ~/caravel_analog_fulgor/xschem/simulations/charge_pump_pex_c.spice
+.include ~/caravel_analog_fulgor/xschem/simulations/loop_filter_v2_pex_c.spice
+.include ~/caravel_analog_fulgor/xschem/simulations/csvco_pex_c.spice
+.include ~/caravel_analog_fulgor/xschem/simulations/ring_osc_buffer_pex_c.spice
+.include ~/caravel_analog_fulgor/xschem/simulations/buffer_salida_pex_c.spice
+.include ~/caravel_analog_fulgor/xschem/simulations/div_by_2_pex_c.spice
+.include ~/caravel_analog_fulgor/xschem/simulations/freq_div_pex_c.spice
+
+
+* Data to save
+
+.ic v(A) = 0.0
+.ic v(QA) = 0.0
+.ic v(QB) = 0.0
+.ic v(Up) = 0.0
+.ic v(nUp) = 0.0
+.ic v(Down) = 0.0
+.ic v(nDown) = 0.0
+.ic v(vctrl) = 0.0
+.ic v(D0) = 0.0
+.ic v(vco_out) = 0.0
+.ic v(vco_buffer_out) = 0.0
+.ic v(out_to_div) = 0.0
+.ic v(out_to_pad) = 0.0
+.ic v(out_div_2) = 0.0
+.ic v(n_out_div_2) = 0.0
+.ic v(out_buffer_div_2) = 0.0
+.ic v(n_out_buffer_div_2) = 0.0
+.ic v(out_by_2) = 0.0
+.ic v(n_out_by_2) = 0.0
+.ic v(clk_0) = 0.0
+.ic v(n_clk_0) = 0.0
+.ic v(clk_1) = 0.0
+.ic v(n_clk_1) = 0.0
+.ic v(clk_pre) = 0.0
+.ic v(clk_5) = 0.0
+.ic v(clk_d) = 0.0
+.ic v(clk_2_f) = 0.0
+.ic v(s1n) = 0.0
+.ic v(s0n) = 0.0
+.ic v(out_div) = 0.0
+
+
+* Simulation
+.control
+	tran 0.01ns 2us
+	meas tran Tosc trig v(out_to_pad) val=0.9 fall=1005 targ v(out_to_pad) val=0.9 fall=1105
+	let  T = Tosc/100.0
+	let  f = 1/T
+	echo .
+	echo ------ PLL simulation ------
+	print T f
+	*write tb_PLL_tran.raw
+	plot v(vctrl) v(pfd_reset)+2 v(nDown)+4 v(Down)+6 v(nUp)+8 v(Up)+10 v(QA)+12 v(QB)+12 v(A)+14
++ v(out_div)+16
+ 	plot v(out_to_pad)+12 v(out_to_buffer)+9 v(out_to_div)+6 v(out_by_2)+3 v(out_div)
+	plot v(out_div) v(out_by_2) v(out_to_div)
+	plot v(vctrl)
+	plot v(pswitch) v(nswitch) xlimit 1.4us 1.444us
+.endc
+
+
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  bias.sym # of pins=12
+* sym_path: /home/dhernando/caravel_analog_fulgor/xschem/bias.sym
+* sch_path: /home/dhernando/caravel_analog_fulgor/xschem/bias.sch
+.subckt bias  vdd iref iref_0 iref_1 iref_2 iref_3 iref_4 iref_5 iref_6 iref_7 iref_8 iref_9
+*.iopin iref
+*.iopin vdd
+*.opin iref_0
+*.opin iref_1
+*.opin iref_2
+*.opin iref_3
+*.opin iref_4
+*.opin iref_5
+*.opin iref_6
+*.opin iref_7
+*.opin iref_8
+*.opin iref_9
+XM1 iref iref vbp1 vdd sky130_fd_pr__pfet_01v8_lvt L=0.45 W=4.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=25 m=25 
+XM2 vbp1 vbp1 vdd vdd sky130_fd_pr__pfet_01v8_lvt L=0.45 W=4.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=25 m=25 
+XM3 net1 vbp1 vdd vdd sky130_fd_pr__pfet_01v8_lvt L=0.45 W=4.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=25 m=25 
+XM4 iref_0 iref net1 vdd sky130_fd_pr__pfet_01v8_lvt L=0.45 W=4.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=25 m=25 
+XM5 net2 vbp1 vdd vdd sky130_fd_pr__pfet_01v8_lvt L=0.45 W=4.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=25 m=25 
+XM6 iref_1 iref net2 vdd sky130_fd_pr__pfet_01v8_lvt L=0.45 W=4.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=25 m=25 
+XM7 net3 vbp1 vdd vdd sky130_fd_pr__pfet_01v8_lvt L=0.45 W=4.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=25 m=25 
+XM8 iref_2 iref net3 vdd sky130_fd_pr__pfet_01v8_lvt L=0.45 W=4.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=25 m=25 
+XM9 net4 vbp1 vdd vdd sky130_fd_pr__pfet_01v8_lvt L=0.45 W=4.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=25 m=25 
+XM10 iref_3 iref net4 vdd sky130_fd_pr__pfet_01v8_lvt L=0.45 W=4.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=25 m=25 
+XM11 net5 vbp1 vdd vdd sky130_fd_pr__pfet_01v8_lvt L=0.45 W=4.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=25 m=25 
+XM12 iref_4 iref net5 vdd sky130_fd_pr__pfet_01v8_lvt L=0.45 W=4.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=25 m=25 
+XM13 net6 vbp1 vdd vdd sky130_fd_pr__pfet_01v8_lvt L=0.45 W=4.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=25 m=25 
+XM14 iref_5 iref net6 vdd sky130_fd_pr__pfet_01v8_lvt L=0.45 W=4.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=25 m=25 
+XM15 net7 vbp1 vdd vdd sky130_fd_pr__pfet_01v8_lvt L=0.45 W=4.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=25 m=25 
+XM16 iref_6 iref net7 vdd sky130_fd_pr__pfet_01v8_lvt L=0.45 W=4.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=25 m=25 
+XM17 net8 vbp1 vdd vdd sky130_fd_pr__pfet_01v8_lvt L=0.45 W=4.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=25 m=25 
+XM18 iref_7 iref net8 vdd sky130_fd_pr__pfet_01v8_lvt L=0.45 W=4.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=25 m=25 
+XM19 net9 vbp1 vdd vdd sky130_fd_pr__pfet_01v8_lvt L=0.45 W=4.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=25 m=25 
+XM20 iref_8 iref net9 vdd sky130_fd_pr__pfet_01v8_lvt L=0.45 W=4.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=25 m=25 
+XM21 net10 vbp1 vdd vdd sky130_fd_pr__pfet_01v8_lvt L=0.45 W=4.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=25 m=25 
+XM22 iref_9 iref net10 vdd sky130_fd_pr__pfet_01v8_lvt L=0.45 W=4.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=25 m=25 
+.ends
+
+
+* expanding   symbol:  top_pll_v3_pex_no_integration.sym # of pins=44
+* sym_path: /home/dhernando/caravel_analog_fulgor/xschem/top_pll_v3_pex_no_integration.sym
+* sch_path: /home/dhernando/caravel_analog_fulgor/xschem/top_pll_v3_pex_no_integration.sch
+.subckt top_pll_v3_pex_no_integration  iref_cp vss vdd vco_out vco_vctrl Up pfd_QA out_to_buffer
++ in_ref nUp out_to_pad Down nDown pfd_QB lf_D0 lf_vc out_first_buffer cp_biasp cp_pswitch cp_nswitch
++ pfd_reset s_0 MC s_1 out_by_2 out_to_div out_div n_out_by_2 n_out_div_2 out_div_2 n_out_buffer_div_2
++ out_buffer_div_2 n_clk_0 s1n s0n clk_2_f clk_d clk_out_mux21 clk_5 clk_pre n_clk_1 clk_1 clk_0 lf_D0
+*.iopin vdd
+*.iopin vss
+*.ipin in_ref
+*.iopin pfd_QA
+*.iopin pfd_QB
+*.iopin Up
+*.iopin nUp
+*.iopin Down
+*.iopin nDown
+*.iopin pfd_reset
+*.iopin cp_nswitch
+*.iopin cp_pswitch
+*.iopin cp_biasp
+*.ipin iref_cp
+*.iopin lf_vc
+*.ipin vco_D0
+*.iopin vco_vctrl
+*.iopin vco_out
+*.iopin out_first_buffer
+*.iopin out_to_buffer
+*.iopin out_to_div
+*.iopin out_by_2
+*.iopin n_out_by_2
+*.iopin out_div_2
+*.iopin n_out_div_2
+*.iopin out_buffer_div_2
+*.iopin n_out_buffer_div_2
+*.iopin out_div
+*.opin out_to_pad
+*.iopin clk_0
+*.iopin n_clk_0
+*.iopin clk_1
+*.iopin n_clk_1
+*.iopin clk_pre
+*.iopin clk_5
+*.iopin clk_out_mux21
+*.iopin clk_d
+*.iopin clk_2_f
+*.iopin s0n
+*.iopin s1n
+*.ipin MC
+*.ipin s_0
+*.ipin s_1
+*.ipin lf_D0
+x1 vss vdd pfd_QA in_ref out_div pfd_QB pfd_reset PFD_pex_c
+x2 Up vdd pfd_QA nUp Down pfd_QB vss nDown pfd_cp_interface_pex_c
+x4 vdd Up nUp vco_vctrl Down nDown vss iref_cp cp_nswitch cp_pswitch cp_biasp charge_pump_pex_c
+x5 vss vco_vctrl lf_vc lf_D0 loop_filter_v2_pex_c
+x6 vdd vco_out out_to_buffer out_to_div vss out_first_buffer ring_osc_buffer_pex_c
+x7 vdd out_to_pad out_to_buffer vss buffer_salida_pex_c
+x8 n_out_by_2 vss out_to_div vdd out_by_2 out_div_2 n_out_div_2 out_buffer_div_2 n_out_buffer_div_2
++ div_by_2_pex_c
+x9 s1n s0n s_0 s_1 MC clk_0 clk_pre vss vdd clk_out_mux21 clk_d n_clk_0 out_div out_by_2 clk_5
++ clk_2_f n_out_by_2 clk_1 n_clk_1 freq_div_pex_c
+x3 vdd vco_out vco_vctrl vss vco_D0 csvco_pex_c
+.ends
+
+.GLOBAL GND
+**** begin user architecture code
+
+**** end user architecture code
+** flattened .save nodes
+.end

@@ -1,0 +1,291 @@
+**.subckt freq_div s_0 vdd vss in_a in_b out MC s_1 clk_0 n_clk_0 clk_1 n_clk_1 clk_pre clk_5
+*+ clk_out_mux21 clk_d clk_2 s_0_n s_1_n
+*.ipin s_0
+*.iopin vdd
+*.iopin vss
+*.ipin in_a
+*.ipin in_b
+*.opin out
+*.ipin MC
+*.ipin s_1
+*.iopin clk_0
+*.iopin n_clk_0
+*.iopin clk_1
+*.iopin n_clk_1
+*.iopin clk_pre
+*.iopin clk_5
+*.iopin clk_out_mux21
+*.iopin clk_d
+*.iopin clk_2
+*.iopin s_0_n
+*.iopin s_1_n
+x2 vdd clk_pre clk_0 n_clk_0 vss MC net2 net1 net3 net4 prescaler_23
+x3 net14 vss clk_out_mux21 vdd clk_2 net5 net6 net7 net8 div_by_2
+x4 vdd clk_5 clk_1 vss n_clk_1 net9 net10 net12 net13 net11 div_by_5
+x9 vdd s_0_n s_0 vss inverter_min_x2
+x1 vdd vss in_a in_b n_clk_0 clk_0 s_0 n_clk_1 clk_1 s_0_n mux2to4
+x6 vdd vss clk_out_mux21 clk_pre s_0 clk_5 s_0_n mux2to1
+x5 vdd vss out clk_d s_1 clk_2 s_1_n mux2to1
+x7 vdd s_1_n s_1 vss inverter_min_x2
+x8 vdd net15 clk_out_mux21 vss inverter_min_x2
+x10 vdd clk_d net15 vss inverter_min_x4
+**.ends
+
+* expanding   symbol:  prescaler_23/sch/prescaler_23.sym # of pins=10
+* sym_path: /home/dhernando/sky130-mpw2-fulgor/prescaler_23/sch/prescaler_23.sym
+* sch_path: /home/dhernando/sky130-mpw2-fulgor/prescaler_23/sch/prescaler_23.sch
+.subckt prescaler_23  vdd CLK_23 CLK nCLK vss MC Q1 nCLK_23 Q2 Q2_d
+*.iopin vdd
+*.ipin CLK
+*.ipin nCLK
+*.ipin MC
+*.iopin vss
+*.opin CLK_23
+*.iopin nCLK_23
+*.iopin Q1
+*.iopin Q2
+*.iopin Q2_d
+x3 nCLK_23 1 vss vss vdd vdd 2 sky130_fd_sc_hs__and2_1
+x4 Q1 MC vss vss vdd vdd 1 sky130_fd_sc_hs__or2_1
+x6 3 nCLK_23 MC vss vss vdd vdd CLK_23 sky130_fd_sc_hs__mux2_1
+x7 Q2 Q2_d vss vss vdd vdd 3 sky130_fd_sc_hs__or2_1
+x1 vdd Q1 net1 vss nCLK_23 CLK nCLK DFlipFlop
+x2 vdd Q2 nCLK_23 vss 2 CLK nCLK DFlipFlop
+x5 vdd Q2_d net2 vss Q2 nCLK CLK DFlipFlop
+.ends
+
+
+* expanding   symbol:  div_by_2/sch/div_by_2.sym # of pins=9
+* sym_path: /home/dhernando/sky130-mpw2-fulgor/div_by_2/sch/div_by_2.sym
+* sch_path: /home/dhernando/sky130-mpw2-fulgor/div_by_2/sch/div_by_2.sch
+.subckt div_by_2  nCLK_2 vss CLK vdd CLK_2 out_div nout_div o1 o2
+*.ipin CLK
+*.opin CLK_2
+*.iopin vss
+*.iopin vdd
+*.opin nCLK_2
+*.iopin nout_div
+*.iopin o2
+*.iopin o1
+*.iopin out_div
+x1 vdd out_div nout_div vss nout_div CLK_d nCLK_d DFlipFlop
+x2 vdd CLK_d CLK nCLK_d vss clock_inverter
+x3 vdd o1 out_div vss inverter_min_x2
+x4 vdd CLK_2 o1 vss inverter_min_x4
+x5 vdd o2 nout_div vss inverter_min_x2
+x6 vdd nCLK_2 o2 vss inverter_min_x4
+.ends
+
+
+* expanding   symbol:  div_by_5/sch/div_by_5.sym # of pins=10
+* sym_path: /home/dhernando/sky130-mpw2-fulgor/div_by_5/sch/div_by_5.sym
+* sch_path: /home/dhernando/sky130-mpw2-fulgor/div_by_5/sch/div_by_5.sch
+.subckt div_by_5  vdd CLK_5 CLK vss nCLK nQ2 Q1 nQ0 Q0 Q1_shift
+*.iopin vdd
+*.iopin vss
+*.ipin CLK
+*.opin CLK_5
+*.ipin nCLK
+*.iopin nQ2
+*.iopin Q1
+*.iopin Q0
+*.iopin nQ0
+*.iopin Q1_shift
+x8 Q1 Q0 vss vss vdd vdd D2 sky130_fd_sc_hs__and2_1
+x9 Q1 Q0 vss vss vdd vdd D1 sky130_fd_sc_hs__xor2_1
+x10 nQ2 nQ0 vss vss vdd vdd D0 sky130_fd_sc_hs__and2_1
+x12 Q1 Q1_shift vss vss vdd vdd CLK_5 sky130_fd_sc_hs__or2_1
+x1 vdd Q2 nQ2 vss D2 CLK nCLK DFlipFlop
+x2 vdd Q1 nQ1 vss D1 CLK nCLK DFlipFlop
+x3 vdd Q0 nQ0 vss D0 CLK nCLK DFlipFlop
+x4 vdd Q1_shift nQ1_shift vss Q1 nCLK CLK DFlipFlop
+.ends
+
+
+* expanding   symbol:  inverter_min_x2/sch/inverter_min_x2.sym # of pins=4
+* sym_path: /home/dhernando/sky130-mpw2-fulgor/inverter_min_x2/sch/inverter_min_x2.sym
+* sch_path: /home/dhernando/sky130-mpw2-fulgor/inverter_min_x2/sch/inverter_min_x2.sch
+.subckt inverter_min_x2  vdd out in vss
+*.iopin vss
+*.ipin in
+*.opin out
+*.iopin vdd
+XM2 out in vdd vdd sky130_fd_pr__pfet_01v8 L=0.15 W=0.84 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=2 m=2 
+XM1 out in vss vss sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=2 m=2 
+.ends
+
+
+* expanding   symbol:  mux2to4/sch/mux2to4.sym # of pins=10
+* sym_path: /home/dhernando/sky130-mpw2-fulgor/mux2to4/sch/mux2to4.sym
+* sch_path: /home/dhernando/sky130-mpw2-fulgor/mux2to4/sch/mux2to4.sch
+.subckt mux2to4  vdd vss in_a in_b out_b_0 out_a_0 selec_0 out_b_1 out_a_1 selec_0_neg
+*.iopin in_a
+*.iopin in_b
+*.ipin selec_0_neg
+*.ipin selec_0
+*.iopin out_b_0
+*.iopin out_b_1
+*.iopin out_a_0
+*.iopin out_a_1
+*.iopin vdd
+*.iopin vss
+x4 selec_0 out_a_1 in_a selec_0_neg vss vdd trans_gate_mux2to8
+x5 selec_0_neg out_a_0 in_a selec_0 vss vdd trans_gate_mux2to8
+x8 selec_0 out_b_1 in_b selec_0_neg vss vdd trans_gate_mux2to8
+x9 selec_0_neg out_b_0 in_b selec_0 vss vdd trans_gate_mux2to8
+.ends
+
+
+* expanding   symbol:  mux2to1/sch/mux2to1.sym # of pins=7
+* sym_path: /home/dhernando/sky130-mpw2-fulgor/mux2to1/sch/mux2to1.sym
+* sch_path: /home/dhernando/sky130-mpw2-fulgor/mux2to1/sch/mux2to1.sch
+.subckt mux2to1  vdd vss in_a out_a_0 selec_0 out_a_1 selec_0_neg
+*.iopin in_a
+*.ipin selec_0_neg
+*.ipin selec_0
+*.iopin out_a_0
+*.iopin out_a_1
+*.iopin vdd
+*.iopin vss
+x4 selec_0 out_a_1 in_a selec_0_neg vss vdd trans_gate_mux2to8
+x5 selec_0_neg out_a_0 in_a selec_0 vss vdd trans_gate_mux2to8
+.ends
+
+
+* expanding   symbol:  inverter_min_x4/sch/inverter_min_x4.sym # of pins=4
+* sym_path: /home/dhernando/sky130-mpw2-fulgor/inverter_min_x4/sch/inverter_min_x4.sym
+* sch_path: /home/dhernando/sky130-mpw2-fulgor/inverter_min_x4/sch/inverter_min_x4.sch
+.subckt inverter_min_x4  vdd out in vss
+*.iopin vss
+*.ipin in
+*.opin out
+*.iopin vdd
+XM2 out in vdd vdd sky130_fd_pr__pfet_01v8 L=0.15 W=0.84 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=4 m=4 
+XM1 out in vss vss sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=4 m=4 
+.ends
+
+
+* expanding   symbol:  DFlipFlop/sch/DFlipFlop.sym # of pins=7
+* sym_path: /home/dhernando/sky130-mpw2-fulgor/DFlipFlop/sch/DFlipFlop.sym
+* sch_path: /home/dhernando/sky130-mpw2-fulgor/DFlipFlop/sch/DFlipFlop.sch
+.subckt DFlipFlop  vdd Q nQ vss D CLK nCLK
+*.iopin vdd
+*.iopin vss
+*.opin Q
+*.opin nQ
+*.ipin D
+*.ipin CLK
+*.ipin nCLK
+x1 vdd D_d D nD_d vss clock_inverter
+x2 vdd nA A D_d nD_d CLK vss latch_diff
+x3 vdd nQ Q A nA nCLK vss latch_diff
+.ends
+
+
+* expanding   symbol:  clock_inverter/sch/clock_inverter.sym # of pins=5
+* sym_path: /home/dhernando/sky130-mpw2-fulgor/clock_inverter/sch/clock_inverter.sym
+* sch_path: /home/dhernando/sky130-mpw2-fulgor/clock_inverter/sch/clock_inverter.sch
+.subckt clock_inverter  vdd CLK_d CLK nCLK_d vss
+*.ipin CLK
+*.iopin vdd
+*.iopin vss
+*.opin nCLK_d
+*.opin CLK_d
+x5 vdd nCLK_d net1 vss trans_gate
+x1 vdd CLK_d net2 vss inverter_cp_x1
+x2 vdd net2 CLK vss inverter_cp_x1
+x3 vdd net1 CLK vss inverter_cp_x1
+.ends
+
+
+* expanding   symbol:  trans_gate_mux2to8/sch/trans_gate_mux2to8.sym # of pins=6
+* sym_path: /home/dhernando/sky130-mpw2-fulgor/trans_gate_mux2to8/sch/trans_gate_mux2to8.sym
+* sch_path: /home/dhernando/sky130-mpw2-fulgor/trans_gate_mux2to8/sch/trans_gate_mux2to8.sch
+.subckt trans_gate_mux2to8  en_pos out in en_neg vss vdd
+*.iopin en_neg
+*.ipin in
+*.opin out
+*.iopin en_pos
+*.iopin vdd
+*.iopin vss
+XM2 out en_neg in vdd sky130_fd_pr__pfet_01v8 L=0.15 W=1.25 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=3 m=3 
+XM1 out en_pos in vss sky130_fd_pr__nfet_01v8 L=0.15 W=1.25 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=3 m=3 
+.ends
+
+
+* expanding   symbol:  latch_diff/sch/latch_diff.sym # of pins=7
+* sym_path: /home/dhernando/sky130-mpw2-fulgor/latch_diff/sch/latch_diff.sym
+* sch_path: /home/dhernando/sky130-mpw2-fulgor/latch_diff/sch/latch_diff.sch
+.subckt latch_diff  vdd nQ Q D nD CLK vss
+*.iopin vdd
+*.iopin vss
+*.ipin D
+*.opin nQ
+*.ipin CLK
+*.ipin nD
+*.opin Q
+XM3 net1 CLK vss vss sky130_fd_pr__nfet_01v8 L=0.15 W=1.25 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=3 m=3 
+XM4 nQ Q vdd vdd sky130_fd_pr__pfet_01v8 L=0.15 W=0.95 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=2 m=2 
+XM5 Q nQ vdd vdd sky130_fd_pr__pfet_01v8 L=0.15 W=0.95 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=2 m=2 
+XM1 nQ D net1 vss sky130_fd_pr__nfet_01v8 L=0.15 W=0.95 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=2 m=2 
+XM2 Q nD net1 vss sky130_fd_pr__nfet_01v8 L=0.15 W=0.95 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=2 m=2 
+.ends
+
+
+* expanding   symbol:  trans_gate/sch/trans_gate.sym # of pins=4
+* sym_path: /home/dhernando/sky130-mpw2-fulgor/trans_gate/sch/trans_gate.sym
+* sch_path: /home/dhernando/sky130-mpw2-fulgor/trans_gate/sch/trans_gate.sch
+.subckt trans_gate  vdd out in vss
+*.iopin vss
+*.ipin in
+*.opin out
+*.iopin vdd
+XM2 out vss in vdd sky130_fd_pr__pfet_01v8 L=0.15 W=1.25 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=3 m=3 
+XM1 out vdd in vss sky130_fd_pr__nfet_01v8 L=0.15 W=1.25 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=3 m=3 
+.ends
+
+
+* expanding   symbol:  inverter_cp_x1/sch/inverter_cp_x1.sym # of pins=4
+* sym_path: /home/dhernando/sky130-mpw2-fulgor/inverter_cp_x1/sch/inverter_cp_x1.sym
+* sch_path: /home/dhernando/sky130-mpw2-fulgor/inverter_cp_x1/sch/inverter_cp_x1.sch
+.subckt inverter_cp_x1  vdd out in vss
+*.iopin vss
+*.ipin in
+*.opin out
+*.iopin vdd
+XM2 out in vdd vdd sky130_fd_pr__pfet_01v8 L=0.15 W=1.25 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=3 m=3 
+XM1 out in vss vss sky130_fd_pr__nfet_01v8 L=0.15 W=1.25 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=3 m=3 
+.ends
+
+** flattened .save nodes
+.end

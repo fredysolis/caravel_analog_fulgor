@@ -1,0 +1,57 @@
+**.subckt tb_prescaler_23_pex_c
+VSS vss GND {vss} 
+VDD vdd vss {vdd} 
+Vref CLK vss PULSE(0 {vin} 0 1p 1p {Tref/2} {Tref}) DC {vin} AC 0 
+C2 clk_23 vss 10f m=1
+Vmc MC vss PULSE({vin} 0 0 1p 1p 400n 800n) DC {vin} AC 0 
+x1 vdd clk_23 clk_2 nclk_2 vss MC net6 net5 net7 net8 prescaler_23_pex_c
+x2 nclk_2 vss CLK vdd clk_2 net1 net2 net3 net4 div_by_2_pex_c
+**** begin user architecture code
+
+
+
+* Parameters
+.param kp = 1.0
+.param vdd = kp*1.8
+.param vss = 0.0
+.param vin = vdd
+.param fref = 1e9
+.param Tref = 1/fref
+.param C = 1f
+.param iref=100u
+
+.options TEMP = 100.0
+.options RSHUNT = 1e20
+
+* Models
+.lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/corners/sky130.lib SS
+.include ~/sky130-mpw2-fulgor/div_by_2/sch/simulations/div_by_2_pex_c.spice
+.include ~/sky130-mpw2-fulgor/prescaler_23/sch/simulations/prescaler_23_pex_c.spice
+
+* Data to save
+
+.ic v(CLK) = 0.0
+.ic v(MC) = 0.0
+.ic v(clk_2) = 0.0
+.ic v(nclk_2) = 0.0
+.ic v(clk_23) = 0.0
+
+* Simulation
+.control
+	save v(MC) v(CLK) v(clk_2) v(nclk_2) v(clk_23)
+	tran 0.01ns 800ns
+	write tb_div_by_5_tran.raw
+	plot v(clk_23) v(clk) v(clk_2) v(MC)+3 v(clk_23)+6 v(clk_2)+9 v(clk)+12
+
+.endc
+
+
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+**** begin user architecture code
+
+**** end user architecture code
+** flattened .save nodes
+.end

@@ -1,0 +1,90 @@
+v {xschem version=2.9.9 file_version=1.2 }
+G {}
+K {type=primitive
+format="@name @pinlist @symname"
+template="name=x1"
+}
+V {}
+S {}
+E {}
+L 4 -50 -80 -50 -60 {}
+L 4 -70 -80 -70 -60 {}
+L 4 -30 -80 -30 -60 {}
+L 4 140 0 160 0 {}
+L 4 -120 -20 -100 -20 {}
+L 4 -120 20 -100 20 {}
+L 4 -60 60 60 60 {}
+L 4 140 -60 140 60 {}
+L 4 -60 -60 60 -60 {}
+L 4 -100 -60 -100 60 {}
+L 4 -50 40 50 40 {}
+L 4 60 60 100 60 {}
+L 4 -100 60 -60 60 {}
+L 4 -90 40 -50 40 {}
+L 4 -90 40 -90 60 {}
+L 4 50 40 90 40 {}
+L 4 130 40 130 60 {}
+L 4 70 -60 100 -60 {}
+L 4 60 -60 70 -60 {}
+L 4 -100 -60 -60 -60 {}
+L 4 100 60 140 60 {}
+L 4 90 40 130 40 {}
+L 4 100 -60 140 -60 {}
+L 4 -80 -60 -80 -40 {}
+L 4 -80 -40 -20 -40 {}
+L 4 -20 -60 -20 -40 {}
+L 7 120 60 120 80 {}
+L 7 100 60 100 80 {}
+L 7 -80 60 -80 80 {}
+L 7 0 60 0 80 {}
+L 7 100 -80 100 -60 {}
+L 7 80 -80 80 -60 {}
+L 7 40 60 40 80 {}
+L 7 60 60 60 80 {}
+L 7 -60 60 -60 80 {}
+L 7 20 60 20 80 {}
+L 7 80 60 80 80 {}
+L 7 -40 60 -40 80 {}
+L 7 -20 60 -20 80 {}
+B 5 117.5 77.5 122.5 82.5 {name=s_1_n sig_type=std_logic dir=inout }
+B 5 97.5 77.5 102.5 82.5 {name=s_0_n sig_type=std_logic dir=inout }
+B 5 -52.5 -82.5 -47.5 -77.5 {name=s_0 sig_type=std_logic dir=in }
+B 5 -72.5 -82.5 -67.5 -77.5 {name=s_1 sig_type=std_logic dir=in }
+B 5 -32.5 -82.5 -27.5 -77.5 {name=MC sig_type=std_logic dir=in }
+B 5 -82.5 77.5 -77.5 82.5 {name=clk_0 sig_type=std_logic dir=inout }
+B 5 -2.5 77.5 2.5 82.5 {name=clk_pre sig_type=std_logic dir=inout }
+B 5 97.5 -82.5 102.5 -77.5 {name=vss sig_type=std_logic dir=inout }
+B 5 77.5 -82.5 82.5 -77.5 {name=vdd sig_type=std_logic dir=inout }
+B 5 37.5 77.5 42.5 82.5 {name=clk_out_mux21 sig_type=std_logic dir=inout }
+B 5 57.5 77.5 62.5 82.5 {name=clk_d sig_type=std_logic dir=inout }
+B 5 -62.5 77.5 -57.5 82.5 {name=n_clk_0 sig_type=std_logic dir=inout }
+B 5 157.5 -2.5 162.5 2.5 {name=out sig_type=std_logic dir=out }
+B 5 -122.5 -22.5 -117.5 -17.5 {name=in_a sig_type=std_logic dir=in }
+B 5 17.5 77.5 22.5 82.5 {name=clk_5 sig_type=std_logic dir=inout }
+B 5 77.5 77.5 82.5 82.5 {name=clk_2 sig_type=std_logic dir=inout }
+B 5 -122.5 17.5 -117.5 22.5 {name=in_b sig_type=std_logic dir=in }
+B 5 -42.5 77.5 -37.5 82.5 {name=clk_1 sig_type=std_logic dir=inout }
+B 5 -22.5 77.5 -17.5 82.5 {name=n_clk_1 sig_type=std_logic dir=inout }
+T {@symname} 131 69 0 0 0.3 0.3 {}
+T {@name} 0 -47 0 0 0.2 0.2 {}
+T {s_1_n} 119 95 1 1 0.2 0.2 {}
+T {s_0_n} 99 95 1 1 0.2 0.2 {}
+T {s_0} -64 -85 3 1 0.2 0.2 {}
+T {s_1} -84 -85 3 1 0.2 0.2 {}
+T {MC} -44 -85 3 1 0.2 0.2 {}
+T {clk_0} -94 105 3 0 0.2 0.2 {}
+T {clk_pre} -1 105 1 1 0.2 0.2 {}
+T {vss} 99 -85 1 0 0.2 0.2 {}
+T {vdd} 79 -85 1 0 0.2 0.2 {}
+T {clk_out_mux21} 39 140 1 1 0.2 0.2 {}
+T {clk_d} 59 105 1 1 0.2 0.2 {}
+T {n_clk_0} -74 105 3 0 0.2 0.2 {}
+T {out} 135 -4 0 1 0.2 0.2 {}
+T {in_a} -95 -24 0 0 0.2 0.2 {}
+T {clk_5} 19 105 1 1 0.2 0.2 {}
+T {clk_2} 79 105 1 1 0.2 0.2 {}
+T {in_b} -95 16 0 0 0.2 0.2 {}
+T {clk_1} -54 105 3 0 0.2 0.2 {}
+T {n_clk_1} -34 105 3 0 0.2 0.2 {}
+T {Control} -70 -56.5 0 0 0.2 0.2 {}
+T {Debug} 0 43.5 0 0 0.2 0.2 {}

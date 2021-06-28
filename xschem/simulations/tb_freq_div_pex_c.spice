@@ -1,0 +1,77 @@
+**.subckt tb_freq_div_pex_c
+VSS vss GND {vss} 
+VDD vdd vss {vdd} 
+Vref net9 vss PULSE(0 {vin} 0 1p 1p {Tref/2} {Tref}) DC {vin} AC 0 
+VMC S1 vss PULSE(0 {vin} 0 1p 1p 400n 800n) DC {vin} AC 0 
+x4 vdd net10 net9 vss inverter_min_x2_pex_c
+x5 vdd CLK net10 vss inverter_min_x4_pex_c
+VMC1 S0 vss PULSE(0 {vin} 0 1p 1p 200n 400n) DC {vin} AC 0 
+VMC2 MC vss PULSE(0 {vin} 0 1p 1p 100n 200n) DC {vin} AC 0 
+x1 s1n s0n S0 S1 MC clk_0 clk_pre vss vdd clk_out_mux21 clk_d n_clk_0 f_div clk_2 clk_5 clk_2_f
++ nclk_2 clk_1 n_clk_1 freq_div_pex_c
+x2 nclk_2 vss CLK vdd clk_2 net1 net2 net3 net4 div_by_2_pex_c
+x3 vss vdd net7 net6 f_div net8 net5 PFD_pex_c
+**** begin user architecture code
+
+
+
+* Parameters
+.param kp = 1.0
+.param vdd = kp*1.8
+.param vss = 0.0
+.param vin = vdd
+.param fref = 1e9
+.param Tref = 1/fref
+
+.options TEMP = 100.0
+.options RSHUNT = 1e20
+.options GMIN = 1e-10
+
+* Models
+.lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/corners/sky130.lib SS
+.include ~/caravel_analog_fulgor/xschem/simulations/inverter_min_x2_pex_c.spice
+.include ~/caravel_analog_fulgor/xschem/simulations/inverter_min_x4_pex_c.spice
+.include ~/caravel_analog_fulgor/xschem/simulations/div_by_2_pex_c.spice
+.include ~/caravel_analog_fulgor/xschem/simulations/PFD_pex_c.spice
+.include ~/caravel_analog_fulgor/xschem/simulations/freq_div_pex_c.spice
+
+* Data to save
+.save all
+.ic v(CLK) = 0.0
+.ic v(MC) = 0.0
+.ic v(clk_2) = 0.0
+.ic v(nclk_2) = 0.0
+.ic v(f_div) = 0.0
+.ic v(S0) = 0.0
+.ic v(S1) = 0.0
+.ic v(clk_0) = 0.0
+.ic v(n_clk_0) = 0.0
+.ic v(clk_1) = 0.0
+.ic v(n_clk_1) = 0.0
+.ic v(clk_pre) = 0.0
+.ic v(clk_5) = 0.0
+.ic v(clk_d) = 0.0
+.ic v(clk_2_f) = 0.0
+.ic v(s1n) = 0.0
+.ic v(s0n) = 0.0
+
+* Simulation
+.control
+	save v(CLK) v(clk_2) v(S1) v(S0) v(MC) v(clk_0) v(clk_1) v(clk_pre) v(clk_5) v(clk_d) v(clk_2_f)
++ v(f_div)
+	tran 0.01ns 800ns
+	write tb_freq_div_tran.raw
+	plot v(CLK) v(clk_2)+2 v(S1)+4 v(S0)+6 v(MC)+8 v(clk_0)+10 v(clk_1)+12 v(clk_pre)+14 v(clk_5)+16
++ v(clk_d)+18 v(clk_2_f)+20 v(f_div)+22
+.endc
+
+
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+**** begin user architecture code
+
+**** end user architecture code
+** flattened .save nodes
+.end

@@ -1,0 +1,544 @@
+* NGSPICE file created from prescaler_23.ext - technology: sky130A
+
+.subckt sky130_fd_sc_hs__mux2_1 A0 A1 S VGND VNB VPB VPWR X a_304_74# a_443_74# a_524_368#
++ a_27_112#
+X0 VPWR S a_27_112# VPB sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=840000u l=150000u
+X1 VGND a_27_112# a_443_74# VNB sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=740000u l=150000u
+X2 X a_304_74# VPWR VPB sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.12e+06u l=150000u
+X3 VPWR a_27_112# a_524_368# VPB sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X4 a_304_74# A1 a_226_74# VNB sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=740000u l=150000u
+X5 X a_304_74# VGND VNB sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=740000u l=150000u
+X6 a_223_368# S VPWR VPB sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X7 a_304_74# A0 a_223_368# VPB sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X8 a_443_74# A0 a_304_74# VNB sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=740000u l=150000u
+X9 a_524_368# A1 a_304_74# VPB sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X10 a_226_74# S VGND VNB sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=740000u l=150000u
+X11 VGND S a_27_112# VNB sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=550000u l=150000u
+C0 A1 a_304_74# 0.69fF
+C1 a_27_112# VGND 0.18fF
+C2 a_226_74# a_304_74# 0.08fF
+C3 a_27_112# a_304_74# 0.58fF
+C4 S VPWR 0.05fF
+C5 a_524_368# a_27_112# 0.06fF
+C6 VGND A0 0.02fF
+C7 A1 a_27_112# 0.18fF
+C8 a_304_74# A0 0.23fF
+C9 X VPWR 0.28fF
+C10 VGND VPWR 0.02fF
+C11 A1 A0 0.31fF
+C12 a_304_74# VPWR 0.13fF
+C13 a_304_74# a_223_368# 0.05fF
+C14 a_27_112# A0 0.07fF
+C15 A1 VPWR 0.01fF
+C16 VGND S 0.07fF
+C17 a_27_112# VPWR 0.99fF
+C18 a_304_74# S 0.18fF
+C19 a_27_112# a_223_368# 0.09fF
+C20 a_27_112# VPB 0.01fF
+C21 X VGND 0.11fF
+C22 A1 S 0.10fF
+C23 a_304_74# a_443_74# 0.12fF
+C24 X a_304_74# 0.29fF
+C25 a_27_112# S 0.22fF
+C26 a_304_74# VGND 0.58fF
+C27 A1 a_443_74# 0.07fF
+C28 A1 X 0.02fF
+C29 X a_27_112# 0.08fF
+C30 A0 S 0.04fF
+C31 A1 VGND 0.09fF
+C32 VPB VPWR 0.06fF
+C33 VGND VNB 0.88fF
+C34 X VNB 0.25fF
+C35 VPWR VNB 0.89fF
+C36 A1 VNB 0.37fF
+C37 A0 VNB 0.23fF
+C38 S VNB 0.34fF
+C39 VPB VNB 0.87fF
+C40 a_304_74# VNB 0.36fF
+C41 a_27_112# VNB 0.65fF
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_4798MH VSUBS a_81_n156# a_111_n125# a_15_n125# a_n173_n125#
++ w_n311_n344# a_n111_n156# a_n15_n156# a_n81_n125#
+X0 a_n81_n125# a_n111_n156# a_n173_n125# w_n311_n344# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.25e+06u l=150000u
+X1 a_15_n125# a_n15_n156# a_n81_n125# w_n311_n344# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.25e+06u l=150000u
+X2 a_111_n125# a_81_n156# a_15_n125# w_n311_n344# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.25e+06u l=150000u
+C0 a_111_n125# a_n81_n125# 0.13fF
+C1 a_n173_n125# a_15_n125# 0.13fF
+C2 a_n81_n125# a_15_n125# 0.36fF
+C3 a_111_n125# a_15_n125# 0.36fF
+C4 a_n15_n156# a_n111_n156# 0.02fF
+C5 a_n173_n125# w_n311_n344# 0.14fF
+C6 a_n15_n156# a_81_n156# 0.02fF
+C7 a_n81_n125# w_n311_n344# 0.09fF
+C8 a_n173_n125# a_n81_n125# 0.36fF
+C9 a_111_n125# w_n311_n344# 0.14fF
+C10 a_15_n125# w_n311_n344# 0.09fF
+C11 a_n173_n125# a_111_n125# 0.08fF
+C12 a_111_n125# VSUBS 0.03fF
+C13 a_15_n125# VSUBS 0.03fF
+C14 a_n81_n125# VSUBS 0.03fF
+C15 a_n173_n125# VSUBS 0.03fF
+C16 a_81_n156# VSUBS 0.05fF
+C17 a_n15_n156# VSUBS 0.05fF
+C18 a_n111_n156# VSUBS 0.05fF
+C19 w_n311_n344# VSUBS 2.21fF
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_BHR94T a_n15_n151# w_n311_n335# a_81_n151# a_111_n125#
++ a_15_n125# a_n173_n125# a_n111_n151# a_n81_n125#
+X0 a_111_n125# a_81_n151# a_15_n125# w_n311_n335# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.25e+06u l=150000u
+X1 a_n81_n125# a_n111_n151# a_n173_n125# w_n311_n335# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.25e+06u l=150000u
+X2 a_15_n125# a_n15_n151# a_n81_n125# w_n311_n335# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.25e+06u l=150000u
+C0 a_n111_n151# a_n15_n151# 0.02fF
+C1 a_n173_n125# a_n81_n125# 0.36fF
+C2 a_n15_n151# a_81_n151# 0.02fF
+C3 a_111_n125# a_15_n125# 0.36fF
+C4 a_n173_n125# a_15_n125# 0.13fF
+C5 a_n173_n125# a_111_n125# 0.08fF
+C6 a_n81_n125# a_15_n125# 0.36fF
+C7 a_n81_n125# a_111_n125# 0.13fF
+C8 a_111_n125# w_n311_n335# 0.17fF
+C9 a_15_n125# w_n311_n335# 0.12fF
+C10 a_n81_n125# w_n311_n335# 0.12fF
+C11 a_n173_n125# w_n311_n335# 0.17fF
+C12 a_81_n151# w_n311_n335# 0.05fF
+C13 a_n15_n151# w_n311_n335# 0.05fF
+C14 a_n111_n151# w_n311_n335# 0.05fF
+.ends
+
+.subckt trans_gate m1_187_n605# m1_45_n513# vss vdd
+Xsky130_fd_pr__pfet_01v8_4798MH_0 vss vss m1_187_n605# m1_45_n513# m1_45_n513# vdd
++ vss vss m1_187_n605# sky130_fd_pr__pfet_01v8_4798MH
+Xsky130_fd_pr__nfet_01v8_BHR94T_0 vdd vss vdd m1_187_n605# m1_45_n513# m1_45_n513#
++ vdd m1_187_n605# sky130_fd_pr__nfet_01v8_BHR94T
+C0 m1_187_n605# m1_45_n513# 0.36fF
+C1 m1_187_n605# vdd 0.55fF
+C2 vdd m1_45_n513# 0.69fF
+C3 m1_187_n605# vss 0.93fF
+C4 m1_45_n513# vss 1.31fF
+C5 vdd vss 3.36fF
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_7KT7MH VSUBS a_n111_n186# a_111_n125# a_15_n125# a_n173_n125#
++ w_n311_n344# a_n81_n125#
+X0 a_n81_n125# a_n111_n186# a_n173_n125# w_n311_n344# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.25e+06u l=150000u
+X1 a_15_n125# a_n111_n186# a_n81_n125# w_n311_n344# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.25e+06u l=150000u
+X2 a_111_n125# a_n111_n186# a_15_n125# w_n311_n344# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.25e+06u l=150000u
+C0 w_n311_n344# a_111_n125# 0.14fF
+C1 a_15_n125# a_111_n125# 0.36fF
+C2 a_n173_n125# a_111_n125# 0.08fF
+C3 w_n311_n344# a_n81_n125# 0.09fF
+C4 a_15_n125# a_n81_n125# 0.36fF
+C5 a_n173_n125# a_n81_n125# 0.36fF
+C6 a_111_n125# a_n81_n125# 0.13fF
+C7 a_15_n125# w_n311_n344# 0.09fF
+C8 a_n173_n125# w_n311_n344# 0.14fF
+C9 a_n173_n125# a_15_n125# 0.13fF
+C10 a_111_n125# VSUBS 0.03fF
+C11 a_15_n125# VSUBS 0.03fF
+C12 a_n81_n125# VSUBS 0.03fF
+C13 a_n173_n125# VSUBS 0.03fF
+C14 a_n111_n186# VSUBS 0.26fF
+C15 w_n311_n344# VSUBS 2.21fF
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_2BS6QM w_n311_n335# a_111_n125# a_15_n125# a_n173_n125#
++ a_n111_n151# a_n81_n125#
+X0 a_111_n125# a_n111_n151# a_15_n125# w_n311_n335# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.25e+06u l=150000u
+X1 a_n81_n125# a_n111_n151# a_n173_n125# w_n311_n335# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.25e+06u l=150000u
+X2 a_15_n125# a_n111_n151# a_n81_n125# w_n311_n335# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.25e+06u l=150000u
+C0 a_n173_n125# a_111_n125# 0.08fF
+C1 a_n81_n125# a_n173_n125# 0.36fF
+C2 a_111_n125# a_15_n125# 0.36fF
+C3 a_n81_n125# a_15_n125# 0.36fF
+C4 a_n173_n125# a_15_n125# 0.13fF
+C5 a_n81_n125# a_111_n125# 0.13fF
+C6 a_111_n125# w_n311_n335# 0.17fF
+C7 a_15_n125# w_n311_n335# 0.12fF
+C8 a_n81_n125# w_n311_n335# 0.12fF
+C9 a_n173_n125# w_n311_n335# 0.17fF
+C10 a_n111_n151# w_n311_n335# 0.25fF
+.ends
+
+.subckt inverter_cp_x1 in vss out vdd
+Xsky130_fd_pr__pfet_01v8_7KT7MH_0 vss in out vdd vdd vdd out sky130_fd_pr__pfet_01v8_7KT7MH
+Xsky130_fd_pr__nfet_01v8_2BS6QM_0 vss out vss vss in out sky130_fd_pr__nfet_01v8_2BS6QM
+C0 vdd out 0.10fF
+C1 in out 0.32fF
+C2 out vss 0.77fF
+C3 in vss 0.95fF
+C4 vdd vss 3.13fF
+.ends
+
+.subckt clock_inverter vss inverter_cp_x1_2/in CLK vdd inverter_cp_x1_0/out CLK_d
++ nCLK_d
+Xtrans_gate_0 nCLK_d inverter_cp_x1_0/out vss vdd trans_gate
+Xinverter_cp_x1_0 CLK vss inverter_cp_x1_0/out vdd inverter_cp_x1
+Xinverter_cp_x1_2 inverter_cp_x1_2/in vss CLK_d vdd inverter_cp_x1
+Xinverter_cp_x1_1 CLK vss inverter_cp_x1_2/in vdd inverter_cp_x1
+C0 vdd inverter_cp_x1_0/out 0.28fF
+C1 vdd CLK_d 0.03fF
+C2 inverter_cp_x1_2/in vdd 0.21fF
+C3 inverter_cp_x1_2/in CLK_d 0.12fF
+C4 vdd CLK 0.36fF
+C5 inverter_cp_x1_0/out CLK 0.31fF
+C6 inverter_cp_x1_2/in CLK 0.31fF
+C7 vdd nCLK_d 0.03fF
+C8 nCLK_d inverter_cp_x1_0/out 0.11fF
+C9 inverter_cp_x1_2/in vss 2.01fF
+C10 CLK_d vss 0.96fF
+C11 inverter_cp_x1_0/out vss 1.97fF
+C12 CLK vss 3.03fF
+C13 vdd vss 16.51fF
+C14 nCLK_d vss 1.44fF
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_MJG8BZ VSUBS a_n125_n95# a_63_n95# w_n263_n314# a_n33_n95#
++ a_n63_n192#
+X0 a_63_n95# a_n63_n192# a_n33_n95# w_n263_n314# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=950000u l=150000u
+X1 a_n33_n95# a_n63_n192# a_n125_n95# w_n263_n314# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=950000u l=150000u
+C0 a_n33_n95# a_63_n95# 0.28fF
+C1 a_n125_n95# w_n263_n314# 0.11fF
+C2 a_n125_n95# a_63_n95# 0.10fF
+C3 a_n125_n95# a_n33_n95# 0.28fF
+C4 w_n263_n314# a_63_n95# 0.11fF
+C5 a_n33_n95# w_n263_n314# 0.08fF
+C6 a_63_n95# VSUBS 0.03fF
+C7 a_n33_n95# VSUBS 0.03fF
+C8 a_n125_n95# VSUBS 0.03fF
+C9 a_n63_n192# VSUBS 0.20fF
+C10 w_n263_n314# VSUBS 1.80fF
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_2BS854 w_n311_n335# a_n129_n213# a_111_n125# a_15_n125#
++ a_n173_n125# a_n81_n125#
+X0 a_111_n125# a_n129_n213# a_15_n125# w_n311_n335# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.25e+06u l=150000u
+X1 a_n81_n125# a_n129_n213# a_n173_n125# w_n311_n335# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.25e+06u l=150000u
+X2 a_15_n125# a_n129_n213# a_n81_n125# w_n311_n335# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.25e+06u l=150000u
+C0 a_n173_n125# a_n129_n213# 0.02fF
+C1 a_15_n125# a_111_n125# 0.36fF
+C2 a_n173_n125# a_111_n125# 0.08fF
+C3 a_n173_n125# a_15_n125# 0.13fF
+C4 a_n81_n125# a_n129_n213# 0.10fF
+C5 a_n81_n125# a_111_n125# 0.13fF
+C6 a_n81_n125# a_15_n125# 0.36fF
+C7 a_n81_n125# a_n173_n125# 0.36fF
+C8 a_n129_n213# a_111_n125# 0.01fF
+C9 a_15_n125# a_n129_n213# 0.10fF
+C10 a_111_n125# w_n311_n335# 0.05fF
+C11 a_15_n125# w_n311_n335# 0.05fF
+C12 a_n81_n125# w_n311_n335# 0.05fF
+C13 a_n173_n125# w_n311_n335# 0.05fF
+C14 a_n129_n213# w_n311_n335# 0.49fF
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_KU9PSX a_n125_n95# a_n33_n95# a_n81_n183# w_n263_n305#
+X0 a_n33_n95# a_n81_n183# a_n125_n95# w_n263_n305# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=950000u l=150000u
+X1 a_n125_n95# a_n81_n183# a_n33_n95# w_n263_n305# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=950000u l=150000u
+C0 a_n125_n95# a_n81_n183# 0.16fF
+C1 a_n33_n95# a_n81_n183# 0.10fF
+C2 a_n33_n95# a_n125_n95# 0.88fF
+C3 a_n33_n95# w_n263_n305# 0.07fF
+C4 a_n125_n95# w_n263_n305# 0.13fF
+C5 a_n81_n183# w_n263_n305# 0.31fF
+.ends
+
+.subckt latch_diff m1_657_280# nQ Q vss CLK vdd nD D
+Xsky130_fd_pr__pfet_01v8_MJG8BZ_0 vss vdd vdd vdd nQ Q sky130_fd_pr__pfet_01v8_MJG8BZ
+Xsky130_fd_pr__pfet_01v8_MJG8BZ_1 vss vdd vdd vdd Q nQ sky130_fd_pr__pfet_01v8_MJG8BZ
+Xsky130_fd_pr__nfet_01v8_2BS854_0 vss CLK vss m1_657_280# m1_657_280# vss sky130_fd_pr__nfet_01v8_2BS854
+Xsky130_fd_pr__nfet_01v8_KU9PSX_0 m1_657_280# Q nD vss sky130_fd_pr__nfet_01v8_KU9PSX
+Xsky130_fd_pr__nfet_01v8_KU9PSX_1 m1_657_280# nQ D vss sky130_fd_pr__nfet_01v8_KU9PSX
+C0 Q D 0.05fF
+C1 m1_657_280# nQ 1.41fF
+C2 Q nD 0.05fF
+C3 Q vdd 0.16fF
+C4 CLK m1_657_280# 0.24fF
+C5 Q nQ 0.93fF
+C6 nQ D 0.05fF
+C7 Q m1_657_280# 0.94fF
+C8 nD nQ 0.05fF
+C9 vdd nQ 0.16fF
+C10 D vss 0.53fF
+C11 nD vss 0.16fF
+C12 m1_657_280# vss 1.88fF
+C13 CLK vss 0.87fF
+C14 Q vss -0.55fF
+C15 vdd vss 5.98fF
+C16 nQ vss 1.16fF
+.ends
+
+.subckt DFlipFlop latch_diff_0/m1_657_280# vdd vss latch_diff_1/D clock_inverter_0/inverter_cp_x1_2/in
++ nQ latch_diff_0/nD Q latch_diff_1/nD latch_diff_1/m1_657_280# D clock_inverter_0/inverter_cp_x1_0/out
++ CLK latch_diff_0/D nCLK
+Xclock_inverter_0 vss clock_inverter_0/inverter_cp_x1_2/in D vdd clock_inverter_0/inverter_cp_x1_0/out
++ latch_diff_0/D latch_diff_0/nD clock_inverter
+Xlatch_diff_0 latch_diff_0/m1_657_280# latch_diff_1/nD latch_diff_1/D vss CLK vdd
++ latch_diff_0/nD latch_diff_0/D latch_diff
+Xlatch_diff_1 latch_diff_1/m1_657_280# nQ Q vss nCLK vdd latch_diff_1/nD latch_diff_1/D
++ latch_diff
+C0 latch_diff_1/D nQ 0.11fF
+C1 clock_inverter_0/inverter_cp_x1_0/out vdd 0.03fF
+C2 latch_diff_0/m1_657_280# latch_diff_1/nD 0.14fF
+C3 latch_diff_1/nD latch_diff_0/D 0.04fF
+C4 latch_diff_1/m1_657_280# latch_diff_1/D 0.32fF
+C5 latch_diff_0/nD latch_diff_0/m1_657_280# 0.38fF
+C6 Q latch_diff_1/nD 0.01fF
+C7 vdd latch_diff_0/D 0.09fF
+C8 latch_diff_1/D latch_diff_0/m1_657_280# 0.43fF
+C9 vdd latch_diff_1/nD 0.02fF
+C10 latch_diff_1/D latch_diff_0/D 0.11fF
+C11 nQ latch_diff_1/nD 0.08fF
+C12 latch_diff_1/m1_657_280# latch_diff_0/m1_657_280# 0.18fF
+C13 latch_diff_1/D latch_diff_1/nD 0.33fF
+C14 latch_diff_0/nD vdd 0.14fF
+C15 latch_diff_1/m1_657_280# latch_diff_1/nD 0.42fF
+C16 latch_diff_0/nD latch_diff_1/D 0.41fF
+C17 latch_diff_1/D vdd 0.03fF
+C18 latch_diff_0/m1_657_280# latch_diff_0/D 0.37fF
+C19 latch_diff_1/m1_657_280# vss 0.64fF
+C20 nCLK vss 0.83fF
+C21 Q vss -0.92fF
+C22 nQ vss 0.57fF
+C23 latch_diff_0/m1_657_280# vss 0.72fF
+C24 CLK vss 0.83fF
+C25 latch_diff_1/D vss -0.30fF
+C26 latch_diff_1/nD vss 1.83fF
+C27 clock_inverter_0/inverter_cp_x1_2/in vss 1.86fF
+C28 latch_diff_0/D vss 1.29fF
+C29 clock_inverter_0/inverter_cp_x1_0/out vss 1.84fF
+C30 D vss 3.27fF
+C31 vdd vss 32.62fF
+C32 latch_diff_0/nD vss 1.74fF
+.ends
+
+.subckt sky130_fd_sc_hs__and2_1 A B VGND VNB VPB VPWR X a_143_136# a_56_136#
+X0 VGND B a_143_136# VNB sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=640000u l=150000u
+X1 X a_56_136# VGND VNB sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=740000u l=150000u
+X2 VPWR B a_56_136# VPB sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=840000u l=150000u
+X3 a_143_136# A a_56_136# VNB sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=640000u l=150000u
+X4 a_56_136# A VPWR VPB sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=840000u l=150000u
+X5 X a_56_136# VPWR VPB sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.12e+06u l=150000u
+C0 X B 0.02fF
+C1 A a_56_136# 0.17fF
+C2 VPWR VPB 0.04fF
+C3 a_56_136# X 0.26fF
+C4 VPWR B 0.02fF
+C5 VGND B 0.03fF
+C6 A VPWR 0.07fF
+C7 A VGND 0.21fF
+C8 A B 0.08fF
+C9 VPWR a_56_136# 0.57fF
+C10 a_56_136# VGND 0.06fF
+C11 VPWR X 0.20fF
+C12 VGND X 0.15fF
+C13 a_56_136# B 0.30fF
+C14 VGND VNB 0.50fF
+C15 X VNB 0.23fF
+C16 VPWR VNB 0.50fF
+C17 B VNB 0.24fF
+C18 A VNB 0.36fF
+C19 VPB VNB 0.48fF
+C20 a_56_136# VNB 0.38fF
+.ends
+
+.subckt sky130_fd_sc_hs__or2_1 A B VGND VNB VPB VPWR X a_152_368# a_63_368#
+X0 VPWR A a_152_368# VPB sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=840000u l=150000u
+X1 a_152_368# B a_63_368# VPB sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=840000u l=150000u
+X2 X a_63_368# VGND VNB sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=740000u l=150000u
+X3 X a_63_368# VPWR VPB sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.12e+06u l=150000u
+X4 a_63_368# B VGND VNB sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=550000u l=150000u
+X5 VGND A a_63_368# VNB sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=550000u l=150000u
+C0 B VPWR 0.01fF
+C1 A X 0.02fF
+C2 VGND a_63_368# 0.27fF
+C3 A B 0.10fF
+C4 VGND X 0.16fF
+C5 A VPWR 0.05fF
+C6 VGND B 0.11fF
+C7 a_63_368# X 0.33fF
+C8 B a_63_368# 0.14fF
+C9 a_63_368# VPWR 0.29fF
+C10 VPB VPWR 0.04fF
+C11 A a_63_368# 0.28fF
+C12 X VPWR 0.18fF
+C13 a_152_368# a_63_368# 0.03fF
+C14 VGND VNB 0.53fF
+C15 X VNB 0.24fF
+C16 A VNB 0.21fF
+C17 B VNB 0.31fF
+C18 VPWR VNB 0.46fF
+C19 VPB VNB 0.48fF
+C20 a_63_368# VNB 0.37fF
+.ends
+
+.subckt prescaler_23_pex_c vdd CLK_23 CLK nCLK vss MC Q1 nCLK_23 Q2 Q2_d
+Xsky130_fd_sc_hs__mux2_1_0 sky130_fd_sc_hs__or2_1_1/X nCLK_23 MC vss vss vdd vdd CLK_23
++ sky130_fd_sc_hs__mux2_1_0/a_304_74# sky130_fd_sc_hs__mux2_1_0/a_443_74# sky130_fd_sc_hs__mux2_1_0/a_524_368#
++ sky130_fd_sc_hs__mux2_1_0/a_27_112# sky130_fd_sc_hs__mux2_1
+XDFlipFlop_0 DFlipFlop_0/latch_diff_0/m1_657_280# vdd vss DFlipFlop_0/latch_diff_1/D
++ DFlipFlop_0/clock_inverter_0/inverter_cp_x1_2/in DFlipFlop_0/nQ DFlipFlop_0/latch_diff_0/nD
++ Q1 DFlipFlop_0/latch_diff_1/nD DFlipFlop_0/latch_diff_1/m1_657_280# nCLK_23 DFlipFlop_0/clock_inverter_0/inverter_cp_x1_0/out
++ CLK DFlipFlop_0/latch_diff_0/D nCLK DFlipFlop
+XDFlipFlop_1 DFlipFlop_1/latch_diff_0/m1_657_280# vdd vss DFlipFlop_1/latch_diff_1/D
++ DFlipFlop_1/clock_inverter_0/inverter_cp_x1_2/in nCLK_23 DFlipFlop_1/latch_diff_0/nD
++ Q2 DFlipFlop_1/latch_diff_1/nD DFlipFlop_1/latch_diff_1/m1_657_280# DFlipFlop_1/D
++ DFlipFlop_1/clock_inverter_0/inverter_cp_x1_0/out CLK DFlipFlop_1/latch_diff_0/D
++ nCLK DFlipFlop
+XDFlipFlop_2 DFlipFlop_2/latch_diff_0/m1_657_280# vdd vss DFlipFlop_2/latch_diff_1/D
++ DFlipFlop_2/clock_inverter_0/inverter_cp_x1_2/in DFlipFlop_2/nQ DFlipFlop_2/latch_diff_0/nD
++ Q2_d DFlipFlop_2/latch_diff_1/nD DFlipFlop_2/latch_diff_1/m1_657_280# Q2 DFlipFlop_2/clock_inverter_0/inverter_cp_x1_0/out
++ nCLK DFlipFlop_2/latch_diff_0/D CLK DFlipFlop
+Xsky130_fd_sc_hs__and2_1_0 nCLK_23 sky130_fd_sc_hs__or2_1_0/X vss vss vdd vdd DFlipFlop_1/D
++ sky130_fd_sc_hs__and2_1_0/a_143_136# sky130_fd_sc_hs__and2_1_0/a_56_136# sky130_fd_sc_hs__and2_1
+Xsky130_fd_sc_hs__or2_1_0 Q1 MC vss vss vdd vdd sky130_fd_sc_hs__or2_1_0/X sky130_fd_sc_hs__or2_1_0/a_152_368#
++ sky130_fd_sc_hs__or2_1_0/a_63_368# sky130_fd_sc_hs__or2_1
+Xsky130_fd_sc_hs__or2_1_1 Q2 Q2_d vss vss vdd vdd sky130_fd_sc_hs__or2_1_1/X sky130_fd_sc_hs__or2_1_1/a_152_368#
++ sky130_fd_sc_hs__or2_1_1/a_63_368# sky130_fd_sc_hs__or2_1
+C0 DFlipFlop_0/nQ nCLK 0.11fF
+C1 DFlipFlop_1/latch_diff_1/D CLK 0.18fF
+C2 DFlipFlop_0/latch_diff_1/m1_657_280# Q1 0.06fF
+C3 sky130_fd_sc_hs__or2_1_1/a_63_368# Q2 0.09fF
+C4 Q2 vdd 1.63fF
+C5 sky130_fd_sc_hs__mux2_1_0/a_304_74# sky130_fd_sc_hs__or2_1_1/X 0.08fF
+C6 DFlipFlop_2/latch_diff_1/nD CLK 0.19fF
+C7 sky130_fd_sc_hs__or2_1_0/X CLK 0.01fF
+C8 nCLK_23 DFlipFlop_0/clock_inverter_0/inverter_cp_x1_0/out 0.49fF
+C9 DFlipFlop_2/latch_diff_0/D Q2 0.30fF
+C10 sky130_fd_sc_hs__or2_1_0/X sky130_fd_sc_hs__and2_1_0/a_56_136# 0.07fF
+C11 sky130_fd_sc_hs__and2_1_0/a_143_136# nCLK_23 0.02fF
+C12 Q2_d vdd 0.02fF
+C13 Q2 Q2_d 0.66fF
+C14 nCLK DFlipFlop_1/D 0.16fF
+C15 DFlipFlop_0/latch_diff_1/m1_657_280# nCLK 0.28fF
+C16 DFlipFlop_2/latch_diff_1/nD Q2 0.17fF
+C17 sky130_fd_sc_hs__or2_1_1/X nCLK_23 0.26fF
+C18 sky130_fd_sc_hs__or2_1_0/X vdd 0.03fF
+C19 sky130_fd_sc_hs__mux2_1_0/a_27_112# nCLK_23 0.07fF
+C20 nCLK_23 Q1 0.02fF
+C21 DFlipFlop_2/nQ CLK 0.02fF
+C22 DFlipFlop_0/nQ nCLK_23 0.05fF
+C23 DFlipFlop_2/latch_diff_0/m1_657_280# nCLK 0.31fF
+C24 DFlipFlop_2/latch_diff_0/nD nCLK 0.09fF
+C25 DFlipFlop_0/latch_diff_1/nD CLK 0.02fF
+C26 DFlipFlop_2/nQ Q2 0.13fF
+C27 nCLK nCLK_23 0.11fF
+C28 DFlipFlop_0/latch_diff_0/m1_657_280# CLK 0.29fF
+C29 MC CLK 0.08fF
+C30 nCLK_23 DFlipFlop_1/D 0.02fF
+C31 nCLK DFlipFlop_2/clock_inverter_0/inverter_cp_x1_0/out 0.06fF
+C32 sky130_fd_sc_hs__or2_1_1/X sky130_fd_sc_hs__mux2_1_0/a_443_74# 0.03fF
+C33 DFlipFlop_2/latch_diff_1/D CLK 0.09fF
+C34 sky130_fd_sc_hs__mux2_1_0/a_304_74# nCLK_23 0.04fF
+C35 nCLK DFlipFlop_1/clock_inverter_0/inverter_cp_x1_2/in -0.02fF
+C36 MC vdd 0.88fF
+C37 Q2 MC 0.18fF
+C38 DFlipFlop_2/latch_diff_1/D Q2 0.13fF
+C39 CLK_23 vdd 0.16fF
+C40 DFlipFlop_0/latch_diff_1/D nCLK_23 0.05fF
+C41 DFlipFlop_2/clock_inverter_0/inverter_cp_x1_2/in CLK -0.10fF
+C42 DFlipFlop_2/latch_diff_1/D Q2_d 0.03fF
+C43 sky130_fd_sc_hs__or2_1_0/X MC 0.09fF
+C44 Q1 CLK -0.07fF
+C45 DFlipFlop_0/nQ CLK 0.15fF
+C46 DFlipFlop_2/clock_inverter_0/inverter_cp_x1_2/in vdd 0.03fF
+C47 DFlipFlop_2/clock_inverter_0/inverter_cp_x1_2/in Q2 0.38fF
+C48 sky130_fd_sc_hs__or2_1_1/X vdd 0.03fF
+C49 sky130_fd_sc_hs__or2_1_1/X Q2 0.24fF
+C50 Q1 sky130_fd_sc_hs__or2_1_0/a_63_368# 0.09fF
+C51 Q1 vdd 0.07fF
+C52 nCLK_23 sky130_fd_sc_hs__mux2_1_0/a_443_74# 0.09fF
+C53 DFlipFlop_1/latch_diff_1/nD nCLK 0.18fF
+C54 DFlipFlop_1/D CLK 0.40fF
+C55 sky130_fd_sc_hs__or2_1_1/X Q2_d 0.03fF
+C56 nCLK sky130_fd_sc_hs__or2_1_0/a_63_368# 0.05fF
+C57 nCLK vdd -0.55fF
+C58 nCLK Q2 0.29fF
+C59 sky130_fd_sc_hs__or2_1_0/X Q1 0.06fF
+C60 vdd DFlipFlop_1/D 0.07fF
+C61 nCLK DFlipFlop_1/latch_diff_1/D 0.09fF
+C62 nCLK_23 CLK 0.22fF
+C63 nCLK_23 sky130_fd_sc_hs__and2_1_0/a_56_136# 0.14fF
+C64 nCLK_23 sky130_fd_sc_hs__mux2_1_0/a_524_368# 0.04fF
+C65 DFlipFlop_2/latch_diff_1/nD nCLK 0.12fF
+C66 DFlipFlop_0/latch_diff_1/D CLK 0.04fF
+C67 sky130_fd_sc_hs__or2_1_0/X nCLK 0.06fF
+C68 sky130_fd_sc_hs__or2_1_0/a_152_368# Q1 0.01fF
+C69 DFlipFlop_1/latch_diff_0/nD CLK 0.09fF
+C70 DFlipFlop_2/latch_diff_1/m1_657_280# CLK 0.33fF
+C71 sky130_fd_sc_hs__or2_1_0/X DFlipFlop_1/D 0.35fF
+C72 nCLK_23 vdd 3.35fF
+C73 nCLK_23 Q2 0.03fF
+C74 DFlipFlop_1/latch_diff_0/D nCLK 0.02fF
+C75 DFlipFlop_0/latch_diff_1/nD Q1 0.03fF
+C76 nCLK_23 DFlipFlop_0/latch_diff_0/nD 0.12fF
+C77 sky130_fd_sc_hs__or2_1_0/a_152_368# nCLK 0.01fF
+C78 nCLK DFlipFlop_2/nQ 0.02fF
+C79 DFlipFlop_2/clock_inverter_0/inverter_cp_x1_0/out vdd 0.03fF
+C80 sky130_fd_sc_hs__or2_1_1/X MC 0.02fF
+C81 sky130_fd_sc_hs__mux2_1_0/a_27_112# MC 0.24fF
+C82 Q1 MC 0.29fF
+C83 sky130_fd_sc_hs__or2_1_0/X nCLK_23 0.07fF
+C84 nCLK DFlipFlop_0/latch_diff_1/nD 0.05fF
+C85 DFlipFlop_2/latch_diff_1/m1_657_280# Q2_d 0.03fF
+C86 nCLK DFlipFlop_1/latch_diff_1/m1_657_280# 0.31fF
+C87 nCLK MC 0.01fF
+C88 DFlipFlop_2/latch_diff_1/D nCLK 0.16fF
+C89 DFlipFlop_1/latch_diff_1/nD CLK 0.11fF
+C90 sky130_fd_sc_hs__and2_1_0/a_56_136# CLK 0.08fF
+C91 DFlipFlop_0/latch_diff_1/nD nCLK_23 0.02fF
+C92 DFlipFlop_0/nQ Q1 -0.02fF
+C93 DFlipFlop_1/clock_inverter_0/inverter_cp_x1_0/out CLK 0.16fF
+C94 sky130_fd_sc_hs__mux2_1_0/a_304_74# CLK_23 0.05fF
+C95 nCLK_23 MC 4.46fF
+C96 vdd CLK 0.34fF
+C97 Q2 CLK 0.29fF
+C98 DFlipFlop_1/latch_diff_0/m1_657_280# CLK 0.31fF
+C99 DFlipFlop_2/latch_diff_0/D CLK 0.13fF
+C100 nCLK Q1 -0.02fF
+C101 sky130_fd_sc_hs__or2_1_1/a_63_368# vss 0.37fF
+C102 sky130_fd_sc_hs__or2_1_0/a_63_368# vss 0.37fF
+C103 sky130_fd_sc_hs__or2_1_0/X vss 0.92fF
+C104 sky130_fd_sc_hs__and2_1_0/a_56_136# vss 0.39fF
+C105 DFlipFlop_2/latch_diff_1/m1_657_280# vss 0.57fF
+C106 Q2_d vss 0.57fF
+C107 DFlipFlop_2/nQ vss 0.48fF
+C108 DFlipFlop_2/latch_diff_0/m1_657_280# vss 0.57fF
+C109 DFlipFlop_2/latch_diff_1/D vss -1.73fF
+C110 DFlipFlop_2/latch_diff_1/nD vss 0.57fF
+C111 DFlipFlop_2/clock_inverter_0/inverter_cp_x1_2/in vss 1.94fF
+C112 DFlipFlop_2/latch_diff_0/D vss 0.96fF
+C113 DFlipFlop_2/clock_inverter_0/inverter_cp_x1_0/out vss 1.84fF
+C114 Q2 vss 1.35fF
+C115 DFlipFlop_2/latch_diff_0/nD vss 1.14fF
+C116 DFlipFlop_1/latch_diff_1/m1_657_280# vss 0.72fF
+C117 DFlipFlop_1/latch_diff_0/m1_657_280# vss 0.57fF
+C118 DFlipFlop_1/latch_diff_1/D vss -1.72fF
+C119 DFlipFlop_1/latch_diff_1/nD vss 0.58fF
+C120 DFlipFlop_1/clock_inverter_0/inverter_cp_x1_2/in vss 1.86fF
+C121 DFlipFlop_1/latch_diff_0/D vss 0.96fF
+C122 DFlipFlop_1/clock_inverter_0/inverter_cp_x1_0/out vss 1.76fF
+C123 DFlipFlop_1/D vss 2.98fF
+C124 DFlipFlop_1/latch_diff_0/nD vss 1.14fF
+C125 DFlipFlop_0/latch_diff_1/m1_657_280# vss 0.57fF
+C126 nCLK vss -1.49fF
+C127 Q1 vss -0.09fF
+C128 DFlipFlop_0/nQ vss 0.48fF
+C129 DFlipFlop_0/latch_diff_0/m1_657_280# vss 0.57fF
+C130 CLK vss -0.61fF
+C131 DFlipFlop_0/latch_diff_1/D vss -1.73fF
+C132 DFlipFlop_0/latch_diff_1/nD vss 0.57fF
+C133 DFlipFlop_0/clock_inverter_0/inverter_cp_x1_2/in vss 1.86fF
+C134 DFlipFlop_0/latch_diff_0/D vss 0.96fF
+C135 DFlipFlop_0/clock_inverter_0/inverter_cp_x1_0/out vss 1.76fF
+C136 nCLK_23 vss 5.43fF
+C137 vdd vss 115.92fF
+C138 DFlipFlop_0/latch_diff_0/nD vss 1.14fF
+C139 CLK_23 vss 0.05fF
+C140 sky130_fd_sc_hs__or2_1_1/X vss -0.35fF
+C141 MC vss 2.59fF
+C142 sky130_fd_sc_hs__mux2_1_0/a_304_74# vss 0.41fF
+C143 sky130_fd_sc_hs__mux2_1_0/a_27_112# vss 0.69fF
+.ends
+

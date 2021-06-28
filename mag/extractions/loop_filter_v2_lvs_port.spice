@@ -1,0 +1,91 @@
+* NGSPICE file created from loop_filter_v2.ext - technology: sky130A
+
+.subckt sky130_fd_pr__cap_mim_m3_1_MACBVW VSUBS m3_n2650_n13200# m3_n7969_n2600# m3_7988_8000#
++ m3_2669_n7900# m3_n13288_n2600# m3_n2650_2700# m3_2669_2700# m3_n13288_n13200# m3_n7969_n13200#
++ m3_n13288_8000# m3_7988_2700# m3_n2650_n7900# m3_7988_n7900# m3_2669_n13200# m3_n7969_8000#
++ m3_n13288_2700# m3_n7969_n7900# m3_n13288_n7900# m3_2669_n2600# m3_n7969_2700# m3_7988_n13200#
++ c1_n13188_n13100# m3_7988_n2600# m3_n2650_n2600# m3_n2650_8000# m3_2669_8000#
+X0 c1_n13188_n13100# m3_2669_n13200# sky130_fd_pr__cap_mim_m3_1 l=2.5e+07u w=2.5e+07u
+X1 c1_n13188_n13100# m3_n2650_8000# sky130_fd_pr__cap_mim_m3_1 l=2.5e+07u w=2.5e+07u
+X2 c1_n13188_n13100# m3_2669_n7900# sky130_fd_pr__cap_mim_m3_1 l=2.5e+07u w=2.5e+07u
+X3 c1_n13188_n13100# m3_n13288_n13200# sky130_fd_pr__cap_mim_m3_1 l=2.5e+07u w=2.5e+07u
+X4 c1_n13188_n13100# m3_n7969_2700# sky130_fd_pr__cap_mim_m3_1 l=2.5e+07u w=2.5e+07u
+X5 c1_n13188_n13100# m3_n13288_8000# sky130_fd_pr__cap_mim_m3_1 l=2.5e+07u w=2.5e+07u
+X6 c1_n13188_n13100# m3_2669_8000# sky130_fd_pr__cap_mim_m3_1 l=2.5e+07u w=2.5e+07u
+X7 c1_n13188_n13100# m3_7988_2700# sky130_fd_pr__cap_mim_m3_1 l=2.5e+07u w=2.5e+07u
+X8 c1_n13188_n13100# m3_2669_n2600# sky130_fd_pr__cap_mim_m3_1 l=2.5e+07u w=2.5e+07u
+X9 c1_n13188_n13100# m3_7988_n13200# sky130_fd_pr__cap_mim_m3_1 l=2.5e+07u w=2.5e+07u
+X10 c1_n13188_n13100# m3_n7969_8000# sky130_fd_pr__cap_mim_m3_1 l=2.5e+07u w=2.5e+07u
+X11 c1_n13188_n13100# m3_7988_n7900# sky130_fd_pr__cap_mim_m3_1 l=2.5e+07u w=2.5e+07u
+X12 c1_n13188_n13100# m3_n7969_n13200# sky130_fd_pr__cap_mim_m3_1 l=2.5e+07u w=2.5e+07u
+X13 c1_n13188_n13100# m3_7988_8000# sky130_fd_pr__cap_mim_m3_1 l=2.5e+07u w=2.5e+07u
+X14 c1_n13188_n13100# m3_n13288_n7900# sky130_fd_pr__cap_mim_m3_1 l=2.5e+07u w=2.5e+07u
+X15 c1_n13188_n13100# m3_n7969_n7900# sky130_fd_pr__cap_mim_m3_1 l=2.5e+07u w=2.5e+07u
+X16 c1_n13188_n13100# m3_n2650_n7900# sky130_fd_pr__cap_mim_m3_1 l=2.5e+07u w=2.5e+07u
+X17 c1_n13188_n13100# m3_n2650_n13200# sky130_fd_pr__cap_mim_m3_1 l=2.5e+07u w=2.5e+07u
+X18 c1_n13188_n13100# m3_n2650_2700# sky130_fd_pr__cap_mim_m3_1 l=2.5e+07u w=2.5e+07u
+X19 c1_n13188_n13100# m3_7988_n2600# sky130_fd_pr__cap_mim_m3_1 l=2.5e+07u w=2.5e+07u
+X20 c1_n13188_n13100# m3_n13288_2700# sky130_fd_pr__cap_mim_m3_1 l=2.5e+07u w=2.5e+07u
+X21 c1_n13188_n13100# m3_n13288_n2600# sky130_fd_pr__cap_mim_m3_1 l=2.5e+07u w=2.5e+07u
+X22 c1_n13188_n13100# m3_n7969_n2600# sky130_fd_pr__cap_mim_m3_1 l=2.5e+07u w=2.5e+07u
+X23 c1_n13188_n13100# m3_n2650_n2600# sky130_fd_pr__cap_mim_m3_1 l=2.5e+07u w=2.5e+07u
+X24 c1_n13188_n13100# m3_2669_2700# sky130_fd_pr__cap_mim_m3_1 l=2.5e+07u w=2.5e+07u
+.ends
+
+.subckt cap1_loop_filter VSUBS in out
+Xsky130_fd_pr__cap_mim_m3_1_MACBVW_0 VSUBS out out out out out out out out out out
++ out out out out out out out out out out out in out out out out sky130_fd_pr__cap_mim_m3_1_MACBVW
+.ends
+
+.subckt sky130_fd_pr__cap_mim_m3_1_WHJTNJ VSUBS m3_n4309_50# m3_n4309_n4250# c1_n4209_n4150#
++ c1_110_n4150# m3_10_n4250#
+X0 c1_n4209_n4150# m3_n4309_n4250# sky130_fd_pr__cap_mim_m3_1 l=2e+07u w=2e+07u
+X1 c1_110_n4150# m3_10_n4250# sky130_fd_pr__cap_mim_m3_1 l=2e+07u w=2e+07u
+X2 c1_n4209_n4150# m3_n4309_50# sky130_fd_pr__cap_mim_m3_1 l=2e+07u w=2e+07u
+X3 c1_110_n4150# m3_10_n4250# sky130_fd_pr__cap_mim_m3_1 l=2e+07u w=2e+07u
+.ends
+
+.subckt cap3_loop_filter VSUBS in out
+Xsky130_fd_pr__cap_mim_m3_1_WHJTNJ_0 VSUBS out out in in out sky130_fd_pr__cap_mim_m3_1_WHJTNJ
+.ends
+
+.subckt sky130_fd_pr__cap_mim_m3_1_W3JTNJ VSUBS m3_n6469_n2100# c1_n6369_n6300# m3_2169_n6400#
++ m3_n2150_n6400# c1_2269_n6300# m3_n6469_2200# m3_n2150_n2100# c1_n2050_n6300# m3_n2150_2200#
++ m3_n6469_n6400#
+X0 c1_2269_n6300# m3_2169_n6400# sky130_fd_pr__cap_mim_m3_1 l=2e+07u w=2e+07u
+X1 c1_2269_n6300# m3_2169_n6400# sky130_fd_pr__cap_mim_m3_1 l=2e+07u w=2e+07u
+X2 c1_n2050_n6300# m3_n2150_2200# sky130_fd_pr__cap_mim_m3_1 l=2e+07u w=2e+07u
+X3 c1_n6369_n6300# m3_n6469_n2100# sky130_fd_pr__cap_mim_m3_1 l=2e+07u w=2e+07u
+X4 c1_2269_n6300# m3_2169_n6400# sky130_fd_pr__cap_mim_m3_1 l=2e+07u w=2e+07u
+X5 c1_n6369_n6300# m3_n6469_n6400# sky130_fd_pr__cap_mim_m3_1 l=2e+07u w=2e+07u
+X6 c1_n2050_n6300# m3_n2150_n2100# sky130_fd_pr__cap_mim_m3_1 l=2e+07u w=2e+07u
+X7 c1_n2050_n6300# m3_n2150_n6400# sky130_fd_pr__cap_mim_m3_1 l=2e+07u w=2e+07u
+X8 c1_n6369_n6300# m3_n6469_2200# sky130_fd_pr__cap_mim_m3_1 l=2e+07u w=2e+07u
+.ends
+
+.subckt cap2_loop_filter VSUBS in out
+Xsky130_fd_pr__cap_mim_m3_1_W3JTNJ_0 VSUBS out in out out in out out in out out sky130_fd_pr__cap_mim_m3_1_W3JTNJ
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_U2JGXT w_n226_n510# a_n118_n388# a_n88_n300# a_30_n300#
+X0 a_30_n300# a_n118_n388# a_n88_n300# w_n226_n510# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=3e+06u l=300000u
+.ends
+
+.subckt sky130_fd_pr__res_high_po_5p73_X44RQA a_n573_2292# w_n739_n2890# a_n573_n2724#
+X0 a_n573_n2724# a_n573_2292# w_n739_n2890# sky130_fd_pr__res_high_po_5p73 l=2.292e+07u
+.ends
+
+.subckt res_loop_filter vss out in
+Xsky130_fd_pr__res_high_po_5p73_X44RQA_0 in vss out sky130_fd_pr__res_high_po_5p73_X44RQA
+.ends
+
+.subckt loop_filter_v2 vss in vc_pex D0_cap
+Xcap1_loop_filter_0 vss vc_pex vss cap1_loop_filter
+Xcap3_loop_filter_0 vss cap3_loop_filter_0/in vss cap3_loop_filter
+Xcap2_loop_filter_0 vss in vss cap2_loop_filter
+Xsky130_fd_pr__nfet_01v8_U2JGXT_0 vss D0_cap in cap3_loop_filter_0/in sky130_fd_pr__nfet_01v8_U2JGXT
+Xres_loop_filter_0 vss res_loop_filter_2/out in res_loop_filter
+Xres_loop_filter_1 vss res_loop_filter_2/out vc_pex res_loop_filter
+Xres_loop_filter_2 vss res_loop_filter_2/out vc_pex res_loop_filter
+.ends
+

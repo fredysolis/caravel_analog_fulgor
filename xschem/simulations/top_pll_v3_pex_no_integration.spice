@@ -1,0 +1,62 @@
+**.subckt top_pll_v3_pex_no_integration vdd vss in_ref pfd_QA pfd_QB Up nUp Down nDown pfd_reset
+*+ cp_nswitch cp_pswitch cp_biasp iref_cp lf_vc vco_D0 vco_vctrl vco_out out_first_buffer out_to_buffer
+*+ out_to_div out_by_2 n_out_by_2 out_div_2 n_out_div_2 out_buffer_div_2 n_out_buffer_div_2 out_div out_to_pad
+*+ clk_0 n_clk_0 clk_1 n_clk_1 clk_pre clk_5 clk_out_mux21 clk_d clk_2_f s0n s1n MC s_0 s_1 lf_D0
+*.iopin vdd
+*.iopin vss
+*.ipin in_ref
+*.iopin pfd_QA
+*.iopin pfd_QB
+*.iopin Up
+*.iopin nUp
+*.iopin Down
+*.iopin nDown
+*.iopin pfd_reset
+*.iopin cp_nswitch
+*.iopin cp_pswitch
+*.iopin cp_biasp
+*.ipin iref_cp
+*.iopin lf_vc
+*.ipin vco_D0
+*.iopin vco_vctrl
+*.iopin vco_out
+*.iopin out_first_buffer
+*.iopin out_to_buffer
+*.iopin out_to_div
+*.iopin out_by_2
+*.iopin n_out_by_2
+*.iopin out_div_2
+*.iopin n_out_div_2
+*.iopin out_buffer_div_2
+*.iopin n_out_buffer_div_2
+*.iopin out_div
+*.opin out_to_pad
+*.iopin clk_0
+*.iopin n_clk_0
+*.iopin clk_1
+*.iopin n_clk_1
+*.iopin clk_pre
+*.iopin clk_5
+*.iopin clk_out_mux21
+*.iopin clk_d
+*.iopin clk_2_f
+*.iopin s0n
+*.iopin s1n
+*.ipin MC
+*.ipin s_0
+*.ipin s_1
+*.ipin lf_D0
+x1 vss vdd pfd_QA in_ref out_div pfd_QB pfd_reset PFD_pex_c
+x2 Up vdd pfd_QA nUp Down pfd_QB vss nDown pfd_cp_interface_pex_c
+x4 vdd Up nUp vco_vctrl Down nDown vss iref_cp cp_nswitch cp_pswitch cp_biasp charge_pump_pex_c
+x5 vss vco_vctrl lf_vc lf_D0 loop_filter_v2_pex_c
+x6 vdd vco_out out_to_buffer out_to_div vss out_first_buffer ring_osc_buffer_pex_c
+x7 vdd out_to_pad out_to_buffer vss buffer_salida_pex_c
+x8 n_out_by_2 vss out_to_div vdd out_by_2 out_div_2 n_out_div_2 out_buffer_div_2 n_out_buffer_div_2
++ div_by_2_pex_c
+x9 s1n s0n s_0 s_1 MC clk_0 clk_pre vss vdd clk_out_mux21 clk_d n_clk_0 out_div out_by_2 clk_5
++ clk_2_f n_out_by_2 clk_1 n_clk_1 freq_div_pex_c
+x3 vdd vco_out vco_vctrl vss vco_D0 csvco_pex_c
+**.ends
+** flattened .save nodes
+.end
