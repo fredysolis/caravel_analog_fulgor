@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1624402156
+timestamp 1624896651
 << nwell >>
 rect 0 2846 20536 2860
 rect 0 2838 6183 2846
@@ -519,42 +519,42 @@ rect 13076 -4358 13077 -3781
 rect 13764 -4358 13765 -3781
 rect 13076 -4359 13765 -4358
 rect 19686 -4493 43939 -3693
-use charge_pump  charge_pump_0
-timestamp 1624049879
-transform 1 0 6183 0 1 -142
-box 0 -96 7722 2988
-use buffer_salida  buffer_salida_0
-timestamp 1624049879
-transform 1 0 20599 0 1 1292
-box -63 -1119 28718 1568
 use pfd_cp_interface  pfd_cp_interface_0
-timestamp 1624049879
+timestamp 1624885207
 transform 1 0 3909 0 1 -230
 box 0 0 2154 3068
-use PFD  PFD_0
-timestamp 1624049879
-transform 1 0 0 0 1 1304
-box 0 -1304 3790 1304
-use ring_osc  ring_osc_0
-timestamp 1624049879
-transform 1 0 14447 0 1 -174
-box -422 0 3882 2956
-use ring_osc_buffer  ring_osc_buffer_0
-timestamp 1624402156
-transform 1 0 18509 0 1 653
-box 0 0 1963 1270
 use div_by_5  div_by_5_0
-timestamp 1624402156
+timestamp 1624896651
 transform -1 0 13250 0 1 -3418
 box -556 0 13892 3068
 use div_by_2  div_by_2_0
-timestamp 1624402156
+timestamp 1624896651
 transform -1 0 18034 0 -1 -350
 box -1244 0 4228 3068
 use loop_filter_v2  loop_filter_v2_0
 timestamp 1624053471
 transform 1 0 15820 0 1 -9473
 box -16462 -24206 34360 5780
+use ring_osc_buffer  ring_osc_buffer_0
+timestamp 1624402156
+transform 1 0 18509 0 1 653
+box 0 0 1963 1270
+use ring_osc  ring_osc_0
+timestamp 1624049879
+transform 1 0 14447 0 1 -174
+box -422 0 3882 2956
+use PFD  PFD_0
+timestamp 1624049879
+transform 1 0 0 0 1 1304
+box 0 -1304 3790 1304
+use buffer_salida  buffer_salida_0
+timestamp 1624049879
+transform 1 0 20599 0 1 1292
+box -63 -1119 28718 1568
+use charge_pump  charge_pump_0
+timestamp 1624049879
+transform 1 0 6183 0 1 -142
+box 0 -96 7722 2988
 << labels >>
 rlabel metal2 2159 858 2211 1750 1 pfd_reset
 rlabel metal1 0 1956 210 2022 1 in_ref

@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1624471326
+timestamp 1624896651
 << nwell >>
 rect 18234 4138 21604 4172
 << pwell >>
@@ -906,26 +906,26 @@ rect 20467 -605 28949 -165
 rect 20467 -611 20491 -605
 rect 19795 -635 20491 -611
 rect -4958 -972 -4262 -948
-use sky130_fd_pr__cap_mim_m3_1_U5ZKVF  sky130_fd_pr__cap_mim_m3_1_U5ZKVF_0
-timestamp 1624471326
-transform 1 0 16786 0 1 6344
-box -700 -850 699 850
-use sky130_fd_pr__cap_mim_m3_1_U5ZKVF  sky130_fd_pr__cap_mim_m3_1_U5ZKVF_1
-timestamp 1624471326
-transform 1 0 16786 0 1 1968
-box -700 -850 699 850
 use res_amp_lin_prog  res_amp_lin_prog_0
-timestamp 1624397222
+timestamp 1624402156
 transform 1 0 -5726 0 1 -7077
 box 5835 7077 21302 14799
 use res_amp_sync_v2  res_amp_sync_v2_0
-timestamp 1624397222
+timestamp 1624896651
 transform 1 0 -899 0 1 4870
 box -92 -2189 8342 7015
 use source_follower_buff_diff  source_follower_buff_diff_0
 timestamp 1624113565
 transform 1 0 17170 0 1 1168
 box 863 -174 10692 6158
+use sky130_fd_pr__cap_mim_m3_1_U5ZKVF  sky130_fd_pr__cap_mim_m3_1_U5ZKVF_1
+timestamp 1624471326
+transform 1 0 16786 0 1 1968
+box -700 -850 699 850
+use sky130_fd_pr__cap_mim_m3_1_U5ZKVF  sky130_fd_pr__cap_mim_m3_1_U5ZKVF_0
+timestamp 1624471326
+transform 1 0 16786 0 1 6344
+box -700 -850 699 850
 << labels >>
 rlabel metal4 8534 12559 8597 12604 1 inn
 rlabel metal4 8060 12573 8123 12618 1 inp

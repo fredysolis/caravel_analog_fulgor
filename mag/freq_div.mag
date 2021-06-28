@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1624885207
+timestamp 1624896651
 << nwell >>
 rect 2984 3068 4571 3079
 rect 10778 3059 11706 3083
@@ -358,6 +358,14 @@ rect 15660 240 15661 363
 rect -1845 237 -1844 240
 rect 15571 239 15661 240
 rect -1953 236 -1844 237
+use div_by_5  div_by_5_0
+timestamp 1624896651
+transform 1 0 556 0 1 0
+box -556 0 13892 3068
+use div_by_2  div_by_2_0
+timestamp 1624896651
+transform 1 0 17530 0 1 0
+box -1244 0 4228 3068
 use mux2to1  mux2to1_1
 timestamp 1624653480
 transform -1 0 23305 0 -1 2710
@@ -370,10 +378,6 @@ use mux2to4  mux2to4_0
 timestamp 1624653480
 transform 1 0 -2821 0 -1 2556
 box -11 -1360 2541 2
-use div_by_5  div_by_5_0
-timestamp 1624885207
-transform 1 0 556 0 1 0
-box -556 0 13892 3068
 use inverter_min_x2  inverter_min_x2_2
 timestamp 1624049879
 transform 1 0 -1766 0 -1 655
@@ -382,10 +386,6 @@ use inverter_min_x2  inverter_min_x2_1
 timestamp 1624049879
 transform -1 0 22879 0 -1 655
 box -53 -615 473 655
-use div_by_2  div_by_2_0
-timestamp 1624885207
-transform 1 0 17530 0 1 0
-box -1244 0 4228 3068
 use inverter_min_x4  inverter_min_x4_0
 timestamp 1624049879
 transform 1 0 18971 0 -1 4889
@@ -395,7 +395,7 @@ timestamp 1624049879
 transform 1 0 18445 0 -1 4890
 box -53 -615 473 655
 use prescaler_23  prescaler_23_0
-timestamp 1624885207
+timestamp 1624896651
 transform 1 0 0 0 -1 6136
 box 0 -316 11752 3068
 << labels >>

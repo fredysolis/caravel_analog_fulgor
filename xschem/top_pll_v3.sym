@@ -117,7 +117,7 @@ B 5 487.5 -2.5 492.5 2.5 {name=out_to_pad dir=out }
 B 5 -242.5 127.5 -237.5 132.5 {name=Down dir=inout }
 B 5 -222.5 127.5 -217.5 132.5 {name=nDown dir=inout }
 B 5 -322.5 127.5 -317.5 132.5 {name=pfd_QB dir=inout }
-B 5 -282.5 -132.5 -277.5 -127.5 {name=lf_D0 dir=in }
+B 5 -282.5 -132.5 -277.5 -127.5 {name=vco_D0 dir=in }
 B 5 -102.5 127.5 -97.5 132.5 {name=lf_vc dir=inout }
 B 5 -22.5 127.5 -17.5 132.5 {name=out_first_buffer dir=inout }
 B 5 -142.5 127.5 -137.5 132.5 {name=cp_biasp dir=inout }

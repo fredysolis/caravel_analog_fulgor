@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1624886397
+timestamp 1624896651
 << nwell >>
 rect 0 2846 20536 2860
 rect 0 2838 6183 2846
@@ -546,42 +546,42 @@ rect 13136 -7126 13764 353
 rect 13136 -7854 13169 -7126
 rect 13729 -7854 13764 -7126
 rect 13136 -7886 13764 -7854
-use loop_filter_v2  loop_filter_v2_0
-timestamp 1624053471
-transform 1 0 15820 0 1 -12873
-box -16462 -24206 34360 5780
-use div_by_2  div_by_2_0
-timestamp 1624885207
-transform -1 0 30791 0 -1 -468
-box -1244 0 4228 3068
-use freq_div *freq_div_0
-timestamp 1624885207
-transform -1 0 22875 0 -1 -400
-box -2832 0 23316 6452
-use ring_osc_buffer  ring_osc_buffer_0
-timestamp 1624402156
-transform 1 0 18509 0 1 653
-box 0 0 1963 1270
-use ring_osc  ring_osc_0
-timestamp 1624049879
-transform 1 0 14447 0 1 -174
-box -422 0 3882 2956
-use PFD  PFD_0
-timestamp 1624049879
-transform 1 0 0 0 1 1304
-box 0 -1304 3790 1304
 use pfd_cp_interface  pfd_cp_interface_0
 timestamp 1624885207
 transform 1 0 3909 0 1 -230
 box 0 0 2154 3068
-use buffer_salida  buffer_salida_0
-timestamp 1624049879
-transform 1 0 20599 0 1 1292
-box -63 -1119 28718 1568
+use div_by_2  div_by_2_0
+timestamp 1624896651
+transform -1 0 30791 0 -1 -468
+box -1244 0 4228 3068
 use charge_pump *charge_pump_0
 timestamp 1624049879
 transform 1 0 6183 0 1 -142
 box 0 -96 7722 2988
+use buffer_salida  buffer_salida_0
+timestamp 1624049879
+transform 1 0 20599 0 1 1292
+box -63 -1119 28718 1568
+use PFD  PFD_0
+timestamp 1624049879
+transform 1 0 0 0 1 1304
+box 0 -1304 3790 1304
+use ring_osc  ring_osc_0
+timestamp 1624049879
+transform 1 0 14447 0 1 -174
+box -422 0 3882 2956
+use ring_osc_buffer  ring_osc_buffer_0
+timestamp 1624402156
+transform 1 0 18509 0 1 653
+box 0 0 1963 1270
+use freq_div *freq_div_0
+timestamp 1624896651
+transform -1 0 22875 0 -1 -400
+box -2832 0 23316 6452
+use loop_filter_v2  loop_filter_v2_0
+timestamp 1624053471
+transform 1 0 15820 0 1 -12873
+box -16462 -24206 34360 5780
 << labels >>
 rlabel metal2 2159 858 2211 1750 1 pfd_reset
 rlabel metal1 0 1956 210 2022 1 in_ref

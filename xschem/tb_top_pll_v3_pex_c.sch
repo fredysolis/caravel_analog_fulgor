@@ -122,12 +122,12 @@ value="
 .param vd0 = 0.0
 .param vd1 = 0.0
 
-.options TEMP = 0.0
+.options TEMP = 100.0
 .options RSHUNT = 1e20
-.options GMIN = 1e-10
+*.options GMIN = 1e-10
 
 * Models
-.lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/corners/sky130.lib FF
+.lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/corners/sky130.lib SS
 .include ~/caravel_analog_fulgor/xschem/simulations/bias_pex_c.spice
 .include ~/caravel_analog_fulgor/xschem/simulations/top_pll_v3_pex_c.spice
 
