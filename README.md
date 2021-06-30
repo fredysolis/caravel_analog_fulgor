@@ -85,6 +85,7 @@ In this run you can find:
     - Version 2: It adds progrmabillity to the loop filter by adding capacitance in parallel with the secondary loop filter capacitor.
     - Version 3: It adds progrmabillity not just to the loop filter, but also to the frequency divider. Now is possible to divide the VCO output frequency by 4,6,8,10,12 and 20. This will allow us to use several reference frequencies and to make the PLL work if the tapeout comes in the Slow-Slow corner.
 
- - A Residual Amplifier With Variable Output Common Mode and Gain
+ - A Residual Amplifier With Variable Output Common Mode and Gain:
+    - This design consist of a single stage dynamic amplifier with output common mode and gain calibrations, able to operate at 100MHz. Additionally, the design include a clock generation block, where control signals are generated. Finally, the amplified output signal is buffered by source follower buffers.
 
 
